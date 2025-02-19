@@ -1,17 +1,29 @@
-research_task:
+prosecution_task:
   description: >
-    Conduct a thorough research about {topic}
-    Make sure you find any interesting and relevant information given
-    the current year is {current_year}.
+    Prepare and present the prosecution's argument based on the given case details.
+    Ensure that legal precedents, evidence, and logical reasoning support the charges.
+    Cross-examine responses and counter any defense arguments effectively.
   expected_output: >
-    A list with 10 bullet points of the most relevant information about {topic}
-  agent: researcher
+    A structured argument outlining the prosecution's case with legal references,
+    key evidence, and counterarguments. Formatted as markdown without '```'.
+  agent: prosecutor
 
-reporting_task:
+judgment_task:
   description: >
-    Review the context you got and expand each topic into a full section for a report.
-    Make sure the report is detailed and contains any and all relevant information.
+    Evaluate the arguments presented by the prosecution and the defense.
+    Ask clarifying questions where needed and ensure that legal principles
+    are correctly applied. Deliver an impartial verdict with reasoning.
   expected_output: >
-    A fully fledged report with the main topics, each with a full section of information.
-    Formatted as markdown without '```'
-  agent: reporting_analyst
+    A judgment summary detailing the legal analysis, case evaluation, and final ruling.
+    Formatted as markdown without '```'.
+  agent: judge
+
+review_task:
+  description: >
+    Analyze and assess the law student's performance in presenting arguments.
+    Provide constructive feedback on legal reasoning, argument structure, 
+    and presentation skills. Suggest case law references and improvements.
+  expected_output: >
+    A detailed feedback report with strengths, weaknesses, and actionable insights
+    to improve the student's advocacy skills. Formatted as markdown without '```'.
+  agent: reviewer

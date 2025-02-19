@@ -4,7 +4,7 @@ import warnings
 
 from datetime import datetime
 
-from mootcourt.crew import Mootcourt
+from mootcourt.mootcourt import Mootcourt
 
 warnings.filterwarnings("ignore", category=SyntaxWarning, module="pysbd")
 
@@ -18,7 +18,7 @@ def run():
     Run the crew.
     """
     inputs = {
-        'topic': 'AI LLMs',
+        'topic': 'Prakhar Name',
         'current_year': str(datetime.now().year)
     }
     
