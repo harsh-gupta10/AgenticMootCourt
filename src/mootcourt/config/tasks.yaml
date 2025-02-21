@@ -1,29 +1,43 @@
-prosecution_task:
+defense_task:
   description: >
-    Prepare and present the prosecution's argument based on the given case details.
-    Ensure that legal precedents, evidence, and logical reasoning support the charges.
-    Cross-examine responses and counter any defense arguments effectively.
+    Present the defense arguments in the Indian constitutional moot court setting.
+    Respond to the human prosecutor's arguments, addressing each point methodically.
+    Follow proper court etiquette addressing the judge as "Your Lordship" and using phrases
+    like 'It is humbly submitted that...' Present your arguments in segments, pausing
+    for the judge's potential questions. Cite relevant Indian case law and legal precedents.
+    Participate in rebuttal rounds as needed.
   expected_output: >
-    A structured argument outlining the prosecution's case with legal references,
-    key evidence, and counterarguments. Formatted as markdown without '```'.
-  agent: prosecutor
+    A structured defense argument following proper court etiquette with clear segmentation, 
+    legal references to Indian case law, and responses to the judge's inquiries.
+    Formatted as markdown without '```'.
+  agent: defender
 
 judgment_task:
   description: >
-    Evaluate the arguments presented by the prosecution and the defense.
-    Ask clarifying questions where needed and ensure that legal principles
-    are correctly applied. Deliver an impartial verdict with reasoning.
+    Oversee the moot court proceedings in an Indian constitutional law setting.
+    Listen to both the human prosecutor and AI defender, intervening with critical questions
+    after each segment of their arguments. Ask for clarifications, challenge assertions,
+    request citations to relevant case law, and identify any factual inaccuracies.
+    Ensure both parties follow proper court procedures. The proceedings should include
+    an opening round for both parties followed by rebuttal rounds.
   expected_output: >
-    A judgment summary detailing the legal analysis, case evaluation, and final ruling.
+    A series of targeted questions and interventions throughout the proceedings,
+    maintaining proper court decorum and ensuring thorough legal analysis.
     Formatted as markdown without '```'.
   agent: judge
 
 review_task:
   description: >
-    Analyze and assess the law student's performance in presenting arguments.
-    Provide constructive feedback on legal reasoning, argument structure, 
-    and presentation skills. Suggest case law references and improvements.
+    Silently observe the entire moot court proceeding and evaluate both the human prosecutor
+    and AI defender according to the 100-point rubric. Score each participant on:
+    recognition of issues (10 pts), identification of legal principles (15 pts),
+    use of authorities (15 pts), appreciation of facts (15 pts), clarity and structure (10 pts),
+    response to questions (15 pts), communication with judges (10 pts), and
+    overall presentation (10 pts). Provide specific examples from their arguments to
+    justify scores and offer constructive feedback for improvement.
   expected_output: >
-    A detailed feedback report with strengths, weaknesses, and actionable insights
-    to improve the student's advocacy skills. Formatted as markdown without '```'.
+    A comprehensive evaluation report with individual scores for both participants,
+    detailed justification for each score based on their performance, and actionable
+    feedback for improvement. Formatted as markdown without '```'.
   agent: reviewer
+  output_file: 'moot_court_evaluation.md'
