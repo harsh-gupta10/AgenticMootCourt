@@ -73,7 +73,14 @@ class Mootcourt():
             agent=self.prosecutor(),
             output_file='moot_court_prosecution.md'
         )
-
+    @task
+    def judge_followup_task(self) -> Task:
+        return Task(
+            description="Judge reviews the prosecutor's argument and provides follow-up questions.",
+            expected_output="A list of follow-up questions or comments.",
+            agent=self.judge()
+        )
+        
     @task
     def defense_task(self) -> Task:
         task_config = self.tasks_config['defense_task']
