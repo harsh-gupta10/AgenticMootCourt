@@ -43,7 +43,7 @@ class CourtAgentRunnable:
         # instead of SystemMessage which might be causing compatibility issues
         prompt = ChatPromptTemplate.from_messages([
             # Convert system messages to AI messages for compatibility
-            ("ai", "I am a {role} in a moot court. I can use the case details and legal documents."),
+            ("ai", "{role}"),
             ("ai", "Case Details: {case_details}"),
             ("ai", "I've retrieved these relevant legal documents: {retrieved_docs}"),
             MessagesPlaceholder(variable_name="chat_history"),
