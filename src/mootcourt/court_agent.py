@@ -2,18 +2,19 @@ from langchain.memory import ConversationBufferMemory
 from langchain_community.chat_message_histories import ChatMessageHistory
 from langchain_core.messages import HumanMessage, AIMessage
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
-from langchain_core.runnables import RunnablePassthrough, RunnableLambda
+from langchain_core.runnables import RunnableLambda
 from langchain_core.runnables.history import RunnableWithMessageHistory
-from langchain_community.vectorstores import FAISS
-from langchain.tools import Tool
+from langchain.agents import create_tool_calling_agent
+from langchain_core.tools import tool
 
 class CourtAgentRunnable:
-    def __init__(self, llm, role, case_details, faiss_store1, faiss_store2, memory_store=None):
+    def __init__(self, llm, role, case_details, constitution_store, bns_store, memory_store=None, max_iter=3):
         self.llm = llm
         self.role = role
         self.case_details = case_details
-        self.faiss_store1 = faiss_store1
-        self.faiss_store2 = faiss_store2
+        self.constitution_store = constitution_store
+        self.bns_store = bns_store
+        self.max_iter = max_iter
 
         # Use persistent memory
         self.memory = memory_store if memory_store else ConversationBufferMemory(
@@ -21,59 +22,51 @@ class CourtAgentRunnable:
             return_messages=True
         )
 
-    def retrieve_from_law_doc(self, query, k=3):
-        """Retrieve relevant documents from both FAISS stores."""
-        docs1 = self.faiss_store1.similarity_search(query, k=k)
-        docs2 = self.faiss_store2.similarity_search(query, k=k)
-        merged_docs = docs1 + docs2  # Merge results
+        # Define retrieval tools
+        @tool
+        def search_constitution_store(query: str, k: int = 3) -> str:
+            """Search the constitution store for relevant documents."""
+            docs = self.constitution_store.similarity_search(query, k=k)
+            return "\n\n".join([doc.page_content for doc in docs])
+
+        @tool
+        def search_bns_store(query: str, k: int = 3) -> str:
+            """Search the BNS store for relevant documents."""
+            docs = self.bns_store.similarity_search(query, k=k)
+            return "\n\n".join([doc.page_content for doc in docs])
         
-        # Return document content as a string
-        retrieved_content = "\n\n".join([doc.page_content for doc in merged_docs])
-        print(f"Retrieved content: {retrieved_content[:100]}...")  # Debug print
-        return retrieved_content
+        # Register tools
+        self.tools = [search_constitution_store, search_bns_store]
+
+        # Create the agent
+        self.agent = create_tool_calling_agent(self.llm, self.tools)
 
     def get_session_history(self, session_id):
         """Retrieve chat history."""
         return self.memory.chat_memory
 
     def create_runnable(self) -> RunnableWithMessageHistory:
-        """Creates a RunnableWithMessageHistory with FAISS retrieval properly integrated."""
+        """Creates an agent-based RunnableWithMessageHistory."""
         
-        # Create a more comprehensive prompt that uses only HumanMessage and AIMessage
-        # instead of SystemMessage which might be causing compatibility issues
         prompt = ChatPromptTemplate.from_messages([
-            # Convert system messages to AI messages for compatibility
             ("ai", "{role}"),
             ("ai", "Case Details: {case_details}"),
-            ("ai", "I've retrieved these relevant legal documents: {retrieved_docs}"),
             MessagesPlaceholder(variable_name="chat_history"),
             ("human", "{input}")
         ])
 
-        # Define a function to prepare context with retrieved documents
         def prepare_inputs(input_dict):
             query = input_dict.get("input", "")
-            # Include chat_history in the prepared inputs
             chat_history = input_dict.get("chat_history", [])
-            
-            retrieved_docs = self.retrieve_from_law_doc(query)
-            
             return {
                 "input": query,
-                "retrieved_docs": retrieved_docs,
                 "case_details": self.case_details,
                 "role": self.role,
                 "chat_history": chat_history
             }
+        
+        chain = RunnableLambda(prepare_inputs) | prompt | self.agent
 
-        # Define the improved chain that includes retrieval
-        chain = (
-            RunnableLambda(prepare_inputs)
-            | prompt
-            | self.llm
-        )
-
-        # Wrap with message history
         return RunnableWithMessageHistory(
             runnable=chain,
             get_session_history=self.get_session_history,
