@@ -12,7 +12,7 @@ api_key = os.environ["GOOGLE_API_KEY"]
 genai.configure(api_key=api_key)
 
 # Initialize FAISS stores (Placeholder, replace with actual instances)
-embedding_model = GoogleGenerativeAIEmbeddings(model="models/embedding-001")
+embedding_model = GoogleGenerativeAIEmbeddings(model="models/embedding-004")
 faiss_store1 = FAISS.load_local("faiss_bns", embedding_model, allow_dangerous_deserialization=True)
 faiss_store2 = FAISS.load_local("faiss_constitution", embedding_model, allow_dangerous_deserialization=True)
 
@@ -168,6 +168,7 @@ def run_moot_court():
         while  "No Questions" not in judge_response:
             print(f"\n👨‍⚖️ Judge: {judge_response}")
             prosecutor_answer = prosecutor_round()
+            # ! Why Judge's Question is Not Stored Here to which Prosecutor is Responding. 
             prosecutor_log += f"Prosecutor Response: {prosecutor_answer}\n"
             judge_response = judge_followup(prosecutor_answer)
         
@@ -180,7 +181,8 @@ def run_moot_court():
     defense_arguments = defense_outline.split("\n")
     defense_arguments = [arg for arg in defense_arguments if arg.strip()]  # Filter empty strings
     
-    for i in range(min(len(defense_arguments), 5)):  # Limit to prevent infinite loop, max 3 arguments
+    for i in range(min(len(defense_arguments), 5)):  # Limit to prevent infinite loop, max 5 arguments
+      # ! I dont get it why Max 5 only if Defender have more arguments? Or what is its concluding arguments gets missed?
         defense_argument = present_defense_argument(defense_outline, i)
         print(f"\n👨‍⚖️ Defense Argument {i+1}:\n{defense_argument}")
         defender_log += f"Defender Argument {i+1}: {defense_argument}\n"
@@ -197,7 +199,11 @@ def run_moot_court():
         if i < len(defense_arguments) - 1:  
             if input("\nContinue with next defense argument? (yes/no): ").lower() != "yes":
                 break
-    # TODO: FIX Rebuttal flow
+        
+        # ! Why can Prosecutor(USER) Control How many arguments will Defender will give.
+        
+    # TODO: FIX Rebuttal flow 
+    # ! Ye Kon Kar rha ?
     # print("\n🔁 Rebuttal Round:")
     # print("\nProsecutor, present your rebuttal to the defense arguments:")
     # prosecutor_rebuttal = prosecutor_round()

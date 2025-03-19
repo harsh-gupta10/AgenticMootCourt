@@ -1,0 +1,6 @@
+google-generativeai
+langchain-google-genai
+langchain-community
+langchain-core
+langchain
+faiss-cpu
