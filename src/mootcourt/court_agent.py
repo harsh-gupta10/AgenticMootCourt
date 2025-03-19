@@ -1,22 +1,21 @@
 from langchain.memory import ConversationBufferMemory
 from langchain_community.chat_message_histories import ChatMessageHistory
-from langchain_core.messages import HumanMessage, AIMessage
-from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain_core.runnables import RunnableLambda
 from langchain_core.runnables.history import RunnableWithMessageHistory
-from langchain.agents import create_tool_calling_agent
 from langchain_core.tools import tool
+from langchain.agents import AgentExecutor, create_react_agent
+from langchain_core.prompts import PromptTemplate
 
 class CourtAgentRunnable:
-    def __init__(self, llm, role, case_details, constitution_store, bns_store, memory_store=None, max_iter=3):
+    def __init__(self, llm, role, case_details, constitution_store, bns_store, memory_store=None, max_iter=20):
         self.llm = llm
         self.role = role
         self.case_details = case_details
-        self.constitution_store = constitution_store
-        self.bns_store = bns_store
+        self.constitution_store = constitution_store.as_retriever(k=4)
+        self.bns_store = bns_store.as_retriever(k=4)
         self.max_iter = max_iter
 
-        # Use persistent memory
+        # Initialize persistent memory
         self.memory = memory_store if memory_store else ConversationBufferMemory(
             chat_memory=ChatMessageHistory(),
             return_messages=True
@@ -24,52 +23,74 @@ class CourtAgentRunnable:
 
         # Define retrieval tools
         @tool
-        def search_constitution_store(query: str, k: int = 3) -> str:
-            """Search the constitution store for relevant documents."""
-            docs = self.constitution_store.similarity_search(query, k=k)
-            return "\n\n".join([doc.page_content for doc in docs])
+        def search_constitution_store(query: str) -> str:
+            """Search the constitution store for relevant text using FAISS"""
+            answer = self.constitution_store.invoke(query)[2]
+            print("Answer", answer)
+            return answer
 
         @tool
-        def search_bns_store(query: str, k: int = 3) -> str:
-            """Search the BNS store for relevant documents."""
-            docs = self.bns_store.similarity_search(query, k=k)
-            return "\n\n".join([doc.page_content for doc in docs])
+        def search_bns_store(query: str) -> str:
+            """Search the BNS store for relevant text using FAISS."""
+            answer = self.bns_store.invoke(query)[2]
+            print("Searching BNS store")
+            return answer
         
         # Register tools
         self.tools = [search_constitution_store, search_bns_store]
+        
+        # Create BasePromptTemplate
+        base_prompt = PromptTemplate.from_template(
+             """{role}.
+                These are the case details:
+                {case_details}
+                These are the tools you can use:
 
-        # Create the agent
-        self.agent = create_tool_calling_agent(self.llm, self.tools)
+                {tools}
+                Use the following format:
+                Question: {input}(can be a statement or a question)
+                Thought: Use the chat history to determine the next argument or the answer to the question 
+                Action: Answering the question. You can use the [{tool_names}] if you need.
+                Action Input: the search query 
+                Observation: Verifying the reasonability of the argument
+                ... (this Thought/Action/Action Input/Observation can repeat 7 times)
+                Thought: I now know the final answer
+                Final Answer: the final argument that you want to make
+
+                Begin!
+
+                Question: {input}
+                Thought:{agent_scratchpad}"""
+        )
+        self.agent = create_react_agent(
+            llm=self.llm,
+            tools=self.tools,
+            prompt=base_prompt
+        )
+        
+        # Wrap the agent with an executor that integrates memory and sets max iterations
+        self.agent_executor = AgentExecutor(agent=self.agent,tools=self.tools, max_execution_time=100,max_iterations=100,return_intermediate_steps=True,verbose=True)
 
     def get_session_history(self, session_id):
         """Retrieve chat history."""
         return self.memory.chat_memory
 
     def create_runnable(self) -> RunnableWithMessageHistory:
-        """Creates an agent-based RunnableWithMessageHistory."""
+        """Creates a RunnableWithMessageHistory using the ReAct agent executor."""
         
-        prompt = ChatPromptTemplate.from_messages([
-            ("ai", "{role}"),
-            ("ai", "Case Details: {case_details}"),
-            MessagesPlaceholder(variable_name="chat_history"),
-            ("human", "{input}")
-        ])
-
         def prepare_inputs(input_dict):
-            query = input_dict.get("input", "")
-            chat_history = input_dict.get("chat_history", [])
+            # For ReAct agents, the input is just the user query.
+            print(input_dict)
             return {
-                "input": query,
-                "case_details": self.case_details,
+                "input": input_dict.get("input", ""),
                 "role": self.role,
-                "chat_history": chat_history
+                "case_details": self.case_details
             }
         
-        chain = RunnableLambda(prepare_inputs) | prompt | self.agent
 
         return RunnableWithMessageHistory(
-            runnable=chain,
+            runnable=self.agent_executor,
             get_session_history=self.get_session_history,
             input_messages_key="input",
-            history_messages_key="chat_history"
+            history_messages_key="chat_history",
         )

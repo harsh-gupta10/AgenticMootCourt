@@ -15,11 +15,11 @@ def main():
         return
     
     genai.configure(api_key=api_key)
-    llm = ChatGoogleGenerativeAI(model="gemini-1.5-flash", temperature=0.7)
+    llm = ChatGoogleGenerativeAI(model="gemini-1.5-pro", temperature=0.2)
 
     # Load FAISS stores
     try:
-        embedding_model = GoogleGenerativeAIEmbeddings(model="models/embedding-001")
+        embedding_model = GoogleGenerativeAIEmbeddings(model="models/text-embedding-004")
         faiss_store1 = FAISS.load_local("faiss_bns", embedding_model, allow_dangerous_deserialization=True)
         faiss_store2 = FAISS.load_local("faiss_constitution", embedding_model, allow_dangerous_deserialization=True)
         
@@ -27,19 +27,18 @@ def main():
     except Exception as e:
         print(f"Error loading FAISS stores: {e}")
         return
+    
 
+    # Role and case details
+    role  = """You are a legal assistant well versed in Indian constitutional law. You are tasked with answering legal questions of the user.
+    You are to provide legal advice and information based on the Indian Constitution and the Bhartiya Nyay Sanhita(BNS)"""
+
+    case_details="THIS IS A PLACEHOLDER. IGNORE THIS LINE."
     # Initialize CourtAgentRunnable
-    chatbot = CourtAgentRunnable(
-        llm=llm,
-        role="Legal Assistant specialized in constitutional law",
-        case_details="The case involves constitutional law disputes regarding rights and freedoms.",
-        faiss_store1=faiss_store1,
-        faiss_store2=faiss_store2
-    )
+    chatbot = CourtAgentRunnable(llm,role,case_details,faiss_store2,faiss_store1,max_iter=3)
 
     # Create runnable agent
     chat_agent = chatbot.create_runnable()
-
     # Chat Loop
     print("Legal Assistant Chatbot (type 'exit' to stop)\n")
     while True:
@@ -48,16 +47,19 @@ def main():
             break
 
         try:
-            # Run the chatbot with FAISS retrieval
             print("Passing input:", user_input)
             response = chat_agent.invoke(
-                {"input": user_input},
+                {"input": user_input,
+                 "role": role,
+                 "case_details": case_details},
                 config={"configurable": {"session_id": "legal-session-123"}}
             )
             print("The bot will answer now.")
-            print("\nBot:", response.content)
+            print("\nBot:", response["output"])
         except Exception as e:
-            print(f"\nError: {e}")
+            import traceback    
+            print("Error:", e)
+            traceback.print_exc()
 
 if __name__ == "__main__":
     main()
