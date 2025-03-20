@@ -15,13 +15,13 @@ api_key = os.environ["GOOGLE_API_KEY"]
 genai.configure(api_key=api_key)
 
 # Initialize FAISS stores (Placeholder, replace with actual instances)
-embedding_model = GoogleGenerativeAIEmbeddings(model="models/embedding-004")
+embedding_model = GoogleGenerativeAIEmbeddings(model="models/text-embedding-004")
 faiss_store1 = FAISS.load_local("faiss_bns", embedding_model, allow_dangerous_deserialization=True)
 faiss_store2 = FAISS.load_local("faiss_constitution", embedding_model, allow_dangerous_deserialization=True)
 
 # Create LLM instance
 def create_llm():
-    return ChatGoogleGenerativeAI(model="gemini-1.5-pro", temperature=0.7)
+    return ChatGoogleGenerativeAI(model="gemini-1.5-flash", temperature=0.2)
 
 llm = create_llm()
 
@@ -46,8 +46,7 @@ def log_to_file(content):
 # Agent functions
 def judge_followup(argument):
     response = judge_runnable.invoke({"input": argument , "role": judge_prompt, "case_details":case_details},config={"configurable": {"session_id": "legal-session-123"}})
-    if hasattr(response, 'content'):
-        response = response.content
+    response=response["output"]
     log_to_file(f"Judge: {response}")
     return response
 
@@ -56,24 +55,21 @@ def judge_followup(argument):
 def present_defense_argument(outline, argument_index):
     prompt = f"Based on the following outline, present argument {argument_index+1}:\n\n{outline}"
     response = defense_runnable.invoke({"input": prompt , "role": defender_prompt, "case_details":case_details},config={"configurable": {"session_id": "legal-session-123"}})
-    if hasattr(response, 'content'):
-        response = response.content
+    response=response["output"]
     log_to_file(f"Defender: {response}")
     return response
   
 def defender_reply_to_judge(judge_response):
     prompt = f"As the Respondent, answer the Judge's question: {judge_response}"
     response = defense_runnable.invoke({"input": prompt , "role": defender_prompt, "case_details":case_details},config={"configurable": {"session_id": "legal-session-123"}})
-    if hasattr(response, 'content'):
-        response = response.content
+    response = response["output"]
     log_to_file(f"Defender Reply: {response}")
     return response
 
 def defender_Reburtal_round(prosecutor_rebuttal):
     prompt = f"Present your rebuttal to the prosecutor's arguments: {prosecutor_rebuttal}"
     response = defense_runnable.invoke({"input": prompt , "role": defender_prompt, "case_details":case_details},config={"configurable": {"session_id": "legal-session-123"}})
-    if hasattr(response, 'content'):
-        response = response.content
+    response = response["output"]
     log_to_file(f"Defender Reply: {response}")
     return response
 
@@ -81,8 +77,7 @@ def defender_Reburtal_round(prosecutor_rebuttal):
 def review_case(prosecutor_log, defender_log):
     full_log = f"Prosecutor:\n{prosecutor_log}\n\nDefender:\n{defender_log}"
     response = reviewer_runnable.invoke({"input": full_log , "role": reviewer_prompt, "case_details":case_details},config={"configurable": {"session_id": "legal-session-123"}})
-    if hasattr(response, 'content'):
-        response = response.content
+    response = response["output"]
     log_to_file(f"Final Score Report: {response}")
     return response
 
@@ -94,14 +89,17 @@ def prosecutor_round():
 
 
 def generate_defense_outline(prosecutor_log):
+    global Defence_Outline_Prompt
     Defence_Outline_Prompt = Defence_Outline_Prompt + prosecutor_log
     response = defense_runnable.invoke(
-        {"input": Defence_Outline_Prompt},
+        {"input": Defence_Outline_Prompt,
+        "role": defender_prompt,
+        "case_details": case_details,},
         config={"configurable": {"session_id": "legal-session-123"}}
     )
     
-    if hasattr(response, 'content'):
-        response = response.content
+    if hasattr(response, 'output'):
+        response = response.output
     
     log_to_file(f"Defense Outline: {response}")
     
