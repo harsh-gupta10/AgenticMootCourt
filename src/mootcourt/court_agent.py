@@ -42,25 +42,24 @@ class CourtAgentRunnable:
         # Create BasePromptTemplate
         base_prompt = PromptTemplate.from_template(
              """{role}.
-                These are the case details:
-                {case_details}
                 These are the tools you can use:
-
                 {tools}
                 Use the following format:
-                Question: {input}(can be a statement or a question)
-                Thought: Use the chat history to determine the next argument or the answer to the question 
-                Action: Answering the question. You can use the [{tool_names}] if you need.
+                Input: The input question/statement
+                Case details: The details of the case
+                Thought: Use the chat history to determine the next argument/question/answer
+                Action: One of the [{tool_names}] **only if you need to**.
                 Action Input: the search query 
-                Observation: Verifying the reasonability of the argument
-                ... (this Thought/Action/Action Input/Observation can repeat 7 times)
-                Thought: I now know the final answer
-                Final Answer: the final argument that you want to make
+                Observation: Verifying the reasonability of the argument/question/answer
+                ... (this Thought/Action/Action Input/Observation can repeat 3 times)
+                Thought: I now know the final answer/argument/question
+                Final Answer: the final argument that you want to make/ the final answer to the question/ the final question you want to ask
 
                 Begin!
 
-                Question: {input}
-                Thought:{agent_scratchpad}"""
+                Input: {input}
+                Thought:{agent_scratchpad}
+                Case Details:{case_details}"""
         )
         self.agent = create_react_agent(
             llm=self.llm,
@@ -69,7 +68,8 @@ class CourtAgentRunnable:
         )
         
         # Wrap the agent with an executor that integrates memory and sets max iterations
-        self.agent_executor = AgentExecutor(agent=self.agent,tools=self.tools, max_execution_time=100,max_iterations=10,return_intermediate_steps=True,verbose=True)
+        self.agent_executor = AgentExecutor(agent=self.agent,tools=self.tools, max_execution_time=20,max_iterations=100,handle_parsing_errors=True
+                                            ,verbose=True,return_intermediate_steps=True)
 
     def get_session_history(self, session_id):
         """Retrieve chat history."""
