@@ -53,7 +53,7 @@ class CourtAgentRunnable:
                 Observation: Verifying the reasonability of the argument/question/answer
                 ... (this Thought/Action/Action Input/Observation can repeat 3 times)
                 Thought: I now know the final answer/argument/question
-                Final Answer: the final argument that you want to make/ the final answer to the question/ the final question you want to ask
+                Final Answer: the Arguments that you want to make/ the Answers/ the Questions you want to ask (**FOLLOW OUTPUT FORMAT IF SPECIFIED**)
 
                 Begin!
 

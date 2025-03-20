@@ -87,40 +87,32 @@ def prosecutor_round():
     return argument
 
 
-
 def generate_defense_outline(prosecutor_log):
     global Defence_Outline_Prompt
-    Defence_Outline_Prompt = Defence_Outline_Prompt + prosecutor_log
+    Defence_Outline_Prompt += f"\n\n{prosecutor_log}"  # Append prosecutor's log correctly
+
     response = defense_runnable.invoke(
         {"input": Defence_Outline_Prompt,
-        "role": defender_prompt,
-        "case_details": case_details,},
+         "role": defender_prompt,
+         "case_details": case_details},
         config={"configurable": {"session_id": "legal-session-123"}}
     )
-    
-    if hasattr(response, 'output'):
-        response = response.output
-    
+
+    response=response["output"]
     log_to_file(f"Defense Outline: {response}")
-    
-    # Try to split by ARGUMENT: first
-    defense_arguments = response.split("ARGUMENT:")
+
+    # Split response into argument paragraphs (expecting one argument per paragraph)
+    defense_arguments = response.split("\n\n")
     defense_arguments = [arg.strip() for arg in defense_arguments if arg.strip()]
     
-    # Fallback: If we didn't get any arguments using the ARGUMENT: format
-    # or got fewer than 2 (since first might be preamble), use simple paragraph splitting
-    if len(defense_arguments) < 2:
-        print("Note: Format marker 'ARGUMENT:' not found. Using fallback paragraph splitting.")
-        # Split by double newline to find paragraphs
-        defense_arguments = response.split("\n\n")
+    # Fallback: If we have fewer than 4 arguments, try single newline splitting
+    if len(defense_arguments) < 4:
+        print("Warning: Not enough arguments found with paragraph splitting. Using single newline split as fallback.")
+        defense_arguments = response.split("\n")
         defense_arguments = [arg.strip() for arg in defense_arguments if arg.strip()]
-        
-        # If still not enough arguments, split by single newlines
-        if len(defense_arguments) < 3:
-            defense_arguments = response.split("\n")
-            defense_arguments = [arg.strip() for arg in defense_arguments if arg.strip()]
     
     return response, defense_arguments
+
 
 def run_moot_court():
     print("\n🎓 Welcome to the AI Moot Court!\n")

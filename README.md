@@ -3,3 +3,7 @@
          Build summary generation module.
 - Ishan: Figure out a way to utilize tools properly.
          Test SLM or some API.
+
+
+Tasks:
+- Try Grok with GPT or LAMA Gemini sucks!

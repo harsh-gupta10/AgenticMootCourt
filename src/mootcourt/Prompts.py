@@ -71,11 +71,8 @@ You **evaluate, not judge**, ensuring objective assessment based on advocacy qua
 
 Defence_Outline_Prompt  = f"""
 Based on the prosecutor's arguments below, create a defense outline.
-Format each argument point as:
-ARGUMENT: [brief title of argument]
-[argument details]
+Format each argument point as a new paragraph. Eg if there are 4 arguments you want to present then Just keep 4 paragraph. In each paragraphs Just one argument. Don't write in points and also dont write headings or anything Just paragraphs for each arguments.
 
-Make sure each argument starts with 'ARGUMENT:' on a new line.
 
 Prosecutor's arguments:
 """
