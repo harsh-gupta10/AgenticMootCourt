@@ -30,14 +30,14 @@ class CourtAgentRunnable:
             return answer
 
         @tool
-        def search_bns_store(query: str) -> str:
+        def search_BHARATIYA_NYAYA_SANHITA_store(query: str) -> str:
             """Search the BNS store for relevant text using FAISS."""
             answer = self.bns_store.invoke(query)[2]
             print("Searching BNS store")
             return answer
         
         # Register tools
-        self.tools = [search_constitution_store, search_bns_store]
+        self.tools = [search_constitution_store, search_BHARATIYA_NYAYA_SANHITA_store]
         
         # Create BasePromptTemplate
         base_prompt = PromptTemplate.from_template(
@@ -69,7 +69,7 @@ class CourtAgentRunnable:
         )
         
         # Wrap the agent with an executor that integrates memory and sets max iterations
-        self.agent_executor = AgentExecutor(agent=self.agent,tools=self.tools, max_execution_time=100,max_iterations=100,return_intermediate_steps=True,verbose=True)
+        self.agent_executor = AgentExecutor(agent=self.agent,tools=self.tools, max_execution_time=100,max_iterations=10,return_intermediate_steps=True,verbose=True)
 
     def get_session_history(self, session_id):
         """Retrieve chat history."""
