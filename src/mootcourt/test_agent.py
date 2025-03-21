@@ -3,7 +3,7 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_community.vectorstores import FAISS
 from langchain_google_genai.embeddings import GoogleGenerativeAIEmbeddings
 from langchain.schema import HumanMessage
-from court_agent import CourtAgentRunnable
+from court_agent_exp import CourtAgentRunnable
 import os
 
 def main():
@@ -20,8 +20,8 @@ def main():
     # Load FAISS stores
     try:
         embedding_model = GoogleGenerativeAIEmbeddings(model="models/text-embedding-004")
-        faiss_store1 = FAISS.load_local("faiss_bns", embedding_model, allow_dangerous_deserialization=True)
-        faiss_store2 = FAISS.load_local("faiss_constitution", embedding_model, allow_dangerous_deserialization=True)
+        faiss_store1 = FAISS.load_local("../../vector_database/faiss_bns", embedding_model, allow_dangerous_deserialization=True)
+        faiss_store2 = FAISS.load_local("../../vector_database/faiss_constitution", embedding_model, allow_dangerous_deserialization=True)
         
         print("FAISS stores loaded successfully")
     except Exception as e:

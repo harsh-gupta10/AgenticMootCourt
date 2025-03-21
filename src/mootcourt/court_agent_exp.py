@@ -1,3 +1,4 @@
+# This is an experimental version of court agent class with ReAct+IRAC prompting. Refer to google doc for more details.
 from langchain.memory import ConversationBufferMemory
 from langchain_community.chat_message_histories import ChatMessageHistory
 from langchain_core.runnables import RunnableLambda
@@ -7,7 +8,7 @@ from langchain.agents import AgentExecutor, create_react_agent
 from langchain_core.prompts import PromptTemplate
 
 class CourtAgentRunnable:
-    def __init__(self, llm, role, case_details, constitution_store, bns_store, Landmark_Cases_store, SC_Landmark_Cases_store ,  memory_store=None, max_iter=20):
+    def __init__(self, llm, role, case_details, constitution_store, bns_store, memory_store=None, max_iter=50):
         self.llm = llm
         self.role = role
         self.case_details = case_details
@@ -36,45 +37,60 @@ class CourtAgentRunnable:
             print("Searching BNS store.............")
             return answer
         
-        @tool
-        def Landmark_Cases(query: str) -> str:
-            """Search the Landmark Cases for relevant text using FAISS."""
-            answer = self.Landmark_Cases_store.invoke(query)[2]
-            print("Searching Landmark Cases.............")
-            return answer
+        # @tool
+        # def Landmark_Cases(query: str) -> str:
+        #     """Search the Landmark Cases for relevant text using FAISS."""
+        #     answer = self.Landmark_Cases_store.invoke(query)[2]
+        #     print("Searching Landmark Cases.............")
+        #     return answer
           
-        @tool
-        def Supreme_Court_Landmark_Cases(query: str) -> str:
-            """Search the Supreme Court Landmark Cases for relevant text using FAISS."""
-            answer = self.SC_Landmark_Cases_store.invoke(query)[2]
-            print("Searching Supreme Court Landmark Cases.............")
-            return answer
+        # @tool
+        # def Supreme_Court_Landmark_Cases(query: str) -> str:
+        #     """Search the Supreme Court Landmark Cases for relevant text using FAISS."""
+        #     answer = self.SC_Landmark_Cases_store.invoke(query)[2]
+        #     print("Searching Supreme Court Landmark Cases.............")
+        #     return answer
         
         # Register tools
-        self.tools = [search_constitution_store, search_BHARATIYA_NYAYA_SANHITA_store , Landmark_Cases , Supreme_Court_Landmark_Cases]
+        self.tools = [search_constitution_store, search_BHARATIYA_NYAYA_SANHITA_store]
         
         # Create BasePromptTemplate
         base_prompt = PromptTemplate.from_template(
-             """{role}.
-                These are the tools you can use:
-                {tools}
-                Use the following format:
-                Input: The input question/statement
-                Case details: The details of the case
-                Thought: Use the chat history to determine the next argument/question/answer
-                Action: One of the [{tool_names}] **only if you need to**.
-                Action Input: the search query 
-                Observation: Verifying the reasonability of the argument/question/answer
-                ... (this Thought/Action/Action Input/Observation can repeat 3 times)
-                Thought: I now know the final answer/argument/question
-                Final Answer: the Arguments that you want to make/ the Answers/ the Questions you want to ask (**FOLLOW OUTPUT FORMAT IF SPECIFIED**)
+                """
+                {role}
+                These are the tools you can use: {tools}
+                Use the following structured format for argumentation and questioning:
+
+                Input:
+                - Input: The input question/statement  
+                - Case Details: The details of the case  
+
+                Thought:
+                Use the chat history to determine the next argument/question/answer using IRAC framework:
+                - Issue: Identify the key legal or logical issue in the argument.  
+                - Rule: State the relevant legal principle, rule, or logical framework.  
+                - Application: Apply the rule to the specific facts of the case.  
+                - Conclusion: Provide a reasoned conclusion based on the analysis.  
+
+                Action:
+                - Action: One of the [{tool_names}] **only if needed**.  
+                - Action Input: The search query.
+
+                Observation: 
+                Evaluate **VALIDITY, RELEVANCE and RHETORIC** of the arguments/questions/answers. 
+
+                (Repeat Thought/Action/Observation up to 3 times if necessary.)
+
+                Final Answer:
+                - **Thought:** I now know the final answers/arguments/questions.  
+                - **Final Answer:** The arguments, questions, or answers.  
 
                 Begin!
 
-                Input: {input}
-                Thought:{agent_scratchpad}
-                Case Details:{case_details}
-                Chat History:{chat_history}
+                **Input:** {input}  
+                **Thought:** {agent_scratchpad}  
+                **Case Details:** {case_details}
+                **Chat History:** {chat_history}
                 """
         )
         self.agent = create_react_agent(
@@ -89,21 +105,14 @@ class CourtAgentRunnable:
 
     def get_session_history(self, session_id):
         """Retrieve chat history."""
+
+        print("Retrieving chat history.............")
+        print(self.memory.chat_memory)
         return self.memory.chat_memory
 
     def create_runnable(self) -> RunnableWithMessageHistory:
         """Creates a RunnableWithMessageHistory using the ReAct agent executor."""
-        
-        def prepare_inputs(input_dict):
-            # For ReAct agents, the input is just the user query.
-            print(input_dict)
-            return {
-                "input": input_dict.get("input", ""),
-                "role": self.role,
-                "case_details": self.case_details
-            }
-        
-
+    
         return RunnableWithMessageHistory(
             runnable=self.agent_executor,
             get_session_history=self.get_session_history,
