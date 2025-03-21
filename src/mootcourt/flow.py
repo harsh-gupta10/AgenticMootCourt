@@ -16,8 +16,11 @@ genai.configure(api_key=api_key)
 
 # Initialize FAISS stores (Placeholder, replace with actual instances)
 embedding_model = GoogleGenerativeAIEmbeddings(model="models/text-embedding-004")
-faiss_store1 = FAISS.load_local("faiss_bns", embedding_model, allow_dangerous_deserialization=True)
-faiss_store2 = FAISS.load_local("faiss_constitution", embedding_model, allow_dangerous_deserialization=True)
+faiss_bns = FAISS.load_local("../../vector_database/faiss_bns", embedding_model, allow_dangerous_deserialization=True)
+faiss_constitution = FAISS.load_local("../../vector_database/faiss_constitution", embedding_model, allow_dangerous_deserialization=True)
+faiss_lc = FAISS.load_local("../../vector_database/faiss_landmark_cases", embedding_model, allow_dangerous_deserialization=True)
+faiss_sc_lc = FAISS.load_local("../../vector_database/faiss_supreme_court_csv", embedding_model, allow_dangerous_deserialization=True)
+
 
 # Create LLM instance
 def create_llm():
@@ -27,9 +30,9 @@ llm = create_llm()
 
 
 # Initialize court agents with proper prompts
-judge_agent = CourtAgentRunnable(llm, judge_prompt, case_details,faiss_store1, faiss_store2)
-defense_agent = CourtAgentRunnable(llm, defender_prompt, case_details,faiss_store1, faiss_store2)
-reviewer_agent = CourtAgentRunnable(llm, reviewer_prompt, case_details,faiss_store1, faiss_store2)
+judge_agent = CourtAgentRunnable(llm, judge_prompt, case_details,faiss_constitution, faiss_bns,faiss_lc,faiss_sc_lc)
+defense_agent = CourtAgentRunnable(llm, defender_prompt, case_details,faiss_constitution, faiss_bns,faiss_lc,faiss_sc_lc)
+reviewer_agent = CourtAgentRunnable(llm, reviewer_prompt, case_details,faiss_constitution, faiss_bns,faiss_lc,faiss_sc_lc)
 
 # Create runnables once
 judge_runnable = judge_agent.create_runnable()

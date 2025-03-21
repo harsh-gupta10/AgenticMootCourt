@@ -7,7 +7,7 @@ from langchain.agents import AgentExecutor, create_react_agent
 from langchain_core.prompts import PromptTemplate
 
 class CourtAgentRunnable:
-    def __init__(self, llm, role, case_details, constitution_store, bns_store, memory_store=None, max_iter=20):
+    def __init__(self, llm, role, case_details, constitution_store, bns_store, Landmark_Cases_store, SC_Landmark_Cases_store ,  memory_store=None, max_iter=20):
         self.llm = llm
         self.role = role
         self.case_details = case_details
@@ -26,18 +26,32 @@ class CourtAgentRunnable:
         def search_constitution_store(query: str) -> str:
             """Search the constitution store for relevant text using FAISS"""
             answer = self.constitution_store.invoke(query)[2]
-            print("Answer", answer)
+            print("Searching constitution store.............")
             return answer
 
         @tool
         def search_BHARATIYA_NYAYA_SANHITA_store(query: str) -> str:
             """Search the BNS store for relevant text using FAISS."""
             answer = self.bns_store.invoke(query)[2]
-            print("Searching BNS store")
+            print("Searching BNS store.............")
+            return answer
+        
+        @tool
+        def Landmark_Cases(query: str) -> str:
+            """Search the Landmark Cases for relevant text using FAISS."""
+            answer = self.Landmark_Cases_store.invoke(query)[2]
+            print("Searching Landmark Cases.............")
+            return answer
+          
+        @tool
+        def Supreme_Court_Landmark_Cases(query: str) -> str:
+            """Search the Supreme Court Landmark Cases for relevant text using FAISS."""
+            answer = self.SC_Landmark_Cases_store.invoke(query)[2]
+            print("Searching Supreme Court Landmark Cases.............")
             return answer
         
         # Register tools
-        self.tools = [search_constitution_store, search_BHARATIYA_NYAYA_SANHITA_store]
+        self.tools = [search_constitution_store, search_BHARATIYA_NYAYA_SANHITA_store , Landmark_Cases , Supreme_Court_Landmark_Cases]
         
         # Create BasePromptTemplate
         base_prompt = PromptTemplate.from_template(

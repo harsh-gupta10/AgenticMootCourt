@@ -1,51 +1,12 @@
-# from langchain_community.vectorstores import FAISS
-# from langchain_google_genai import GoogleGenerativeAIEmbeddings
-# from langchain_community.document_loaders import PyPDFLoader
-# from langchain.text_splitter import RecursiveCharacterTextSplitter
-# from PyPDF2 import PdfReader
-# import os
-
-# # Set Google API Key (replace with actual key or use environment variable)
-# os.environ["GOOGLE_API_KEY"] = "AIzaSyAys9j5WcbyzR-Xvn2Xb0QCpJft6BTkWjo"
-
-# # Function to load and process PDF files
-# def load_and_process_pdf(file_path):
-#     document = PdfReader(file_path)
-#     raw_text = ''.join(page.extract_text() for page in document.pages if page.extract_text())
-#     text_splitter = RecursiveCharacterTextSplitter(chunk_size=800, chunk_overlap=400)
-#     split_docs = text_splitter.split_text(raw_text)
-#     return split_docs
-
-# # Load BNS and Constitution PDF files
-# bns_docs = load_and_process_pdf("../../Processed_Data/Laws_Constitution/BNS.pdf")
-# constitution_docs = load_and_process_pdf("../../Processed_Data/Laws_Constitution/constitution.pdf")
-
-# # Initialize Gemini embeddings model
-# embeddings = GoogleGenerativeAIEmbeddings(model="models/text-embedding-004")
-
-# # Create FAISS stores
-# bns_store = FAISS.from_texts(bns_docs, embeddings)
-# constitution_store = FAISS.from_texts(constitution_docs, embeddings)
-
-# # Save FAISS indexes locally
-# bns_store.save_local("../../vector_database/faiss_bns")
-# constitution_store.save_local("../../vector_database/faiss_constitution")
-
-# print("FAISS stores for BNS and Constitution created successfully!")
-
-
-
 from langchain_community.vectorstores import FAISS
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
-from langchain_community.document_loaders import PyPDFLoader, CSVLoader
+from langchain_community.document_loaders import PyPDFLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from PyPDF2 import PdfReader
 import os
-import json
 import pandas as pd
-import docx
-from typing import List, Dict, Any, Optional
-import re
+from typing import List, Dict, Any
+import glob
 
 # Set Google API Key (replace with actual key or use environment variable)
 os.environ["GOOGLE_API_KEY"] = "AIzaSyAys9j5WcbyzR-Xvn2Xb0QCpJft6BTkWjo"  # Replace with environment variable in production
@@ -62,72 +23,79 @@ class LegalDocumentProcessor:
             chunk_overlap=self.chunk_overlap
         )
     
-    def process_pdf(self, file_path: str) -> List[str]:
-        """Process PDF files and return chunks of text."""
+    def process_pdf(self, file_path: str) -> List[Dict[str, Any]]:
+        """Process PDF files and return chunks of text with metadata."""
         print(f"Processing PDF: {file_path}")
+        # Extract filename without extension as case name
+        file_name = os.path.basename(file_path)
+        case_name = os.path.splitext(file_name)[0]
+        
         document = PdfReader(file_path)
         raw_text = ''.join(page.extract_text() for page in document.pages if page.extract_text())
-        split_docs = self.text_splitter.split_text(raw_text)
-        print(f"  Created {len(split_docs)} chunks from PDF")
-        return split_docs
-    
-    def process_docx(self, file_path: str) -> List[str]:
-        """Process DOCX files and return chunks of text."""
-        print(f"Processing DOCX: {file_path}")
-        doc = docx.Document(file_path)
-        raw_text = '\n'.join([paragraph.text for paragraph in doc.paragraphs])
-        split_docs = self.text_splitter.split_text(raw_text)
-        print(f"  Created {len(split_docs)} chunks from DOCX")
-        return split_docs
-    
-    def process_json_landmark_cases(self, file_path: str) -> List[Dict[str, Any]]:
-        """Process the landmark cases JSON file and treat each case as a document."""
-        print(f"Processing JSON: {file_path}")
-        with open(file_path, 'r', encoding='utf-8') as f:
-            data = json.load(f)
+        chunks = self.text_splitter.split_text(raw_text)
         
-        # For landmark cases, we want to keep each case as a whole
-        formatted_cases = []
-        for case in data:
-            # Create a document dict with formatted text and metadata
-            case_doc = {
-                "text": self._format_case_text(case),
+        # Create documents with metadata
+        documents = []
+        for i, chunk in enumerate(chunks):
+            doc = {
+                "text": chunk,
                 "metadata": {
-                    "topic": case.get("Topic", ""),
-                    "part": case.get("Part", ""),
-                    "part_name": case.get("Part_Name", ""),
-                    "case_name": case.get("Name of the case", ""),
-                    "source": "landmark_cases.json"
+                    "source": file_path,
+                    "case_name": case_name,
+                    "chunk_number": i+1,
+                    "total_chunks": len(chunks)
                 }
             }
-            formatted_cases.append(case_doc)
+            documents.append(doc)
         
-        print(f"  Created {len(formatted_cases)} case documents from JSON")
-        return formatted_cases
+        print(f"  Created {len(documents)} chunks from {file_name}")
+        return documents
     
-    def _format_case_text(self, case: Dict[str, Any]) -> str:
-        """Format the case text in a consistent way."""
-        # Compile all available fields into a formatted string
-        case_text = f"Case: {case.get('Name of the case', 'Unknown')}\n"
-        if case.get("Topic"):
-            case_text += f"Topic: {case['Topic']}\n"
-        if case.get("Part") and case.get("Part_Name"):
-            case_text += f"Constitutional Part: {case['Part']} ({case['Part_Name']})\n"
-        if case.get("Bench"):
-            case_text += f"Bench: {case['Bench']}\n"
-        if case.get("Issue"):
-            case_text += f"Issue: {case['Issue']}\n"
-        if case.get("Fact of the Case"):
-            case_text += f"Facts: {case['Fact of the Case']}\n"
-        if case.get("Ratio"):
-            case_text += f"Ratio: {case['Ratio']}\n"
-        if case.get("Judgment"):
-            case_text += f"Judgment: {case['Judgment']}\n"
-        if case.get("case_details"):
-            case_text += f"Additional Details: {case['case_details']}\n"
+    def process_landmark_cases_directory(self, directory_path: str) -> List[Dict[str, Any]]:
+        """Process all PDF files in the landmark cases directory."""
+        print(f"Processing all PDFs in directory: {directory_path}")
+        all_documents = []
         
-        return case_text
+        # Get all PDF files in the directory
+        pdf_files = glob.glob(os.path.join(directory_path, "*.pdf"))
+        
+        if not pdf_files:
+            print(f"No PDF files found in {directory_path}")
+            return all_documents
+        
+        # Process each PDF file
+        for pdf_file in pdf_files:
+            documents = self.process_pdf(pdf_file)
+            all_documents.extend(documents)
+        
+        print(f"Total documents from landmark cases directory: {len(all_documents)}")
+        return all_documents
     
+    def process_constitutional_docs(self, file_path: str, doc_type: str) -> List[Dict[str, Any]]:
+        """Process constitutional documents like BNS and Constitution with appropriate metadata."""
+        print(f"Processing {doc_type}: {file_path}")
+        document = PdfReader(file_path)
+        raw_text = ''.join(page.extract_text() for page in document.pages if page.extract_text())
+        
+        # Split text into chunks
+        chunks = self.text_splitter.split_text(raw_text)
+        
+        # Add metadata to each chunk
+        documents = []
+        for i, chunk in enumerate(chunks):
+            doc = {
+                "text": chunk,
+                "metadata": {
+                    "source": doc_type,
+                    "chunk_number": i+1,
+                    "total_chunks": len(chunks)
+                }
+            }
+            documents.append(doc)
+        
+        print(f"  Created {len(documents)} chunks from {doc_type}")
+        return documents
+
     def process_csv_supreme_court(self, file_path: str) -> List[Dict[str, Any]]:
         """Process the Supreme Court CSV file handling longer entries appropriately."""
         print(f"Processing CSV: {file_path}")
@@ -179,32 +147,6 @@ class LegalDocumentProcessor:
         print(f"  Created {len(documents)} documents from CSV")
         return documents
 
-
-    def process_constitutional_docs(self, file_path: str, doc_type: str) -> List[Dict[str, Any]]:
-        """Process constitutional documents like BNS and Constitution with appropriate metadata."""
-        print(f"Processing {doc_type}: {file_path}")
-        document = PdfReader(file_path)
-        raw_text = ''.join(page.extract_text() for page in document.pages if page.extract_text())
-        
-        # Split text into chunks
-        chunks = self.text_splitter.split_text(raw_text)
-        
-        # Add metadata to each chunk
-        documents = []
-        for i, chunk in enumerate(chunks):
-            doc = {
-                "text": chunk,
-                "metadata": {
-                    "source": doc_type,
-                    "chunk_number": i+1,
-                    "total_chunks": len(chunks)
-                }
-            }
-            documents.append(doc)
-        
-        print(f"  Created {len(documents)} chunks from {doc_type}")
-        return documents
-
     def create_faiss_index(self, documents: List[Dict[str, Any]], index_name: str) -> FAISS:
         """Create a FAISS index from documents with metadata."""
         print(f"Creating FAISS index: {index_name}")
@@ -218,43 +160,27 @@ class LegalDocumentProcessor:
         db.save_local(f"../../vector_database/faiss_{index_name}")
         print(f"  Saved FAISS index: faiss_{index_name}")
         return db
-    
-    def create_faiss_index_from_texts(self, texts: List[str], index_name: str) -> FAISS:
-        """Create a FAISS index from text chunks."""
-        print(f"Creating FAISS index: {index_name}")
-        db = FAISS.from_texts(texts, self.embeddings)
-        db.save_local(f"../../vector_database/faiss_{index_name}")
-        print(f"  Saved FAISS index: faiss_{index_name}")
-        return db
 
 # Main execution
 def main():
     # Initialize the processor
     processor = LegalDocumentProcessor(chunk_size=800, chunk_overlap=200)
     
-    
-    # Process BNS and Constitution PDF files (with metadata)
+    # # Process BNS and Constitution PDF files (with metadata)
     bns_docs = processor.process_constitutional_docs("../../Processed_Data/Laws_Constitution/BNS.pdf", "BNS")
     processor.create_faiss_index(bns_docs, "bns")
     
     constitution_docs = processor.process_constitutional_docs("../../Processed_Data/Laws_Constitution/constitution.pdf", "Constitution")
     processor.create_faiss_index(constitution_docs, "constitution")
-
-    # Process PDF files
-    landmark_judgments_pdf = processor.process_pdf("../../Processed_Data/PreviousCases/LANDMARK_JUDGMENTS_OF_THE_SUPREME_COURT.pdf")
-    processor.create_faiss_index_from_texts(landmark_judgments_pdf, "landmark_judgments_pdf")
-    
-    # Process DOCX files
-    landmark_cases_docx = processor.process_docx("../../Processed_Data/PreviousCases/100LandmarkCases.docx")
-    processor.create_faiss_index_from_texts(landmark_cases_docx, "landmark_cases_docx")
-    
-    # Process JSON landmark cases
-    landmark_cases_json = processor.process_json_landmark_cases("../../Processed_Data/PreviousCases/landmark_cases.json")
-    processor.create_faiss_index(landmark_cases_json, "landmark_cases_json")
     
     # Process Supreme Court CSV
     supreme_court_csv = processor.process_csv_supreme_court("../../Processed_Data/PreviousCases/supreme_court_judgments_cleaned.csv")
     processor.create_faiss_index(supreme_court_csv, "supreme_court_csv")
+    
+    # Process all PDFs in the 100LandmarkCases directory
+    landmark_cases_directory = "../../Processed_Data/PreviousCases/landmark_cases"
+    landmark_cases_docs = processor.process_landmark_cases_directory(landmark_cases_directory)
+    processor.create_faiss_index(landmark_cases_docs, "landmark_cases")
     
     print("All FAISS stores created successfully!")
 
