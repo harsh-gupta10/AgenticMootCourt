@@ -30,7 +30,7 @@ def main():
     
 
     # Role and case details
-    role  = """You are a legal assistant well versed in Indian constitutional law. You are tasked with answering legal questions of the user.
+    role  = """You are a legal professional well versed in Indian constitutional law. You are tasked with answering legal questions of the user.
     You are to provide legal advice and information based on the Indian Constitution and the Bhartiya Nyay Sanhita(BNS)"""
 
     case_details="THIS IS A PLACEHOLDER. IGNORE THIS LINE."

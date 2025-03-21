@@ -61,36 +61,31 @@ class CourtAgentRunnable:
                 These are the tools you can use: {tools}
                 Use the following structured format for argumentation and questioning:
 
-                Input:
-                - Input: The input question/statement  
-                - Case Details: The details of the case  
+                Input: The input question/statement  
+                Case Details: The details of the case  
 
-                Thought:
-                Use the chat history to determine the next argument/question/answer using IRAC framework:
+                Thought: Use the chat history to determine the next argument/question/answer using IRAC framework:
                 - Issue: Identify the key legal or logical issue in the argument.  
                 - Rule: State the relevant legal principle, rule, or logical framework.  
                 - Application: Apply the rule to the specific facts of the case.  
                 - Conclusion: Provide a reasoned conclusion based on the analysis.  
 
-                Action:
-                - Action: One of the [{tool_names}] **only if needed**.  
-                - Action Input: The search query.
+                Action: One of the [{tool_names}] **only if needed**.  
+                Action Input: The search query.
 
-                Observation: 
-                Evaluate **VALIDITY, RELEVANCE and RHETORIC** of the arguments/questions/answers. 
+                Observation: Evaluate **VALIDITY, RELEVANCE and RHETORIC** of the arguments/questions/answers. 
 
                 (Repeat Thought/Action/Observation up to 3 times if necessary.)
 
-                Final Answer:
-                - **Thought:** I now know the final answers/arguments/questions.  
-                - **Final Answer:** The arguments, questions, or answers.  
+                Thought: I now know the final answers/arguments/questions.  
+                Final Answer: The arguments, questions, or answers.  
 
                 Begin!
 
-                **Input:** {input}  
-                **Thought:** {agent_scratchpad}  
-                **Case Details:** {case_details}
-                **Chat History:** {chat_history}
+                Input: {input}  
+                Thought: {agent_scratchpad}  
+                Case Details: {case_details}
+                Chat History: {chat_history}
                 """
         )
         self.agent = create_react_agent(
