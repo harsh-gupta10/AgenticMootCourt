@@ -7,9 +7,13 @@ import google.generativeai as genai
 from langchain_google_genai.embeddings import GoogleGenerativeAIEmbeddings
 from Prompts import judge_prompt , defender_prompt, reviewer_prompt ,Defence_Outline_Prompt
 from CaseDetails import case_details
+import getpass
+from langchain_groq import ChatGroq
+
 
 # Set up API keys
 os.environ["GOOGLE_API_KEY"] = "AIzaSyAys9j5WcbyzR-Xvn2Xb0QCpJft6BTkWjo"
+os.environ["GROQ_API_KEY"] = "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"
 
 api_key = os.environ["GOOGLE_API_KEY"]
 genai.configure(api_key=api_key)
@@ -23,10 +27,18 @@ faiss_sc_lc = FAISS.load_local("../../vector_database/faiss_supreme_court_csv", 
 
 
 # Create LLM instance
-def create_llm():
-    return ChatGoogleGenerativeAI(model="gemini-1.5-flash", temperature=0.2)
+def create_llm( Provider , model , temprature):
+    if Provider=="Google" and model=="gemini-1.5-flash":
+       return ChatGoogleGenerativeAI(model="gemini-1.5-flash", temperature=temprature)
+    elif Provider=="Groq" and  model=="deepseek-r1-distill-llama-70b":
+      return ChatGroq( model="deepseek-r1-distill-llama-70b", temperature=temprature)
 
-llm = create_llm()
+
+
+# llm = create_llm()
+# llm = create_llm(Provider="Google" , model="gemini-1.5-flash" , temprature=0.2)
+llm = create_llm(Provider="Groq" , model="deepseek-r1-distill-llama-70b" , temprature=0.2)
+
 
 
 # Initialize court agents with proper prompts

@@ -12,7 +12,7 @@ from langchain_core.runnables import RunnablePassthrough
 
 llm = ChatGoogleGenerativeAI(
     model="gemini-1.5-pro",
-    google_api_key="AIzaSyAys9j5WcbyzR-Xvn2Xb0QCpJft6BTkWjo",  # Replace with your actual API key
+    google_api_key="AIzaSyAys9j5WcbyzR-Xvn2Xb0QCpJft6BTkWjo",  
     temperature=0.2
 )
 

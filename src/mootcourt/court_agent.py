@@ -13,6 +13,8 @@ class CourtAgentRunnable:
         self.case_details = case_details
         self.constitution_store = constitution_store.as_retriever(k=4)
         self.bns_store = bns_store.as_retriever(k=4)
+        self.Landmark_Cases_store = Landmark_Cases_store.as_retriever(k=4)
+        self.SC_Landmark_Cases_store = SC_Landmark_Cases_store.as_retriever(k=4)
         self.max_iter = max_iter
 
         # Initialize persistent memory
