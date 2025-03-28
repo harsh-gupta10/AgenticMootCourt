@@ -57,6 +57,7 @@ class CourtAgentRunnable:
         # Create BasePromptTemplate
         base_prompt = PromptTemplate.from_template(
                 """
+                FOLLOW FORMAT STRICTLY.
                 {role}
                 These are the tools you can use: {tools}
                 Use the following structured format for argumentation and questioning:
@@ -70,15 +71,16 @@ class CourtAgentRunnable:
                 - Application: Apply the rule to the specific facts of the case.  
                 - Conclusion: Provide a reasoned conclusion based on the analysis.  
 
-                Action: One of the [{tool_names}] **only if needed**.  
-                Action Input: The search query.
+                Action: One of the [{tool_names}] only if needed.  
+                Action Input: The search query if using a tool.
 
-                Observation: Evaluate **VALIDITY, RELEVANCE and RHETORIC** of the arguments/questions/answers. 
+                Observation: The result of the search. 
 
                 (Repeat Thought/Action/Observation up to 3 times if necessary.)
 
                 Thought: I now know the final answers/arguments/questions.  
-                Final Answer: The arguments, questions, or answers.  
+                Final Answer: The arguments, questions, or answers.    
+
 
                 Begin!
 
@@ -95,7 +97,7 @@ class CourtAgentRunnable:
         )
         
         # Wrap the agent with an executor that integrates memory and sets max iterations
-        self.agent_executor = AgentExecutor(agent=self.agent,tools=self.tools, max_execution_time=20,max_iterations=100,handle_parsing_errors=True
+        self.agent_executor = AgentExecutor(agent=self.agent,tools=self.tools, max_execution_time=20,max_iterations=10,handle_parsing_errors=True
                                             ,verbose=True,return_intermediate_steps=True)
 
     def get_session_history(self, session_id):

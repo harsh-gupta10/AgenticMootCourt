@@ -5,6 +5,17 @@ from langchain_google_genai.embeddings import GoogleGenerativeAIEmbeddings
 from langchain.schema import HumanMessage
 from court_agent_exp import CourtAgentRunnable
 import os
+from langchain_groq import ChatGroq
+
+# Create LLM instance
+def create_llm( Provider , model , temprature):
+    if Provider=="Google" and model=="gemini-1.5-flash":
+       return ChatGoogleGenerativeAI(model="gemini-1.5-flash", temperature=temprature)
+    elif Provider=="Groq" and  model=="llama-3.3-70b-versatile":
+      return ChatGroq( model="llama-3.3-70b-versatile", temperature=temprature)
+
+os.environ["GROQ_API_KEY"] = "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"
+llm = create_llm(Provider="Groq" , model="llama-3.3-70b-versatile" , temprature=0.2)
 
 def main():
     # Initialize Gemini model with proper API key
