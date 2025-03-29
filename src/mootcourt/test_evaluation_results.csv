@@ -1,0 +1,3 @@
+domain,question,generated_answer,gold_answer,bleu,rouge-1,rouge-2,rouge-l,embedding_similarity
+TEST,What is Article 14 of the Indian Constitution?,"**
+Article 14 of the Indian Constitution ensures equality before the law and equal protection of the laws for all persons within India. It prohibits the State from denying any person equality and from enacting laws that discriminate without a rational basis. This article is a fundamental right, enforceable by the courts, emphasizing equality and preventing arbitrary discrimination.",Article 14 of the Indian Constitution ensures equality before law and equal protection of laws to all persons within the territory of India.,0.2064846607512353,0.5454545412304868,0.363636359554731,0.5454545412304868,0.8062073588371277
