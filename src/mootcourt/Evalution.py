@@ -3,12 +3,10 @@ import csv
 import os
 from tqdm import tqdm
 import numpy as np
-from sklearn.metrics.pairwise import cosine_similarity
 import nltk
 from nltk.translate.bleu_score import sentence_bleu
 from nltk.tokenize import word_tokenize
 from rouge import Rouge
-from sentence_transformers import SentenceTransformer
 from transformers import AutoTokenizer, AutoModel
 import torch
 import torch.nn.functional as F
@@ -34,9 +32,12 @@ model = AutoModel.from_pretrained("law-ai/InLegalBERT").to(device)
 
 rouge = Rouge()
 
-# Create a directory for storing embeddings
-EMBEDDINGS_DIR = Path("cached_embeddings")
+# Create a directory for storing gold answer embeddings
+EMBEDDINGS_DIR = Path("gold_answer_embeddings")
 EMBEDDINGS_DIR.mkdir(exist_ok=True)
+
+# Dictionary to store gold answer embeddings in memory
+gold_answer_embeddings = {}
 
 def load_json_data(file_path):
     """Load JSON data from file"""
@@ -62,69 +63,72 @@ def calculate_rouge(generated, reference):
     except:
         return {'rouge-1': 0, 'rouge-2': 0, 'rouge-l': 0}
 
-def get_embedding_path(text, dataset_name):
+def get_embedding_filename(text, domain):
     """Generate a unique filename for the given text"""
-    # Create a hash of the text to use as a filename
     import hashlib
     text_hash = hashlib.md5(text.encode()).hexdigest()
-    return EMBEDDINGS_DIR / f"{dataset_name}_{text_hash}.pkl"
+    return f"{domain}_gold_{text_hash}.pkl"
 
-def get_cls_embedding(text, dataset_name=None):
-    """Get the [CLS] token embedding for a given text, with disk caching."""
-    if dataset_name:
-        # Check if embedding is already cached
-        embedding_path = get_embedding_path(text, dataset_name)
-        
-        if embedding_path.exists():
-            try:
-                with open(embedding_path, 'rb') as f:
-                    return pickle.load(f)
-            except Exception as e:
-                print(f"Error loading cached embedding: {e}")
-    
-    # Calculate embedding if not cached or error loading
+def compute_embedding(text):
+    """Compute embedding for a given text"""
     encoded_input = tokenizer(text, return_tensors="pt", padding=True, truncation=True)
-    
-    # Move tensors to CPU
     encoded_input = {k: v.to(device) for k, v in encoded_input.items()}
     
-    with torch.no_grad():  # Disable gradient computation
+    with torch.no_grad():
         output = model(**encoded_input)
-
-    # Extract CLS token embedding (batch_size, hidden_dim)
+    
+    # Extract CLS token embedding
     embedding = output.last_hidden_state[:, 0, :]  # Shape: (1, 768)
-    
-    # Cache the embedding if dataset_name is provided
-    if dataset_name:
-        with open(embedding_path, 'wb') as f:
-            pickle.dump(embedding, f)
-    
     return embedding
 
-def calculate_embedding_similarity(generated, reference, dataset_name=None):
-    """Calculate cosine similarity between embeddings of generated and reference texts."""
-    gen_embedding = get_cls_embedding(generated, f"{dataset_name}_gen" if dataset_name else None)
-    ref_embedding = get_cls_embedding(reference, f"{dataset_name}_ref" if dataset_name else None)
-
-    # Normalize embeddings to unit vectors
-    gen_embedding = F.normalize(gen_embedding, p=2, dim=1)
-    ref_embedding = F.normalize(ref_embedding, p=2, dim=1)
-
-    # Compute cosine similarity
-    similarity = torch.mm(gen_embedding, ref_embedding.T).item()  # Single float value
-
-    return similarity
-
-def cache_gold_embeddings(dataset, domain):
-    """Precompute and cache embeddings for gold standard answers"""
-    print(f"Caching gold standard embeddings for {domain}...")
-    for item in tqdm(dataset, desc=f"Caching {domain} embeddings"):
-        question = item["question"]
-        gold = item["answer"]
+def load_gold_embeddings(gold_answers, domain):
+    """Load or compute embeddings for gold answers"""
+    if domain not in gold_answer_embeddings:
+        gold_answer_embeddings[domain] = {}
+    
+    print(f"Loading gold answer embeddings for {domain}...")
+    for gold_answer in tqdm(gold_answers, desc=f"Processing {domain} gold embeddings"):
+        if gold_answer in gold_answer_embeddings[domain]:
+            continue  # Already loaded
+            
+        embedding_filename = get_embedding_filename(gold_answer, domain)
+        embedding_path = EMBEDDINGS_DIR / embedding_filename
         
-        # Cache the question and gold answer embeddings
-        _ = get_cls_embedding(question, f"{domain}_question")
-        _ = get_cls_embedding(gold, f"{domain}_gold")
+        if embedding_path.exists():
+            # Load from disk
+            with open(embedding_path, 'rb') as f:
+                embedding = pickle.load(f)
+        else:
+            # Compute and save
+            embedding = compute_embedding(gold_answer)
+            with open(embedding_path, 'wb') as f:
+                pickle.dump(embedding, f)
+        
+        # Store in memory
+        gold_answer_embeddings[domain][gold_answer] = embedding
+    
+    print(f"Loaded {len(gold_answer_embeddings[domain])} gold answer embeddings for {domain}")
+
+def calculate_embedding_similarity(generated, gold_answer, domain):
+    """Calculate cosine similarity between generated text and gold answer"""
+    # Get gold answer embedding
+    if domain not in gold_answer_embeddings or gold_answer not in gold_answer_embeddings[domain]:
+        # Compute on the fly if not available
+        gold_embedding = compute_embedding(gold_answer)
+    else:
+        gold_embedding = gold_answer_embeddings[domain][gold_answer]
+    
+    # Compute embedding for generated text (not cached)
+    gen_embedding = compute_embedding(generated)
+    
+    # Normalize embeddings
+    gen_embedding = F.normalize(gen_embedding, p=2, dim=1)
+    gold_embedding = F.normalize(gold_embedding, p=2, dim=1)
+    
+    # Compute cosine similarity
+    similarity = torch.mm(gen_embedding, gold_embedding.T).item()
+    
+    return similarity
 
 def evaluate_legal_qa(questions, generated_answers, gold_answers, domain):
     """Evaluate legal QA performance"""
@@ -160,42 +164,71 @@ def evaluate_legal_qa(questions, generated_answers, gold_answers, domain):
     return results
 
 def save_to_csv(results, output_file):
-    """Save evaluation results to CSV"""
+    """Save evaluation results to CSV with proper handling of newlines and special characters"""
     fieldnames = ['domain', 'question', 'generated_answer', 'gold_answer', 'bleu', 
                  'rouge-1', 'rouge-2', 'rouge-l', 'embedding_similarity']
     
     with open(output_file, 'w', newline='', encoding='utf-8') as f:
-        writer = csv.DictWriter(f, fieldnames=fieldnames)
+        writer = csv.DictWriter(f, fieldnames=fieldnames, quoting=csv.QUOTE_ALL)
         writer.writeheader()
-        writer.writerows(results)
+        
+        # Clean rows before writing
+        cleaned_results = []
+        for row in results:
+            cleaned_row = {}
+            for key, value in row.items():
+                if isinstance(value, str):
+                    # Replace newlines and other problematic characters
+                    cleaned_value = value.replace('\n', ' ').replace('\r', ' ')
+                    cleaned_row[key] = cleaned_value
+                else:
+                    cleaned_row[key] = value
+            cleaned_results.append(cleaned_row)
+            
+        writer.writerows(cleaned_results)
 
-def run_evaluation(use_cached_datasets=True):
-    # Initialize LLM and databases
-    llm, faiss_bns, faiss_constitution, faiss_lc, faiss_sc_lc = initilise_llm_and_databases()
-    
-    # Base prompt for the judge agent
-    Base_prompt = """
-    **Role:** You are an Indian moot court **Judge**, responsible for questioning both the **Petitioner** and **Respondent**, testing their legal reasoning, accuracy, and argument strength.
+# Initialize LLM and databases
+llm, faiss_bns, faiss_constitution, faiss_lc, faiss_sc_lc = initilise_llm_and_databases()
 
-    **Backstory:**  
-    You are an **experienced legal authority**, ensuring **rigorous questioning and fair assessment**. correctly answer the asked Question.
-    """
-    
-    # Initialize judge agent
-    case_details = ""
-    judge_agent = CourtAgentRunnable(llm, Base_prompt, case_details, faiss_constitution, faiss_bns, faiss_lc, faiss_sc_lc)
-    judge_runnable = judge_agent.create_runnable()
-    
-    # Function to get response from judge agent
-    def get_judge_response(question):
-        response = judge_runnable.invoke(
-            {"input": question, "role": Base_prompt, "case_details": case_details},
-            config={"configurable": {"session_id": "legal-session-123"}}
-        )
-        return response["output"]
-    
+# Base prompt for the judge agent
+Base_prompt = """
+**Role:** You are an Indian moot court **Judge**, responsible for questioning both the **Petitioner** and **Respondent**, testing their legal reasoning, accuracy, and argument strength.
+
+**Backstory:**  
+You are an **experienced legal authority**, ensuring **rigorous questioning and fair assessment**. correctly answer the asked Question.
+
+** Answer The asked Question **
+Eg:
+  {
+    "question": "Where are the terms 'Man', 'Woman', 'Person', and 'Public' defined in the Indian Penal Code?",
+    "answer": "These terms are defined in the 'General Explanations' section of the Indian Penal Code."
+  },
+  {
+    "question": "Is it permitted for a person accused of an offence to be forced to be a witness against himself?",
+    "answer": "No, a person accused of an offence shall not be compelled to be a witness against himself."
+  },
+  {
+    "question": "What is the right to life and personal liberty?",
+    "answer": "The right to life and personal liberty means that no person shall be deprived of his life or personal liberty except according to procedure established by law."
+  }
+"""
+
+# Initialize judge agent
+case_details = ""
+judge_agent = CourtAgentRunnable(llm, Base_prompt, case_details, faiss_constitution, faiss_bns, faiss_lc, faiss_sc_lc)
+judge_runnable = judge_agent.create_runnable()
+
+# Function to get response from judge agent
+def get_judge_response(question):
+    response = judge_runnable.invoke(
+        {"input": question, "role": Base_prompt, "case_details": case_details},
+        config={"configurable": {"session_id": "legal-session-123"}}
+    )
+    return response["output"]
+
+def run_evaluation(use_cached_embeddings=True):
     # Load datasets
-    dataset_dir = "legal_dataset"
+    dataset_dir = "../../EvalutionDataset"
     # Create the directory if it doesn't exist
     os.makedirs(dataset_dir, exist_ok=True)
     
@@ -206,76 +239,27 @@ def run_evaluation(use_cached_datasets=True):
         "TEST": os.path.join(dataset_dir, "test.json"),
     }
     
-    # Create cached dataset path
-    cached_datasets_path = Path("cached_datasets")
-    cached_datasets_path.mkdir(exist_ok=True)
-    
     all_results = []
     
     # Process each dataset
     for domain, file_path in dataset_files.items():
         print(f"Processing {domain} dataset...")
         
-        # Check for cached processed dataset
-        cached_file = cached_datasets_path / f"{domain}_processed.pkl"
+        # Load the dataset directly (no caching of dataset)
+        data = load_json_data(file_path)
+        questions = [item["question"] for item in data]
+        gold_answers = [item["answer"] for item in data]
         
-        if use_cached_datasets and cached_file.exists():
-            print(f"Loading cached processed dataset for {domain}...")
-            with open(cached_file, 'rb') as f:
-                cached_data = pickle.load(f)
-                data = cached_data.get('data')
-                questions = cached_data.get('questions')
-                gold_answers = cached_data.get('gold_answers')
-        else:
-            if os.path.exists(file_path):
-                data = load_json_data(file_path)
-            else:
-                print(f"Warning: Dataset file {file_path} does not exist. Creating a sample dataset.")
-                # Create a sample dataset for testing
-                data = [
-                    {"question": "What is Article 14 of the Indian Constitution?", 
-                     "answer": "Article 14 of the Indian Constitution ensures equality before law and equal protection of laws to all persons within the territory of India."}
-                ]
-                # Save the sample dataset
-                with open(file_path, 'w', encoding='utf-8') as f:
-                    json.dump(data, f, indent=4)
-            
-            # Limit the number of questions for faster evaluation (optional)
-            # Remove this for full evaluation
-            data = data[:10]  # First 10 questions for testing
-            
-            questions = [item["question"] for item in data]
-            gold_answers = [item["answer"] for item in data]
-            
-            # Cache processed dataset
-            with open(cached_file, 'wb') as f:
-                pickle.dump({
-                    'data': data,
-                    'questions': questions,
-                    'gold_answers': gold_answers
-                }, f)
+        # Only cache gold answer embeddings
+        if use_cached_embeddings:
+            load_gold_embeddings(gold_answers, domain)
         
-        # Cache gold standard embeddings
-        cache_gold_embeddings(data, domain)
+        generated_answers = []
         
-        # Cached responses path
-        cached_responses_path = cached_datasets_path / f"{domain}_responses.pkl"
-        
-        if use_cached_datasets and cached_responses_path.exists():
-            print(f"Loading cached responses for {domain}...")
-            with open(cached_responses_path, 'rb') as f:
-                generated_answers = pickle.load(f)
-        else:
-            generated_answers = []
-            
-            # Get generated answers
-            for question in tqdm(questions, desc=f"Evaluating {domain} questions"):
-                generated_answer = get_judge_response(question)
-                generated_answers.append(generated_answer)
-            
-            # Cache generated responses
-            with open(cached_responses_path, 'wb') as f:
-                pickle.dump(generated_answers, f)
+        # Generate answers (no caching of responses)
+        for question in tqdm(questions, desc=f"Evaluating {domain} questions"):
+            generated_answer = get_judge_response(question)
+            generated_answers.append(generated_answer)
         
         # Evaluate answers
         domain_results = evaluate_legal_qa(questions, generated_answers, gold_answers, domain)
@@ -311,5 +295,5 @@ def run_evaluation(use_cached_datasets=True):
     print(f"  Average Embedding Similarity: {avg_embedding_sim:.4f}")
 
 if __name__ == "__main__":
-    # Set to False to recalculate everything, True to use cached data when available
-    run_evaluation(use_cached_datasets=True)
+    # Set to False to not use cached embeddings, True to use cached embeddings when available
+    run_evaluation(use_cached_embeddings=True)

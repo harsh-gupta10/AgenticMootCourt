@@ -44,8 +44,8 @@ def initilise_llm_and_databases():
 
 
     # llm = create_llm()
-    # llm = create_llm(Provider="Google" , model="gemini-1.5-flash" , temprature=0.2)
-    llm = create_llm(Provider="Groq" , model="deepseek-r1-distill-llama-70b" , temprature=0.2)
+    llm = create_llm(Provider="Google" , model="gemini-1.5-flash" , temprature=0.1)
+    # llm = create_llm(Provider="Groq" , model="deepseek-r1-distill-llama-70b" , temprature=0.2)
     faiss_sc_lc = FAISS.load_local("../../vector_database/faiss_supreme_court_csv", embedding_model, allow_dangerous_deserialization=True)
     return llm,faiss_bns,faiss_constitution,faiss_lc,faiss_sc_lc
 
