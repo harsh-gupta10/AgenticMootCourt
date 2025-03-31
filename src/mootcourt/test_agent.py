@@ -3,9 +3,10 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_community.vectorstores import FAISS
 from langchain_google_genai.embeddings import GoogleGenerativeAIEmbeddings
 from langchain.schema import HumanMessage
-from court_agent_exp import CourtAgentRunnable
+from court_agent import CourtAgentRunnable
 import os
 from langchain_groq import ChatGroq
+from Initlise import initilise_llm_and_databases
 
 # Create LLM instance
 def create_llm( Provider , model , temprature):
@@ -15,7 +16,7 @@ def create_llm( Provider , model , temprature):
       return ChatGroq( model="llama-3.3-70b-versatile", temperature=temprature)
 
 os.environ["GROQ_API_KEY"] = "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"
-llm = create_llm(Provider="Groq" , model="llama-3.3-70b-versatile" , temprature=0.2)
+#llm = create_llm(Provider="Groq" , model="llama-3.3-70b-versatile" , temprature=0.2)
 
 def main():
     # Initialize Gemini model with proper API key
@@ -27,26 +28,12 @@ def main():
     
     genai.configure(api_key=api_key)
     llm = ChatGoogleGenerativeAI(model="gemini-1.5-pro", temperature=0.2)
+    _,faiss_bns,faiss_constitution,faiss_lc,faiss_sc_lc = initilise_llm_and_databases()
 
-    # Load FAISS stores
-    try:
-        embedding_model = GoogleGenerativeAIEmbeddings(model="models/text-embedding-004")
-        faiss_store1 = FAISS.load_local("../../vector_database/faiss_bns", embedding_model, allow_dangerous_deserialization=True)
-        faiss_store2 = FAISS.load_local("../../vector_database/faiss_constitution", embedding_model, allow_dangerous_deserialization=True)
-        
-        print("FAISS stores loaded successfully")
-    except Exception as e:
-        print(f"Error loading FAISS stores: {e}")
-        return
-    
 
-    # Role and case details
-    role  = """You are a legal professional well versed in Indian constitutional law. You are tasked with answering legal questions of the user.
-    You are to provide legal advice and information based on the Indian Constitution and the Bhartiya Nyay Sanhita(BNS)"""
-
-    case_details="THIS IS A PLACEHOLDER. IGNORE THIS LINE."
+    case_details="IGNORE LINE."
     # Initialize CourtAgentRunnable
-    chatbot = CourtAgentRunnable(llm,role,case_details,faiss_store2,faiss_store1,max_iter=3)
+    chatbot = CourtAgentRunnable(llm,"test",case_details,faiss_constitution,faiss_bns,faiss_lc,faiss_sc_lc,max_iter=5)
 
     # Create runnable agent
     chat_agent = chatbot.create_runnable()
@@ -61,7 +48,6 @@ def main():
             print("Passing input:", user_input)
             response = chat_agent.invoke(
                 {"input": user_input,
-                 "role": role,
                  "case_details": case_details},
                 config={"configurable": {"session_id": "legal-session-123"}}
             )

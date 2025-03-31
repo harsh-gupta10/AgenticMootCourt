@@ -5,6 +5,7 @@ from langchain_core.runnables.history import RunnableWithMessageHistory
 from langchain_core.tools import tool
 from langchain.agents import AgentExecutor, create_react_agent
 from langchain_core.prompts import PromptTemplate
+from Prompts import judge_prompt , defendant_prompt, reviewer_prompt , test_prompt
 
 class CourtAgentRunnable:
     def __init__(self, llm, role, case_details, constitution_store, bns_store, Landmark_Cases_store, SC_Landmark_Cases_store ,  memory_store=None, max_iter=20):
@@ -52,33 +53,38 @@ class CourtAgentRunnable:
             print("Searching Supreme Court Landmark Cases.............")
             return answer
         
+        # @tool
+        # def No_Op(query: str) -> str:
+        #     """Call when no action is needed. Provide action input as No Op"""
+        #     return "Nop"
+        
         # Register tools
         self.tools = [search_constitution_store, search_BHARATIYA_NYAYA_SANHITA_store , Landmark_Cases , Supreme_Court_Landmark_Cases]
+
+
+        base_prompt = None
+        # Add more roles as needed
+        if role=="judge":
+            base_prompt=PromptTemplate.from_template(
+                judge_prompt
+            )
+        elif role=="respondent":
+            base_prompt=PromptTemplate.from_template(
+                defendant_prompt
+            )
         
-        # Create BasePromptTemplate
-        base_prompt = PromptTemplate.from_template(
-             """{role}.
-                These are the tools you can use:
-                {tools}
-                Use the following format:
-                Input: The input question/statement
-                Case details: The details of the case
-                Thought: Use the chat history to determine the next argument/question/answer
-                Action: One of the [{tool_names}] **only if you need to**.
-                Action Input: the search query 
-                Observation: Verifying the reasonability of the argument/question/answer
-                ... (this Thought/Action/Action Input/Observation can repeat 3 times)
-                Thought: I now know the final answer/argument/question
-                Final Answer: the Arguments that you want to make/ the Answers/ the Questions you want to ask (**FOLLOW OUTPUT FORMAT IF SPECIFIED**)
+        elif role=="reviewer":
+            base_prompt=PromptTemplate.from_template(
+                reviewer_prompt
+            )
 
-                Begin!
+        elif role=="test":
+            base_prompt=PromptTemplate.from_template(
+                test_prompt
+            )
+        else:
+            raise ValueError("Invalid role. Please choose from 'judge', 'respondent', 'test' or 'reviewer'.")
 
-                Input: {input}
-                Thought:{agent_scratchpad}
-                Case Details:{case_details}
-                Chat History:{chat_history}
-                """
-        )
         self.agent = create_react_agent(
             llm=self.llm,
             tools=self.tools,
@@ -95,16 +101,6 @@ class CourtAgentRunnable:
 
     def create_runnable(self) -> RunnableWithMessageHistory:
         """Creates a RunnableWithMessageHistory using the ReAct agent executor."""
-        
-        def prepare_inputs(input_dict):
-            # For ReAct agents, the input is just the user query.
-            print(input_dict)
-            return {
-                "input": input_dict.get("input", ""),
-                "role": self.role,
-                "case_details": self.case_details
-            }
-        
 
         return RunnableWithMessageHistory(
             runnable=self.agent_executor,
