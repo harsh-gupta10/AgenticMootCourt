@@ -1,4 +1,4 @@
-from court_agent import CourtAgentRunnable
+from mootcourt.court_agent import CourtAgentRunnable
 from CaseDetails import case_details
 from Initlise import initilise_llm_and_databases
 
@@ -72,17 +72,27 @@ def run_moot_court():
     judge_followup("<Switch>")
     print("\n🔶 Respondent's Arguments:")
     while True:
+        # Add delay of 0.5 seconds
+        import time
+        time.sleep(0.5)
         defender_argument = defender_round()
         if defender_argument == "<END>":
             break
         print("\n🔸 Respondent: ", defender_argument)
         defender_log += f"Respondent: {defender_argument}\n"
         judge_response = judge_followup(defender_argument)
-        while "<None>" not in judge_response:
+        question_counter = 0
+        while "<None>" not in judge_response and question_counter <= 3:
+            # Add delay of 0.5 seconds
+            time.sleep(0.5)
             print(f"\n👨‍⚖️ Judge: {judge_response}")
             defender_answer = defender_round(judge_response)
             defender_log += f"Judge: {judge_response}\nDefender Response: {defender_answer}\n"
-            judge_response = judge_followup("<ANS>"+defender_answer)
+            if question_counter == 3:
+                judge_response = judge_followup("<LIMIT>")
+            else:
+                judge_response = judge_followup(defender_answer)
+            question_counter +=1
         
         
         # Below lines are only for testing if going in loop

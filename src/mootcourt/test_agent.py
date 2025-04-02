@@ -3,7 +3,7 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_community.vectorstores import FAISS
 from langchain_google_genai.embeddings import GoogleGenerativeAIEmbeddings
 from langchain.schema import HumanMessage
-from court_agent import CourtAgentRunnable
+from mootcourt.court_agent import CourtAgentRunnable
 import os
 from langchain_groq import ChatGroq
 from Initlise import initilise_llm_and_databases

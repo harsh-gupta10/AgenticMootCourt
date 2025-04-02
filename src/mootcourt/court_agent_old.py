@@ -1,12 +1,11 @@
 from langchain.memory import ConversationBufferMemory
 from langchain_community.chat_message_histories import ChatMessageHistory
-from langchain_core.runnables import RunnableLambda, Runnable
+from langchain_core.runnables import RunnableLambda
 from langchain_core.runnables.history import RunnableWithMessageHistory
 from langchain_core.tools import tool
 from langchain.agents import AgentExecutor, create_react_agent
 from langchain_core.prompts import PromptTemplate
 from Prompts import judge_prompt , defendant_prompt, reviewer_prompt , test_prompt
-from argsumm_test import LegalArgumentSummarizer
 
 class CourtAgentRunnable:
     def __init__(self, llm, role, case_details, constitution_store, bns_store, Landmark_Cases_store, SC_Landmark_Cases_store ,  memory_store=None, max_iter=20):
@@ -18,7 +17,7 @@ class CourtAgentRunnable:
         self.Landmark_Cases_store = Landmark_Cases_store.as_retriever(k=4)
         self.SC_Landmark_Cases_store = SC_Landmark_Cases_store.as_retriever(k=4)
         self.max_iter = max_iter
-        self.summarizer = LegalArgumentSummarizer()
+
         # Initialize persistent memory
         self.memory = memory_store if memory_store else ConversationBufferMemory(
             chat_memory=ChatMessageHistory(),
@@ -98,76 +97,16 @@ class CourtAgentRunnable:
 
     def get_session_history(self, session_id):
         """Retrieve chat history."""
-        print("Memory :", self.memory.chat_memory)
         return self.memory.chat_memory
-    
-    def normal_execute(self, input_data):
-        """Custom function to handle the full execution flow with memory management"""
-        # Extract the input message
-        user_input = input_data["input"]
-        chat_history = self.get_session_history("default")
-        
-        # Execute the agent with the input and history
-        result = self.agent_executor.invoke({
-            "input": user_input,
-            "chat_history": chat_history,
-            "case_details": self.case_details,
-            "agent_scratchpad": []
-        })
-        
-        # Get the raw response
-        raw_response = result.get("output", "")
-        
-        processed_response = raw_response
-        # Add the user input and processed response to memory
-        self.memory.chat_memory.add_user_message(user_input)
-        self.memory.chat_memory.add_ai_message(processed_response)
-        
-        # Return the result including both raw and processed outputs
-        return {
-            "raw_output": raw_response,
-            "processed_output": processed_response,
-            **result
-        }
+
+    def create_runnable(self) -> RunnableWithMessageHistory:
+        """Creates a RunnableWithMessageHistory using the ReAct agent executor."""
+
+        return RunnableWithMessageHistory(
+            runnable=self.agent_executor,
+            get_session_history=self.get_session_history,
+            input_messages_key="input",
+            history_messages_key="chat_history",
+        )
 
 
-        
-    def process_and_execute(self, input_data):
-        """Custom function to handle the full execution flow with memory management"""
-        # Extract the input message
-        user_input = input_data["input"]
-        chat_history =self.get_session_history("default")
-        
-        # Don't add to memory here - we'll use the history from the input
-        # Execute the agent with the input and history
-        result = self.agent_executor.invoke({
-            "input": user_input,
-            "chat_history": chat_history,
-            "case_details": self.case_details,
-        })
-        
-        # Get the raw response
-        raw_response = result.get("output", "")
-        
-        # Process the response (summarize if needed)
-        if self.role == "judge":
-            processed_response = raw_response  # No summarization for judge
-        else:
-            processed_response = self.summarizer.summarize(raw_response, session_id="default")
-            print("Processed response:", processed_response)
-        
-        # Add the user input and processed response to memory
-        self.memory.chat_memory.add_user_message(user_input)
-        self.memory.chat_memory.add_ai_message(processed_response)
-       
-        
-        # Return the result including both raw and processed outputs
-        return {
-            "raw_output": raw_response,
-            "processed_output": processed_response,
-            **result
-        }
-    
-    def create_runnable(self) -> Runnable:
-        """Creates a custom runnable that manages memory explicitly"""
-        return RunnableLambda(self.process_and_execute)

@@ -33,7 +33,12 @@ Case Details: The details of the case
 
 Follow the format below strictly:  
 Input: The last argument presented by the counsel. <ANS> at the start of the input means an answer to your question.
-Thought: Use the input and chat history to determine if questioning is required.  
+Thought: Use the input and conditions below to determine output:  
+- If the maximum of 5 questions is reached for the party, return <None>.  
+- If the last answer was clear and logical, return <None>.  
+- If <LIMIT> is input, return <None>.  
+- If <Switch> is in input, return <None>.  
+- Otherwise, determine the next question. 
 Action: One of the [{tool_names}] **only if you need to**
 Action Input: The search query  
 Observation: Output of the search query  
