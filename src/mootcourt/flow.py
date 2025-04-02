@@ -1,4 +1,5 @@
-from mootcourt.court_agent import CourtAgentRunnable
+#from mootcourt.court_agent import CourtAgentRunnable
+from court_agent_normal import CourtAgentRunnable
 from CaseDetails import case_details
 from Initlise import initilise_llm_and_databases
 

@@ -6,7 +6,7 @@ from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain_core.tools import Tool
 from Prompts_normal import judge_prompt, defendant_prompt, reviewer_prompt, test_prompt
 from argsumm_test import LegalArgumentSummarizer
-
+import re
 class CourtAgentRunnable:
     def __init__(self, llm, role, case_details, constitution_store, bns_store, Landmark_Cases_store, SC_Landmark_Cases_store, memory_store=None, max_iter=20):
         self.llm = llm
@@ -145,12 +145,13 @@ class CourtAgentRunnable:
             "input": user_input,
             "chat_history": chat_history,
             "case_details": self.case_details,
-            "agent_scratchpad": ""
+            "agent_scratchpad": [""]
         })
         
         # Get the raw response
         raw_response = result.get("output", "")
-        raw_response = result.get("output", "")
+        # Remove markdown formatting like hash and **
+        raw_response = raw_response.replace("#", "").replace("*", "")
         raw_response = raw_response.split("Final Answer:")[-1].strip()
         result["output"] = raw_response
         # Process the response (summarize if needed)
@@ -185,7 +186,9 @@ class CourtAgentRunnable:
         })
         
         raw_response = result.get("output", "")
-        raw_response= raw_response.split("Final Answer:")[-1].strip()
+        raw_response = raw_response.replace("#", "").replace("*", "")
+        match = re.search(r"Final Answer:\s*(.+)",raw_response, re.DOTALL)
+        raw_response = match.group(1).strip() if match else raw_response
         result["output"] = raw_response
         processed_response = raw_response
         self.memory.chat_memory.add_user_message(user_input)
@@ -200,4 +203,4 @@ class CourtAgentRunnable:
 
     def create_runnable(self) -> Runnable:
         # Create a simple runnable that calls our process_and_execute method
-        return RunnableLambda(self.process_and_execute)
+        return RunnableLambda(self.normal_execute)
