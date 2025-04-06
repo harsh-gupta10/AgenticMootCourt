@@ -39,19 +39,19 @@ def initilise_llm_and_databases():
 
     # Create LLM instance
     def create_llm( Provider , model , temprature):
-        if Provider=="Google" and model=="gemini-1.5-flash":
-          return ChatGoogleGenerativeAI(model="gemini-1.5-pro", temperature=temprature)
-        elif Provider=="Groq" and  model=="deepseek-r1-distill-llama-70b":
-          return ChatGroq( model="deepseek-r1-distill-llama-70b", temperature=temprature)
-        elif Provider=="OpenRouter" and model=="deepseek/deepseek-v3-base:free":
-          return ChatOpenAI(model="google/gemini-2.0-flash-001",openai_api_key=os.environ["OPENROUTER_API_KEY"],openai_api_base=os.environ["OPENROUTER_API_BASE"],temperature=temprature)
+        if Provider=="Google":
+          return ChatGoogleGenerativeAI(model, temperature=temprature)
+        elif Provider=="Groq":
+          return ChatGroq(model, temperature=temprature)
+        elif Provider=="OpenRouter":
+          return ChatOpenAI(model=model,openai_api_key=os.environ["OPENROUTER_API_KEY"],openai_api_base=os.environ["OPENROUTER_API_BASE"],temperature=temprature)
 
 
 
     # llm = create_llm()
     # llm = create_llm(Provider="Google" , model="gemini-1.5-flash" , temprature=0.1)
     # llm = create_llm(Provider="Groq" , model="deepseek-r1-distill-llama-70b" , temprature=0.2)
-    llm = create_llm(Provider="OpenRouter" , model="deepseek/deepseek-v3-base:free" , temprature=0.1)
+    llm = create_llm(Provider="OpenRouter" , model="google/gemini-2.5-pro-exp-03-25:free" , temprature=0.1)
     faiss_sc_lc = FAISS.load_local("../../vector_database/faiss_supreme_court_csv", embedding_model, allow_dangerous_deserialization=True)
     return llm,faiss_bns,faiss_constitution,faiss_lc,faiss_sc_lc
 

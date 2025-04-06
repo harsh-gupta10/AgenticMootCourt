@@ -4,7 +4,7 @@ from langchain_core.runnables import RunnableLambda, Runnable
 from langchain.agents import AgentExecutor, create_tool_calling_agent
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain_core.tools import Tool
-from Prompts_normal import judge_prompt, defendant_prompt, reviewer_prompt, test_prompt, evaluation_prompt
+from mootcourt.Prompts_cot import judge_prompt, defendant_prompt, reviewer_prompt, test_prompt, evaluation_prompt
 from argsumm_test import LegalArgumentSummarizer
 import re
 class CourtAgentRunnable:
@@ -131,6 +131,21 @@ class CourtAgentRunnable:
             verbose=True,
             return_intermediate_steps=True
         )
+
+    # def switch_to_rebuttal(self):
+    #     """Switch the agent to rebuttal mode."""
+    #     if self.role != "respondent":
+    #         raise ValueError("Rebuttal mode is only applicable for the respondent.")
+    #     self.agent_executor = AgentExecutor(
+    #         agent=self.agent,
+    #         tools=self.tools,
+    #         max_iterations=20,
+    #         handle_parsing_errors=True,
+    #         verbose=True,
+    #         return_intermediate_steps=True
+    #     )
+    #     print("Switched to rebuttal mode.")
+
 
     def get_session_history(self, session_id):
         """Retrieve chat history."""

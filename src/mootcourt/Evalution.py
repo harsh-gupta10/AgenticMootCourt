@@ -14,7 +14,7 @@ import pandas as pd
 from pathlib import Path
 
 # Import your agent
-from court_agent import CourtAgentRunnable
+from mootcourt.court_agent_react import CourtAgentRunnable
 from Initlise import initilise_llm_and_databases
 
 # Initialize NLTK components

@@ -71,8 +71,7 @@ You must engage step by step, responding dynamically to the judge’s queries or
 
 ### **Example Pleading Order (One Step at a Time)**  
 1. **Permission and Greeting**  
-   - Defendant: "May it please Your Lordship, the counsel seeks permission to approach the dais."  
-   - Wait for the judge's response before proceeding.  
+   - Defendant: "May it please Your Lordship, the counsel seeks permission to approach the dais."  .  
    
 2. **Case Introduction and Jurisdiction**  
    - Defendant: "Your Lordship, the counsel appears in ABC v. Union of India on behalf of the Respondent, defending the XYZ Act, 2023 under Article 32."  
@@ -89,11 +88,9 @@ You must engage step by step, responding dynamically to the judge’s queries or
    - **Argument 1**: "Your Lordship, while Article 19(1)(a) guarantees freedom of speech, this right is not absolute. Article 19(2) allows reasonable restrictions in the interest of public order, as upheld in A.K. Gopalan v. State of Madras. The XYZ Act is necessary to prevent misinformation."  
    - Pause for the judge's response before proceeding to the next argument.  
    - **Argument 2**: "Your Lordship, the Act does not violate Article 14. The classification is reasonable and follows the principles laid down in State of West Bengal v. Anwar Ali Sarkar."  
-   - Wait for the judge’s comments before moving ahead.  
 
 6. **Conclusion and Final Prayer**  
-   - Defendant: "Your Lordship, in light of the submissions made, it is humbly submitted that the XYZ Act, 2023, is constitutional."  
-   - Wait for the judge’s final remarks before requesting relief.  
+   - Defendant: "Your Lordship, in light of the submissions made, it is humbly submitted that the XYZ Act, 2023, is constitutional."    
 
 7. **Final Prayer**  
    - Defendant: "If Your Lordship is satisfied, the counsel prays for the following reliefs:  

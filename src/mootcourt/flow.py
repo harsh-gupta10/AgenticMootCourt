@@ -1,5 +1,5 @@
 #from mootcourt.court_agent import CourtAgentRunnable
-from court_agent_normal import CourtAgentRunnable
+from mootcourt.court_agent_cot import CourtAgentRunnable
 from CaseDetails import case_details
 from Initlise import initilise_llm_and_databases
 
@@ -48,12 +48,14 @@ def defender_round(input="<None>"):
     return argument
 
 
+
 def run_moot_court():
     print("\n🎓 Welcome to the AI Moot Court!\n")
     # Clear log file at the start
     open(LOG_FILE, "w").close()
     prosecutor_log, defender_log = "", ""
-    
+    question_counter = 0
+    # Start with the petitioner's arguments
     print("\n🔷 Petitioner's Arguments:")
     while True:
         prosecutor_argument = prosecutor_round()
@@ -72,6 +74,7 @@ def run_moot_court():
     # Provide <Switch> token to judge to let them know the prosecution is done
     judge_followup("<Switch>")
     print("\n🔶 Respondent's Arguments:")
+    question_counter = 0
     while True:
         # Add delay of 0.5 seconds
         import time
@@ -82,17 +85,12 @@ def run_moot_court():
         print("\n🔸 Respondent: ", defender_argument)
         defender_log += f"Respondent: {defender_argument}\n"
         judge_response = judge_followup(defender_argument)
-        question_counter = 0
         while "<None>" not in judge_response and question_counter <= 3:
             # Add delay of 0.5 seconds
             time.sleep(0.5)
             print(f"\n👨‍⚖️ Judge: {judge_response}")
             defender_answer = defender_round(judge_response)
             defender_log += f"Judge: {judge_response}\nDefender Response: {defender_answer}\n"
-            if question_counter == 3:
-                judge_response = judge_followup("<LIMIT>")
-            else:
-                judge_response = judge_followup(defender_answer)
             question_counter +=1
         
         
