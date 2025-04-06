@@ -5,7 +5,7 @@ from langchain_core.runnables.history import RunnableWithMessageHistory
 from langchain_core.tools import tool
 from langchain.agents import AgentExecutor, create_react_agent
 from langchain_core.prompts import PromptTemplate
-from mootcourt.Prompts_react import judge_prompt , defendant_prompt, reviewer_prompt , test_prompt
+from Prompts_react import judge_prompt , defendant_prompt, reviewer_prompt , test_prompt
 
 class CourtAgentRunnable:
     def __init__(self, llm, role, case_details, constitution_store, bns_store, Landmark_Cases_store, SC_Landmark_Cases_store ,  memory_store=None, max_iter=20):

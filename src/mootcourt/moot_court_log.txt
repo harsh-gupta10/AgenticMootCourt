@@ -1,269 +1,71 @@
 Petitioner: May I begin?
-Judge: <None>
+Judge: `<None>`
 The respondent's arguments will now begin.
-Judge: <None>
-Respondent: May it please Your Lordship, I am \[Counsel's Name], representing the Respondent, the State of Mahadpur, in this matter of PQR & Ors v. State of Mahadpur.
-
-With the Court's kind permission, I would like to address the jurisdiction of this Hon'ble Court to adjudicate on the matter, specifically concerning the constitutional validity of the amendments to the Mahadpur Preservation of Animals Act, 1976.
-
-Judge: What specific aspects of the amendments to the Mahadpur Preservation of Animals Act, 1976, lead you to question this Court's jurisdiction to adjudicate on their constitutional validity?
-Respondent: May it please Your Lordship,
-
-The challenge to this Court's jurisdiction arises from the nature of the amendments themselves and their grounding in the Directive Principles of State Policy, specifically Article 48, which mandates the State to organize agriculture and animal husbandry on modern and scientific lines and, in particular, to take steps for preserving and improving the breeds, and prohibiting the slaughter, of cows and calves and other milch and draught cattle.
-
-The amendments, therefore, are not merely about restricting trade or infringing on personal choice, but about implementing a constitutional directive. The State, in enacting these amendments, acted within its legislative competence, guided by the constitutional mandate to protect and preserve animal resources.
-
-Therefore, the question before this Court is not simply whether the restrictions imposed are reasonable, but whether the State has acted in furtherance of its constitutional obligations. This distinction is crucial in determining the scope of judicial review and the extent to which this Court can interfere with the legislative choices made by the State in fulfilling its constitutional duties.
-
-May I proceed to the statement of issues, Your Lordship?
-
-Judge: How does the grounding of the amendments in the Directive Principles of State Policy specifically limit this Court's jurisdiction to review their constitutional validity, especially considering the fundamental rights arguments presented by the petitioners?
-Respondent: May it please Your Lordship,
-
-The grounding of the amendments in the Directive Principles, specifically Article 48, does not entirely limit this Court's jurisdiction. While the State is obligated to implement these principles, such implementation must be balanced against the fundamental rights guaranteed under Part III of the Constitution.
-
-The relationship between Directive Principles and Fundamental Rights is not one of absolute subordination. As established in Minerva Mills Ltd. v. Union of India (1980) 3 SCC 625, the harmony and balance between Fundamental Rights and Directive Principles is an essential feature of the basic structure of the Constitution. The Court has the power to determine whether the balance has been maintained, and whether the implementation of Directive Principles unduly infringes upon Fundamental Rights.
-
-The petitioners argue that the amendments violate Articles 19(1)(g), 21, 25, and 29. These are justiciable rights, and this Court has the duty to examine whether the restrictions imposed by the amendments are reasonable and proportionate, even if the amendments are aimed at fulfilling a Directive Principle. The burden of proof placed on the accused by Sections 9A and 9B also warrants scrutiny under Article 21.
-
-Therefore, while the Directive Principles provide a justification for the law, they do not immunize it from judicial review, especially when fundamental rights are alleged to be violated. The Court retains the jurisdiction to assess the constitutional validity of the amendments in light of the petitioners' claims.
-
-May I proceed to the statement of issues, Your Lordship?
-
-Judge: The Respondent argues that the amendments are grounded in the Directive Principles of State Policy, specifically Article 48, and that this limits the Court's jurisdiction to review their constitutional validity. The Respondent also argues that the State acted within its legislative competence, guided by the constitutional mandate to protect and preserve animal resources. The Respondent claims that the question before the Court is not simply whether the restrictions imposed are reasonable, but whether the State has acted in furtherance of its constitutional obligations.
-
-I need to ask a question to clarify the Respondent's argument.
-
-What specific criteria or legal standards should this Court apply when assessing whether the State has acted "in furtherance of its constitutional obligations" under Article 48, and how do these criteria differ from the standards typically applied when evaluating restrictions on fundamental rights?
-
-Respondent: May it please Your Lordship,
-
-When assessing whether the State has acted "in furtherance of its constitutional obligations" under Article 48, this Court should apply the following criteria and legal standards:
-
-1.  Nexus and Proportionality: The Court should examine whether there is a direct and demonstrable nexus between the amendments and the objective of Article 48, which is to organize agriculture and animal husbandry on modern and scientific lines, preserve breeds, and prohibit the slaughter of cows and calves and other milch and draught cattle. The restrictions imposed must be proportionate to achieving this objective. This means the Court must assess whether the chosen measures are the least restrictive means to achieve the stated goal.
-
-2.  Reasonable Classification: If the law differentiates between types of animals or imposes different restrictions based on such classification, the Court must determine whether the classification is reasonable. This requires that the classification be based on intelligible differentia and that the differentia has a rational relation to the object sought to be achieved by the statute.
-
-3.  Balancing with Fundamental Rights: The Court must carefully balance the State's obligation under Article 48 with the fundamental rights of citizens, particularly those guaranteed under Articles 19(1)(g), 21, 25, and 29. This involves assessing whether the restrictions imposed are reasonable under Article 19(6), whether they unduly infringe upon the right to privacy and personal choice under Article 21, and whether they violate religious and cultural rights under Articles 25 and 29.
-
-4.  Judicial Review of Reasonableness: The Court should scrutinize the reasonableness of the restrictions, considering factors such as the economic impact on those engaged in the trade, the availability of alternative means of livelihood, and the impact on the cultural and religious practices of the communities affected.
-
-These criteria differ from the standards typically applied when evaluating restrictions on fundamental rights in the following ways:
-
-   Focus on State Obligation: When assessing laws enacted under Directive Principles, the Court gives due weight to the State's constitutional obligation to implement those principles. This means the Court acknowledges the State's policy choices and defers to them unless they are manifestly arbitrary or unreasonable.
-
-   Presumption of Constitutionality: There may be a greater presumption of constitutionality when a law is enacted to implement a Directive Principle. This does not mean the law is immune from judicial review, but it does mean the burden is on the petitioners to show that the law is unconstitutional.
-
-   Wider Margin of Appreciation: The State may be given a wider margin of appreciation in determining the means to achieve the objectives of Directive Principles. This means the Court is less likely to substitute its own judgment for that of the legislature, provided the chosen means are reasonably related to the objective.
-
-However, it is crucial to reiterate that the Directive Principles do not override Fundamental Rights. The Court must ensure that the implementation of Directive Principles does not obliterate or excessively infringe upon Fundamental Rights. The ultimate test is whether a harmonious balance has been achieved between the two, as mandated by the basic structure doctrine.
-
-May I proceed to the statement of issues, Your Lordship?
-
 Judge: `<None>`
-Respondent: May it please Your Lordship,
-
-Having addressed the Court's question regarding the criteria for assessing the State's actions under Article 48, and how these criteria relate to the evaluation of restrictions on fundamental rights, I now seek permission to proceed to the statement of issues before this Hon'ble Court.
-
+Respondent: May it please Your Lordships, I appear on behalf of the Respondent, the State of Mahadpur, in the matter of PQR & Ors v. State of Mahadpur. With Your Lordships' permission, may I begin my submissions?
 Judge: `<None>`
-Respondent: May it please Your Lordship,
+Respondent: Much obliged, Your Lordships. This petition challenges the constitutional validity of the amendments made to the Mahadpur Preservation of Animals Act, 1976, specifically Sections 5A, 5B, 5C, 9A, and 9B, which impose restrictions concerning the transportation, slaughter, import, and possession of the flesh of cows, bulls, and bullocks within the State of Mahadpur. The matter is before this Hon'ble Court under its writ jurisdiction as enshrined in Article 32 of the Constitution of India, invoked by the Petitioners alleging violations of their fundamental rights.
 
-The issues before this Hon'ble Court are as follows:
+May I proceed to outline the issues for determination before this Hon'ble Court, Your Lordships?
+Judge: Counsel, before you proceed to outline the specific issues, could you briefly reiterate which fundamental rights enshrined in the Constitution you contend are violated by the impugned amendments?
+Respondent: Your Lordships, to clarify, it is the Petitioners who contend that the impugned amendments violate certain fundamental rights enshrined in the Constitution. As per their petition, the rights they allege are infringed upon are primarily:
+   Article 21, concerning the Right to Life and Personal Liberty, specifically relating to privacy and personal choice in matters of diet.
+   Article 19(1)(g), concerning the Right to Practice any Profession, or to carry on any Occupation, Trade or Business, which they claim is hindered by the ban.
+   Articles 25 and 29, concerning the Right to Freedom of Religion and the Protection of Interests of Minorities, respectively, which they argue are impacted by the restrictions.
 
-1.  Whether the amendments to the Mahadpur Preservation of Animals Act, 1976, imposing a total ban on the transportation, slaughter, import, and possession of cow, bull, and bullock flesh, violate Article 19(1)(g) of the Constitution, which guarantees the freedom to practice any profession, or to carry on any occupation, trade, or business.
+The Respondent, the State of Mahadpur, firmly contends that the amendments do not violate any fundamental rights. We submit that the restrictions imposed are reasonable, fall within the permissible limits prescribed by the Constitution, particularly under Article 19(6), and are enacted in furtherance of the Directive Principles of State Policy, specifically Article 48.
 
-2.  Whether the said amendments infringe upon the right to privacy and personal choice guaranteed under Article 21 of the Constitution.
-
-3.  Whether the amendments violate the religious and cultural rights protected under Articles 25 and 29 of the Constitution.
-
-4.  Whether Sections 9A and 9B of the amended Act, which place the burden of proof on the accused, violate Article 21 of the Constitution.
-
-May I, with the Court's permission, proceed to present the facts of the case?
-
+If Your Lordships permit, I shall now proceed to outline the issues for determination before this Hon'ble Court.
 Judge: `<None>`
-Respondent: May it please Your Lordship,
+Respondent: Okay, Your Lordships. The primary issues for determination before this Hon'ble Court are as follows:
 
-With the Court's permission, I would like to proceed to the legal arguments, beginning with the justification for the restrictions imposed under Article 19(1)(g).
+1.  Whether the impugned amendments to the Mahadpur Preservation of Animals Act, 1976, particularly the complete ban on possession and consumption of the flesh of cows, bulls, and bullocks, infringe upon the Petitioners' Right to Privacy and Personal Choice, thereby violating Article 21 of the Constitution.
+2.  Whether the said amendments impose an unreasonable restriction on the Petitioners' Right to Freedom of Trade and Occupation under Article 19(1)(g) of the Constitution, exceeding the permissible limits of reasonable restrictions under Article 19(6).
+3.  Whether the impugned amendments interfere with the Petitioners' rights under Article 25 (Freedom of Religion) and Article 29 (Cultural Rights of Minorities).
+4.  Whether the State legislature was competent to enact the impugned amendments, and whether the said amendments are justified and protected under the Directive Principles of State Policy, specifically Article 48, concerning the organisation of agriculture and animal husbandry.
+5.  Whether Sections 9A and 9B of the amended Act, which place the burden of proof on the accused, are constitutionally valid and do not violate the principles of natural justice and Article 14 and 21 of the Constitution.
 
+With Your Lordships' permission, I shall now proceed to present the arguments on behalf of the Respondent, addressing the first issue concerning Article 21.
 Judge: `<None>`
-Respondent: May it please Your Lordship,
+Respondent: Okay, Your Lordships.
 
-The restrictions imposed by the amendments to the Mahadpur Preservation of Animals Act, 1976, on the transportation, slaughter, import, and possession of cow, bull, and bullock flesh, are reasonable restrictions within the meaning of Article 19(6) of the Constitution. These restrictions are necessary to protect and promote the economic well-being of the State, as well as to give effect to the Directive Principles of State Policy, specifically Article 48.
+Regarding the first issue, concerning the alleged violation of Article 21, the Respondent submits that the impugned amendments do not infringe upon the Petitioners' Right to Privacy or Personal Choice.
 
-The cow and its progeny are an integral part of the agricultural economy of Mahadpur. They provide essential inputs for farming, such as draught power, manure, and milk. Protecting these animals is, therefore, directly linked to the economic prosperity of the State's agricultural sector. The ban on slaughter ensures the continued availability of these resources, contributing to the overall economic stability and growth of the region.
+While this Hon'ble Court has rightly interpreted Article 21 to encompass a Right to Privacy, including aspects of personal autonomy and choice, this right, like others, is not absolute and is subject to reasonable restrictions imposed by law for legitimate state interests. The Petitioners' claim that the ban on possession and consumption of beef violates their dietary choice under Article 21 is unsustainable.
 
-Furthermore, the restrictions are aimed at preventing the depletion of valuable animal resources. Unregulated slaughter can lead to a decline in the population of these animals, which would have adverse consequences for agriculture and related industries. By imposing a total ban, the State seeks to conserve these resources for future generations.
+The State of Mahadpur contends that the regulation of foodstuffs is a legitimate state function, often exercised for reasons of public health, social welfare, and economic considerations. In this instance, the prohibition on possession under Section 5C is intrinsically linked to the primary objective of the Act: the preservation of cows, bulls, and bullocks, which are vital for the state's agricultural economy and are accorded special protection in furtherance of the Directive Principles enshrined in Article 48 of the Constitution.
 
-The restrictions are also proportionate to the object sought to be achieved. While they may impact the livelihoods of those involved in the trade of cow, bull, and bullock flesh, the larger public interest in protecting the agricultural economy and conserving animal resources outweighs the individual interests of a few traders. The State has a legitimate interest in regulating activities that have a detrimental impact on the overall economy and environment.
+The ban on possession is necessary to ensure the effective implementation of the prohibition on slaughter within the state. Allowing possession would create a significant loophole, making it difficult, if not impossible, to enforce the ban on slaughter, as the origin of the possessed flesh would be hard to ascertain. Therefore, the restriction imposed is not arbitrary but is a necessary corollary to the primary legislative policy of animal preservation. It constitutes a reasonable restriction enacted in the public interest and for the larger good, directly related to the objectives outlined in Article 48.
 
-May I proceed further, Your Lordship?
+The right to choose one's food cannot override the State's legitimate interest in regulating activities that directly impact the agricultural economy and animal welfare, especially when such regulation is aimed at giving effect to the Directive Principles of State Policy.
 
-Judge: What specific aspects of the amendments does the State consider to be 'reasonable restrictions' under Article 19(6), and how do these restrictions align with the criteria established by the Supreme Court for such restrictions?
-Respondent: May it please Your Lordship,
+Unless Your Lordships have any questions on this issue, may I proceed to address the second issue concerning Article 19(1)(g)?
+Judge: Counsel, you argue the ban on possession is a necessary corollary to the ban on slaughter within the state, primarily for preserving Mahadpur's cattle as per Article 48. How does this justification extend to prohibiting the possession of beef that has been legally slaughtered in and imported from another state where such slaughter is permissible? How does possessing such legally imported beef hinder the preservation of Mahadpur's cattle?
+Respondent: Your Lordships, I shall address the query regarding the extension of the ban on possession to beef legally slaughtered outside Mahadpur and imported into the state.
 
-In response to the Court's earlier question, I would like to elaborate on what specific aspects of the amendments the State considers to be 'reasonable restrictions' under Article 19(6), and how these restrictions align with the criteria established by the Supreme Court for such restrictions.
+It is submitted that the prohibition on possession of any beef within the state, irrespective of its origin, is a necessary measure to ensure the effective implementation and enforcement of the primary legislative object, which is the preservation of cattle specified under the Act within the State of Mahadpur, in line with Article 48.
 
-The State submits that the restrictions are 'reasonable' because they strike a balance between the fundamental right to trade and the larger public interest. The Supreme Court, in numerous cases, has laid down guidelines for determining the reasonableness of restrictions. These include:
+The rationale is primarily grounded in the practical challenges of enforcement. If the possession of beef legally imported from other states were permitted, it would create an insurmountable difficulty for enforcement agencies to distinguish between legally imported beef and beef derived from cattle illegally slaughtered within Mahadpur. Once the flesh is possessed, its origin becomes extremely difficult, if not impossible, to ascertain definitively without complex and often impractical forensic examination for every instance.
 
-1.  Proportionality: The restriction must be proportionate to the object sought to be achieved. In the present case, the object is to protect the agricultural economy, conserve animal resources, and promote animal welfare, as mandated by Article 48. The ban on slaughter is a proportionate measure, as it directly addresses the depletion of these resources.
+Allowing possession of imported beef would, therefore, create a significant loophole, effectively rendering the ban on slaughter within Mahadpur unenforceable. Persons could easily claim that any beef found in their possession was legally imported, thereby masking illegal slaughter activities occurring within the state's borders. This would directly undermine the Act's core objective of preserving the state's own cattle population.
 
-2.  Nexus with the Object: There must be a direct and proximate nexus between the restriction and the object sought to be achieved. The ban on slaughter has a direct nexus with the protection of the agricultural economy, as it ensures the continued availability of draught animals and other essential inputs for farming.
+Thus, the ban on possession, even extending to legally imported beef, is not an arbitrary measure. It is an essential ancillary provision, a necessary corollary to the ban on slaughter, designed to prevent the circumvention of the law and ensure the integrity and effectiveness of the legislative scheme aimed at protecting Mahadpur's cattle resources as mandated by the Directive Principles under Article 48. It is a measure enacted to make the primary prohibition practically effective within the state's territory.
+Judge: Counsel, you state that distinguishing legally imported beef from illegally slaughtered local beef is practically impossible, necessitating a complete ban on possession. Were any less restrictive measures, such as requiring documentation for imported beef or exploring technological tracing methods, considered by the State to address this enforcement challenge without imposing a total ban on possession?
+Respondent: Your Lordships raise a pertinent point regarding the consideration of less restrictive measures. It is submitted that while alternatives like documentation for imported beef or technological tracing methods might exist in theory, the State legislature considered the practical impediments to their effective implementation in the context of enforcing the ban on slaughter within Mahadpur.
 
-3.  Least Restrictive Means: The restriction must be the least restrictive means of achieving the object. While there may be other ways to protect animal resources, a total ban is the most effective way to prevent unregulated slaughter and ensure the long-term availability of these resources.
+    Regarding documentation, the sheer volume of potential imports, the risk of forged or inaccurate documents, and the difficulty of verifying the origin at the point of possession by numerous individuals across the state would create significant enforcement challenges. It would require an extensive and potentially cost-prohibitive administrative machinery for verification, which could still be easily circumvented.
 
-4.  Balancing of Interests: The restriction must strike a balance between the individual interests of traders and the larger public interest. While the ban may impact the livelihoods of those involved in the trade of cow, bull, and bullock flesh, the larger public interest in protecting the agricultural economy and conserving animal resources outweighs the individual interests of a few traders.
+    As for technological tracing, while advancements exist, implementing a foolproof system to track meat from slaughter outside the state to possession within Mahadpur, applicable to every instance, presents considerable logistical, technological, and financial hurdles. Such systems are not yet universally available, standardized, or easily implementable at a scale that would guarantee the integrity of the slaughter ban within Mahadpur.
 
-5.  Duration and Extent: The duration and extent of the restriction must be reasonable. The ban is not indefinite and can be reviewed and modified by the State legislature if circumstances change.
+    The fundamental challenge remains the difficulty in distinguishing, reliably and efficiently, legally imported beef from beef originating from illegal slaughter within the state once it reaches the point of possession. Allowing possession, even with documentation or potential tracing, was considered by the legislature to create an unacceptable risk of the primary prohibition on slaughter being rendered ineffective. Therefore, the legislature, in its wisdom and considering the paramount objective of preserving the State's cattle population as per Article 48 and the practical realities of enforcement, deemed the comprehensive ban on possession a necessary measure to ensure the Act's objectives were not defeated through circumvention.
 
-The State submits that the amendments satisfy all these criteria and are, therefore, 'reasonable restrictions' within the meaning of Article 19(6).
+    Does this address Your Lordships' query? If Your Lordships permit, I shall now proceed to the arguments concerning Article 19(1)(g).
+Judge: Counsel, you assert that the legislature considered alternatives like documentation and tracing but deemed them impractical or cost-prohibitive. On what specific evidence, studies, or reports did the legislature rely to reach this conclusion regarding the infeasibility of these less restrictive measures compared to a complete ban on possession?
+Respondent: Your Lordships, the determination regarding the impracticality of measures like documentation and tracing stems from the legislative assessment of the ground realities of enforcement within the State of Mahadpur. While specific, detailed cost-benefit analysis reports or named empirical studies might not be explicitly appended to the legislative record readily available to counsel at this moment, the legislative process itself, including debates, committee deliberations [if applicable], and inputs received from administrative and enforcement agencies, inherently involves consideration of such factors.
 
-May I proceed further, Your Lordship?
+The legislature considered the significant administrative burden, the potential for widespread fraud and forgery of documentation across numerous points of sale and possession, and the substantial costs associated with establishing and maintaining a reliable verification system or a foolproof technological tracing mechanism statewide. The sheer scale of the task, coupled with the difficulty of immediate, on-the-spot verification by enforcement officers, led the legislature to conclude that such alternatives would be easily circumvented and ultimately ineffective in preventing the commingling of legally imported beef with beef from illegally slaughtered local cattle.
 
-Judge: May I proceed further, Your Lordship?
-Respondent: May it please Your Lordship,
+Therefore, the legislature, in its considered judgment, based on the perceived administrative and enforcement challenges, the potential for abuse, and the paramount need to ensure the effectiveness of the primary ban on slaughter within the State to uphold the objectives of Article 48, concluded that a complete ban on possession was the most practical and necessary measure. It was deemed the only viable means to prevent the legislative scheme from being rendered nugatory.
 
-Having addressed the Court's question regarding the specific aspects of the amendments and their alignment with the criteria established by the Supreme Court for reasonable restrictions under Article 19(6), I seek permission to proceed further and elaborate on the economic justification for the restrictions.
-
-
-Judge: The Respondent has addressed the Court's question regarding the specific aspects of the amendments and their alignment with the criteria established by the Supreme Court for reasonable restrictions under Article 19(6). The Respondent now seeks permission to proceed further and elaborate on the economic justification for the restrictions.
-
-I need to ask a question to clarify the Respondent's argument.
-
-Given that the State argues the ban is the 'least restrictive means,' can the State provide data or comparative analyses demonstrating that alternative measures, such as regulated slaughterhouses or subsidized animal care, would be insufficient to achieve the stated goals of protecting the agricultural economy and conserving animal resources?
-
-Respondent: May it please Your Lordship,
-
-With respect, the State acknowledges the Court's inquiry regarding data and comparative analyses. While a comprehensive, quantifiable dataset comparing the ban with alternative measures may not be readily available in the precise format requested, the State can offer the following justifications for why the ban is considered the least restrictive means:
-
-1.  Enforceability: Regulated slaughterhouses and subsidized animal care programs require extensive infrastructure, monitoring, and enforcement mechanisms. In a state like Mahadpur, with its vast rural areas and limited resources, effectively enforcing these alternatives would be significantly challenging and prone to corruption and leakage. A total ban, while seemingly stringent, offers a more straightforward and easily enforceable solution.
-
-2.  Preventing Illegal Activities: Even with regulated slaughterhouses, there remains a risk of illegal slaughter and transportation of animals outside the regulated framework. A total ban eliminates this risk entirely, ensuring complete protection of the animals.
-
-3.  Cultural and Religious Sentiments: The cow holds a special place in the cultural and religious sentiments of a significant portion of the population in Mahadpur. Alternative measures may not adequately address these sentiments, as they still involve the slaughter of these animals, albeit in a regulated manner.
-
-4.  Long-Term Impact: Subsidized animal care programs, while seemingly beneficial, may not be sustainable in the long run due to financial constraints and changing priorities. A total ban provides a more permanent and reliable solution for protecting animal resources.
-
-The State respectfully submits that while alternative measures may have some merit, they are not as effective, enforceable, or sustainable as a total ban in achieving the stated goals of protecting the agricultural economy and conserving animal resources, while also respecting the cultural and religious sentiments of the people of Mahadpur. The State has acted in good faith, taking into account the unique circumstances and challenges faced by the region.
-
-May I proceed further, Your Lordship?
-
-Judge: Given that the State argues the ban is the 'least restrictive means,' can the State provide data or comparative analyses demonstrating that alternative measures, such as regulated slaughterhouses or subsidized animal care, would be insufficient to achieve the stated goals of protecting the agricultural economy and conserving animal resources?
-Respondent: May it please Your Lordship,
-
-Having addressed the Court's question regarding the justification for considering the ban as the least restrictive means, I seek permission to proceed further and elaborate on the Directive Principles of State Policy, specifically Article 48, and its relevance to the present case.
-
-
-Judge: Could the State elaborate on the specific reasons why providing concrete data or comparative analyses regarding the effectiveness of alternative measures is not feasible in this case, and what alternative forms of evidence or justification can the State offer to support its claim that the ban is the least restrictive means?
-Respondent: May it please Your Lordship,
-
-Having addressed the Court's question regarding the justification for considering the ban as the least restrictive means, I seek permission to proceed further and elaborate on the Directive Principles of State Policy, specifically Article 48, and its relevance to the present case.
-
-Judge: <None>
-Respondent: May it please Your Lordship,
-
-The Directive Principles of State Policy, particularly Article 48, provide a constitutional mandate for the State to organize agriculture and animal husbandry on modern and scientific lines, and to take steps for preserving and improving the breeds, and prohibiting the slaughter, of cows and calves and other milch and draught cattle.
-
-The amendments to the Mahadpur Preservation of Animals Act, 1976, are a direct implementation of this constitutional directive. The State, in enacting these amendments, acted within its legislative competence, guided by the constitutional mandate to protect and preserve animal resources.
-
-The Supreme Court has consistently held that while Directive Principles are not directly enforceable by the courts, they are fundamental in the governance of the country and it is the duty of the State to apply these principles in making laws. The Court has also recognized that there is no conflict between Fundamental Rights and Directive Principles and that they should be interpreted harmoniously.
-
-In the present case, the restrictions imposed by the amendments are aimed at giving effect to Article 48. The State has a legitimate interest in protecting and preserving animal resources, which are essential for the agricultural economy and the well-being of the people of Mahadpur. The restrictions are, therefore, justified as a means of fulfilling the State's constitutional obligations.
-
-May I proceed further, Your Lordship?
-
-Judge: The Respondent has addressed the Court's question regarding the justification for considering the ban as the least restrictive means and now seeks permission to proceed further and elaborate on the Directive Principles of State Policy, specifically Article 48, and its relevance to the present case.
-
-I need to ask a question to clarify the Respondent's argument.
-
-The State argues that the ban is the least restrictive means because alternative measures are difficult to enforce and may not adequately address cultural and religious sentiments. How does the State ensure that the total ban does not disproportionately affect the livelihoods and economic activities of specific communities or individuals, and what measures are in place to mitigate any such disproportionate impact?
-
-Respondent: May it please Your Lordship,
-
-The State acknowledges the Court's concern regarding the potential disproportionate impact of the ban on specific communities or individuals. The State submits that while a complete ban may appear stringent, it is implemented with the following considerations and measures in place to mitigate any such impact:
-
-1.  Rehabilitation and Alternative Livelihood Programs: The State is committed to providing alternative livelihood opportunities for those communities and individuals who may be directly affected by the ban. These programs include assistance in setting up alternative businesses, skill development training, and access to financial resources.
-
-2.  Transition Period: The State has implemented the ban in a phased manner, allowing individuals and communities time to adjust and transition to alternative livelihoods. This transition period is crucial for minimizing disruption and ensuring a smooth transition.
-
-3.  Financial Assistance: The State provides financial assistance to those who may suffer economic hardship as a result of the ban. This assistance is designed to help them meet their basic needs and support their families during the transition period.
-
-4.  Consultation with Affected Communities: The State has engaged in consultations with affected communities to understand their concerns and address their needs. This consultation process is ongoing and helps the State to tailor its mitigation measures to the specific needs of each community.
-
-5.  Review and Modification: The State is committed to reviewing the impact of the ban on a regular basis and making modifications as necessary to minimize any disproportionate impact. This ensures that the ban remains proportionate and does not unduly infringe upon the rights of any particular community or individual.
-
-The State respectfully submits that while the ban may have some impact on specific communities or individuals, the State has taken and continues to take all reasonable steps to mitigate any such impact and ensure that the ban is implemented in a fair and equitable manner.
-
-May I proceed further, Your Lordship?
-
-Judge: The State acknowledges the Court's concern regarding the potential disproportionate impact of the ban on specific communities or individuals. Can the State provide specific, measurable goals and timelines for these mitigation measures, and how will the State ensure accountability in achieving these goals?
-Respondent: May it please Your Lordship,
-
-The State acknowledges the Court's concern regarding the potential disproportionate impact of the ban on specific communities or individuals. The State can provide the following specific, measurable goals and timelines for these mitigation measures, and how the State will ensure accountability in achieving these goals:
-
-1.  Goal: To provide alternative livelihood opportunities for at least 80% of the affected individuals within one year of the implementation of the ban.
-       Timeline: One year.
-       Accountability: The Department of Labour and Employment will be responsible for identifying affected individuals, providing skill development training, and facilitating access to financial resources. Progress will be monitored through regular surveys and reports, and the department will be held accountable for achieving the target.
-
-2.  Goal: To provide financial assistance to at least 90% of the affected families within six months of the implementation of the ban.
-       Timeline: Six months.
-       Accountability: The Department of Social Welfare will be responsible for identifying affected families, disbursing financial assistance, and monitoring the impact of the assistance on their livelihoods. Progress will be monitored through regular audits and reports, and the department will be held accountable for achieving the target.
-
-3.  Goal: To conduct consultations with all affected communities within three months of the implementation of the ban.
-       Timeline: Three months.
-       Accountability: The Department of Community Affairs will be responsible for organizing consultations with affected communities, gathering feedback, and incorporating their concerns into the mitigation measures. Progress will be monitored through regular reports and community feedback mechanisms, and the department will be held accountable for ensuring that all affected communities are consulted.
-
-4.  Goal: To review and modify the mitigation measures on a quarterly basis, based on feedback from affected communities and monitoring data.
-       Timeline: Quarterly.
-       Accountability: A committee comprising representatives from the Departments of Labour and Employment, Social Welfare, and Community Affairs will be responsible for reviewing the mitigation measures, making modifications as necessary, and ensuring that the measures remain effective and proportionate. The committee will be held accountable for ensuring that the mitigation measures are regularly reviewed and updated.
-
-The State respectfully submits that these specific, measurable goals and timelines, along with the accountability mechanisms, will ensure that the mitigation measures are effective in addressing any disproportionate impact of the ban on specific communities or individuals.
-
-May I proceed further, Your Lordship?
-
-Judge: `<None>`
-Respondent: May it please Your Lordship,
-
-Having addressed the Court's question regarding the specific, measurable goals and timelines for the mitigation measures, and how the State will ensure accountability in achieving these goals, I seek permission to proceed further and address the arguments related to Article 21 of the Constitution.
-
-
-Judge: `<Switch>`
-Respondent: May it please Your Lordship,
-
-Having addressed the Court's question regarding the specific, measurable goals and timelines for the mitigation measures, and how the State will ensure accountability in achieving these goals, I seek permission to proceed further and address the arguments related to Article 21 of the Constitution.
-
-
-Judge: The Respondent has finished answering the questions regarding Article 48, and is now switching to arguments related to Article 21.
-
-Since the party is switching, no question is needed.
-
-FINAL ANSWER: `<None>`
-Respondent: May it please Your Lordship,
-
-Having addressed the Court's question regarding the specific, measurable goals and timelines for the mitigation measures, and how the State will ensure accountability in achieving these goals, I seek permission to proceed further and address the arguments related to Article 21 of the Constitution.
-
-
-Judge: The Respondent has finished answering the questions regarding Article 48, and is now switching to arguments related to Article 21.
-
-Since the party is switching, no question is needed.
-
-FINAL ANSWER: `<None>`
-Respondent: May it please Your Lordship,
-
-Having addressed the Court's question regarding the specific, measurable goals and timelines for the mitigation measures, and how the State will ensure accountability in achieving these goals, I seek permission to proceed further and address the arguments related to Article 21 of the Constitution.
-
-
-Judge: The Respondent has finished answering the questions regarding Article 48 and is now switching to arguments related to Article 21.
-
-Since the party is switching, no question is needed.
-
-FINAL ANSWER: `<None>`
-Respondent: May it please Your Lordship,
-
-Having addressed the Court's question regarding the specific, measurable goals and timelines for the mitigation measures, and how the State will ensure accountability in achieving these goals, I seek permission to proceed further and address the arguments related to Article 21 of the Constitution.
-
-
-Judge: The Respondent has finished answering the questions regarding Article 48, and is now switching to arguments related to Article 21.
-
-Since the party is switching, no question is needed.
-
-FINAL ANSWER: `<None>`
+Does this explanation address Your Lordships' concern regarding the basis for the legislature's conclusion?
+Judge: Counsel, while accepting that the legislature considered these matters, you rely on the "legislative assessment" and "perceived challenges" to justify the conclusion that alternatives like documentation or tracing were impractical. Was this conclusion based on concrete evidence presented during deliberations demonstrating these alternatives would be ineffective or impossible to implement, or was it primarily an assessment based on anticipated administrative difficulties and potential for fraud, without specific data comparing these difficulties to the impact of a complete ban on fundamental rights?

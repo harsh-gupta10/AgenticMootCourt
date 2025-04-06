@@ -1,7 +1,8 @@
 #from mootcourt.court_agent import CourtAgentRunnable
-from mootcourt.court_agent_cot import CourtAgentRunnable
+from court_agent_cot import CourtAgentRunnable
 from CaseDetails import case_details
 from Initlise import initilise_llm_and_databases
+import time
 
 llm,faiss_bns,faiss_constitution,faiss_lc,faiss_sc_lc = initilise_llm_and_databases()
 
@@ -57,42 +58,60 @@ def run_moot_court():
     question_counter = 0
     # Start with the petitioner's arguments
     print("\n🔷 Petitioner's Arguments:")
+    judge_response = None
     while True:
         prosecutor_argument = prosecutor_round()
         prosecutor_log += f"Petitioner: {prosecutor_argument}\n"
-        
-        judge_response = judge_followup(prosecutor_argument)
-        while "<None>" not in judge_response:
+        if question_counter >=5:
+            judge_response = "<None>"
+            log_to_file(f"Judge: {judge_response}")
+        else:   
+            judge_response = judge_followup(prosecutor_argument)
+        time.sleep(0.5)
+        while "<None>" not in judge_response and question_counter <= 5:
+            question_counter += 1
             print(f"\n👨‍⚖️ Judge: {judge_response}")
             prosecutor_answer = prosecutor_round()
             prosecutor_log += f"Judge: {judge_response}\nPetitioner Response: {prosecutor_answer}\n"
+            if question_counter==5:
+                break
             judge_response = judge_followup(prosecutor_answer)
-        
+            time.sleep(0.5)      
         if input("\nContinue with next argument? (yes/no): ").lower() != "yes":
             break
     log_to_file("The respondent's arguments will now begin.")
     # Provide <Switch> token to judge to let them know the prosecution is done
     judge_followup("<Switch>")
     print("\n🔶 Respondent's Arguments:")
+    # Limit the number of arguments to 20 and questions to 5
     question_counter = 0
-    while True:
+    argument_counter = 0
+    while argument_counter < 20:
         # Add delay of 0.5 seconds
-        import time
         time.sleep(0.5)
         defender_argument = defender_round()
         if defender_argument == "<END>":
             break
+        argument_counter += 1
         print("\n🔸 Respondent: ", defender_argument)
         defender_log += f"Respondent: {defender_argument}\n"
-        judge_response = judge_followup(defender_argument)
-        while "<None>" not in judge_response and question_counter <= 3:
-            # Add delay of 0.5 seconds
-            time.sleep(0.5)
+        if question_counter >=5:
+            judge_response = "<None>"
+            log_to_file(f"Judge: {judge_response}")
+        else:   
+            judge_response = judge_followup(defender_argument)
+
+        while "<None>" not in judge_response and question_counter <= 5:
+            question_counter += 1
             print(f"\n👨‍⚖️ Judge: {judge_response}")
             defender_answer = defender_round(judge_response)
             defender_log += f"Judge: {judge_response}\nDefender Response: {defender_answer}\n"
-            question_counter +=1
-        
+            if question_counter==5:
+                break
+            judge_response = judge_followup(defender_answer)
+            time.sleep(0.5)
+
+    print("Question counter(final):", question_counter)        
         
         # Below lines are only for testing if going in loop
         # if input("\nContinue with next defense argument? (yes/no): ").lower() != "yes":

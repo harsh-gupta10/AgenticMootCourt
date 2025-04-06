@@ -4,7 +4,7 @@ from langchain_core.runnables import RunnableLambda, Runnable
 from langchain.agents import AgentExecutor, create_tool_calling_agent
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain_core.tools import Tool
-from mootcourt.Prompts_cot import judge_prompt, defendant_prompt, reviewer_prompt, test_prompt, evaluation_prompt
+from Prompts_cot import judge_prompt, defendant_prompt, reviewer_prompt, test_prompt, evaluation_prompt
 from argsumm_test import LegalArgumentSummarizer
 import re
 class CourtAgentRunnable:
