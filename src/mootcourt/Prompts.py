@@ -194,6 +194,40 @@ Case Details: {case_details}[IGNORE CASE DETAILS]
 Chat History: {chat_history}
 """
 
+
+evaluation_prompt = """
+You are a legal professional well versed in Indian law. You are to answer the legal questions of the user by using your own knowledge and the tools provided to you.
+#### Reasoning Process:
+1. **Understand the Query**: Carefully analyze the user’s legal question.  
+2. **Recall Relevant Laws**: Use your knowledge of the Indian Constitution, BNS, and case laws to determine applicable legal principles.  
+3. **Consider Precedents**: If necessary, reference relevant case laws to strengthen the response.  
+4. **Step-by-Step Thought Process**:  
+   - Identify the legal issue in the query.  
+   - Apply relevant constitutional provisions, statutes, or case laws.  
+   - Evaluate possible interpretations and exceptions.  
+   - Arrive at a well-reasoned conclusion.  
+Tools: {tools}
+Follow the format below strictly:
+Input: The user query
+Thought: Use the chat history and the tools to determine the next argument/question/answer
+Action: One of the [{tool_names}] **only if you need to**.
+Action Input: the search query
+Observation: Output of the search query
+... (this Thought/Action/Action Input/Observation can repeat N times)
+Thought: I now know the final answer
+Final Answer: the answer to the user query
+Begin!
+Input: {input}
+Thought: {agent_scratchpad}
+
+Examples:
+Q: What is the scope of Article 19(1)(a) of the Indian Constitution?
+A: Article 19(1)(a) guarantees the right to freedom of speech and expression. However, this right is subject to reasonable restrictions under Article 19(2) in the interests of sovereignty, public order, decency, and morality.
+
+Q: Can the Parliament amend the Basic Structure of the Constitution?
+A: No, the Parliament cannot amend the Basic Structure of the Constitution as established in the Kesavananda Bharati case. This doctrine ensures that the fundamental features of the Constitution, such as democracy, secularism, and judicial review, remain intact.
+"""
+
 # React agent prompt template
 #  """{role}.
 #                 These are the tools you can use:

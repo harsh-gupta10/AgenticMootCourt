@@ -4,7 +4,7 @@ from langchain_core.runnables import RunnableLambda, Runnable
 from langchain.agents import AgentExecutor, create_tool_calling_agent
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain_core.tools import Tool
-from Prompts_normal import judge_prompt, defendant_prompt, reviewer_prompt, test_prompt
+from Prompts_normal import judge_prompt, defendant_prompt, reviewer_prompt, test_prompt, evaluation_prompt
 from argsumm_test import LegalArgumentSummarizer
 import re
 class CourtAgentRunnable:
@@ -109,8 +109,10 @@ class CourtAgentRunnable:
             base_prompt_template = reviewer_prompt
         elif role == "test":
             base_prompt_template = test_prompt
+        elif role == "evaluation":
+            base_prompt_template = evaluation_prompt
         else:
-            raise ValueError("Invalid role. Please choose from 'judge', 'respondent', 'test' or 'reviewer'.")
+            raise ValueError("Invalid role. Please choose from 'judge', 'respondent', 'evaluation', 'test' or 'reviewer'.")
 
 
         # Create the StructuredChatAgent that works with any LLM

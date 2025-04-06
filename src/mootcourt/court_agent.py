@@ -5,8 +5,9 @@ from langchain_core.runnables.history import RunnableWithMessageHistory
 from langchain_core.tools import tool
 from langchain.agents import AgentExecutor, create_react_agent
 from langchain_core.prompts import PromptTemplate
-from Prompts import judge_prompt , defendant_prompt, reviewer_prompt , test_prompt
+from Prompts import judge_prompt , defendant_prompt, reviewer_prompt , test_prompt, evaluation_prompt
 from argsumm_test import LegalArgumentSummarizer
+
 
 class CourtAgentRunnable:
     def __init__(self, llm, role, case_details, constitution_store, bns_store, Landmark_Cases_store, SC_Landmark_Cases_store ,  memory_store=None, max_iter=20):
@@ -82,6 +83,10 @@ class CourtAgentRunnable:
         elif role=="test":
             base_prompt=PromptTemplate.from_template(
                 test_prompt
+            )
+        elif role=="evaluation":
+            base_prompt=PromptTemplate.from_template(
+                evaluation_prompt
             )
         else:
             raise ValueError("Invalid role. Please choose from 'judge', 'respondent', 'test' or 'reviewer'.")
