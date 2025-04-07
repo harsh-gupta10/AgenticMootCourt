@@ -204,7 +204,7 @@ class CourtAgentRunnable:
         
         raw_response = result.get("output", "")
         raw_response = raw_response.replace("#", "").replace("*", "")
-        match = re.search(r"Final Answer:\s*(.+)",raw_response, re.DOTALL)
+        match = re.search(r"Final Answer:\s*(.*)", raw_response, re.DOTALL)
         raw_response = match.group(1).strip() if match else raw_response
         result["output"] = raw_response
         processed_response = raw_response

@@ -65,6 +65,7 @@ def run_moot_court():
         if question_counter >=5:
             judge_response = "<None>"
             log_to_file(f"Judge: {judge_response}")
+            print(f"\n👨‍⚖️ Judge: {judge_response}")
         else:   
             judge_response = judge_followup(prosecutor_argument)
         time.sleep(0.5)
@@ -98,6 +99,7 @@ def run_moot_court():
         if question_counter >=5:
             judge_response = "<None>"
             log_to_file(f"Judge: {judge_response}")
+            print(f"\n👨‍⚖️ Judge: {judge_response}")
         else:   
             judge_response = judge_followup(defender_argument)
 
@@ -105,13 +107,13 @@ def run_moot_court():
             question_counter += 1
             print(f"\n👨‍⚖️ Judge: {judge_response}")
             defender_answer = defender_round(judge_response)
+            print(f"\n🔸 Respondent: {defender_answer}")
             defender_log += f"Judge: {judge_response}\nDefender Response: {defender_answer}\n"
             if question_counter==5:
                 break
             judge_response = judge_followup(defender_answer)
             time.sleep(0.5)
-
-    print("Question counter(final):", question_counter)        
+       
         
         # Below lines are only for testing if going in loop
         # if input("\nContinue with next defense argument? (yes/no): ").lower() != "yes":
