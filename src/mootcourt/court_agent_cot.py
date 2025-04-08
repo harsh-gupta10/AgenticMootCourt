@@ -8,7 +8,7 @@ from Prompts_cot import judge_prompt, defendant_prompt, reviewer_prompt, test_pr
 from argsumm_test import LegalArgumentSummarizer
 import re
 class CourtAgentRunnable:
-    def __init__(self, llm, role, case_details, constitution_store, bns_store, Landmark_Cases_store, SC_Landmark_Cases_store, memory_store=None, max_iter=10):
+    def __init__(self, llm, role, case_details, constitution_store, bns_store, Landmark_Cases_store, SC_Landmark_Cases_store, memory_store=None, max_iter=2):
         self.llm = llm
         self.role = role
         self.case_details = case_details
@@ -126,7 +126,7 @@ class CourtAgentRunnable:
         self.agent_executor = AgentExecutor(
             agent=self.agent,
             tools=self.tools,
-            max_iterations=10,
+            max_iterations=2,
             handle_parsing_errors=True,
             verbose=True,
             return_intermediate_steps=True
@@ -139,7 +139,7 @@ class CourtAgentRunnable:
     #     self.agent_executor = AgentExecutor(
     #         agent=self.agent,
     #         tools=self.tools,
-    #         max_iterations=10,
+    #         max_iterations=2,
     #         handle_parsing_errors=True,
     #         verbose=True,
     #         return_intermediate_steps=True
@@ -195,6 +195,7 @@ class CourtAgentRunnable:
         user_input = input_data["input"]
         chat_history = self.get_session_history("default")
         # Execute the agent with the input and history
+        print("==========================RAW Response===============")
         result = self.agent_executor.invoke({
             "input": user_input,
             "chat_history": chat_history,
@@ -203,15 +204,15 @@ class CourtAgentRunnable:
         })
         
         raw_response = result.get("output", "")
+        # print(raw_response))
+        print("======================================================")
         raw_response = raw_response.replace("#", "").replace("*", "")
-        match = re.search(r"Final Answer:\s*(.*)", raw_response, re.DOTALL)
+        match = re.search(r"Final Answer\s*(.*)", raw_response, re.DOTALL)
         raw_response = match.group(1).strip() if match else raw_response
         result["output"] = raw_response
         processed_response = raw_response
         self.memory.chat_memory.add_user_message(user_input)
         self.memory.chat_memory.add_ai_message(processed_response)
-        
-        # Return the result including both raw and processed outputs
         return {
             "raw_output": raw_response,
             "processed_output": processed_response,

@@ -4,6 +4,9 @@ import numpy as np
 import pandas as pd
 import os
 import csv
+import mlcroissant as mlc
+import pandas as pd
+
 
 from EvalutionMatrices import *
 from  EvalutionInitilise import *
@@ -60,7 +63,7 @@ def evaluate_articles_constitution_dataset():
     try:
         print("\nProcessing Articles Constitution dataset...")
         # df = pd.read_json("hf://datasets/nisaar/Articles_Constitution_3300_Instruction_Set/Article_12_14_15_19_21_Instructionset_train.jsonl", lines=True)
-        df = pd.read_json("Articles_Constitution_3300_Instruction_Set.jsonl", lines=True)
+        df = pd.read_json("../../EvalutionDatasetTEST/Articles_Constitution_3300_Instruction_Set.jsonl", lines=True)
         
         
         questions = []
@@ -96,7 +99,7 @@ def evaluate_lawyer_gpt_dataset():
     try:
         print("\nProcessing Lawyer GPT dataset...")
         # df = pd.read_json("hf://datasets/nisaar/Lawyer_GPT_India/150_lawergpt_dataset_qna_v1_train.jsonl", lines=True)
-        df = pd.read_json("150_lawergpt_dataset_qna_v1_train.jsonl", lines=True)
+        df = pd.read_json("../../EvalutionDatasetTEST/150_lawergpt_dataset_qna_v1_train.jsonl", lines=True)
         
         
         questions = df['question'].tolist()
@@ -134,11 +137,11 @@ def evaluate_indian_constitution_dataset():
         article_ids = []
         
         for _, row in df.iterrows():
-            article_id = f"Part {row['Part No.']} - Article {row['Article No.']}"
-            question = f"What is the description of {article_id} - {row['Article Heading']}? Please provide the full text of this article."
+            article_id = f"Part {row['Part+No.']} - Article {row['Article+No.']}"
+            question = f"What is the description of {article_id} - {row['Article+Heading']}? Please provide the full text of this article."
             
             questions.append(question)
-            gold_answers.append(row['Article Description'])
+            gold_answers.append(row['Article+Description'])
             article_ids.append(article_id)
         
         generated_answers = []
@@ -166,6 +169,15 @@ def evaluate_ipc_sections_dataset():
         print("\nProcessing IPC Sections dataset...")
         df = pd.read_csv("../../EvalutionDatasetTEST/ipc_sections.csv")
         
+        
+        # Fetch the Croissant JSON-LD
+        # croissant_dataset = mlc.Dataset('https://www.kaggle.com/datasets/kanishhkaa/legal-analysis-using-ipc-dataset/croissant/download')
+        # # Check what record sets are in the dataset
+        # record_sets = croissant_dataset.metadata.record_sets
+        # # Fetch the records and put them in a DataFrame
+        # record_set_df = pd.DataFrame(croissant_dataset.records(record_set=record_sets[0].uuid))
+
+        
         # For description evaluations
         desc_questions = []
         desc_gold_answers = []
@@ -174,9 +186,9 @@ def evaluate_ipc_sections_dataset():
         offense_questions = []
         offense_gold_answers = []
         
-        # For punishment evaluations
-        punishment_questions = []
-        punishment_gold_answers = []
+        # # For punishment evaluations
+        # punishment_questions = []
+        # punishment_gold_answers = []
         
         section_ids = []
         
@@ -194,10 +206,10 @@ def evaluate_ipc_sections_dataset():
             offense_questions.append(offense_question)
             offense_gold_answers.append(row['Offense'])
             
-            # Punishment question
-            punishment_question = f"What is the punishment specified under {section_id}?"
-            punishment_questions.append(punishment_question)
-            punishment_gold_answers.append(row['Punishment'])
+            # # Punishment question
+            # punishment_question = f"What is the punishment specified under {section_id}?"
+            # punishment_questions.append(punishment_question)
+            # punishment_gold_answers.append(row['Punishment'])
         
         # Evaluate descriptions
         desc_generated_answers = []
@@ -217,28 +229,29 @@ def evaluate_ipc_sections_dataset():
         offense_results = evaluate_legal_qa(offense_questions, offense_generated_answers, offense_gold_answers, 
                                            "IPC_Offense", section_ids)
         
-        # Evaluate punishments
-        punishment_generated_answers = []
-        for question in tqdm(punishment_questions, desc="Evaluating IPC Section Punishments"):
-            generated_answer = get_judge_response(question)
-            punishment_generated_answers.append(generated_answer)
+        # # Evaluate punishments
+        # punishment_generated_answers = []
+        # for question in tqdm(punishment_questions, desc="Evaluating IPC Section Punishments"):
+        #     generated_answer = get_judge_response(question)
+        #     punishment_generated_answers.append(generated_answer)
         
-        punishment_results = evaluate_legal_qa(punishment_questions, punishment_generated_answers, punishment_gold_answers, 
-                                              "IPC_Punishment", section_ids)
+        # punishment_results = evaluate_legal_qa(punishment_questions, punishment_generated_answers, punishment_gold_answers, 
+                                              # "IPC_Punishment", section_ids)
         
         # Save results separately
         save_to_csv(desc_results, "ipc_description_evaluation_results.csv")
         save_to_csv(offense_results, "ipc_offense_evaluation_results.csv")
-        save_to_csv(punishment_results, "ipc_punishment_evaluation_results.csv")
+        # save_to_csv(punishment_results, "ipc_punishment_evaluation_results.csv")
         
         # Combined results
-        all_ipc_results = desc_results + offense_results + punishment_results
+        # all_ipc_results = desc_results + offense_results + punishment_results
+        all_ipc_results = desc_results + offense_results
         save_to_csv(all_ipc_results, "ipc_all_evaluation_results.csv")
         
         # Print summaries
         print_evaluation_summary(desc_results, "IPC Section Descriptions")
         print_evaluation_summary(offense_results, "IPC Section Offenses")
-        print_evaluation_summary(punishment_results, "IPC Section Punishments")
+        # print_evaluation_summary(punishment_results, "IPC Section Punishments")
         print_evaluation_summary(all_ipc_results, "All IPC Evaluations")
         
         return all_ipc_results
