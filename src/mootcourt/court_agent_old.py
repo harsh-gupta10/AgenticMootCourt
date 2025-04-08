@@ -8,7 +8,7 @@ from langchain_core.prompts import PromptTemplate
 from Prompts_react import judge_prompt , defendant_prompt, reviewer_prompt , test_prompt
 
 class CourtAgentRunnable:
-    def __init__(self, llm, role, case_details, constitution_store, bns_store, Landmark_Cases_store, SC_Landmark_Cases_store ,  memory_store=None, max_iter=20):
+    def __init__(self, llm, role, case_details, constitution_store, bns_store, Landmark_Cases_store, SC_Landmark_Cases_store ,  memory_store=None, max_iter=10):
         self.llm = llm
         self.role = role
         self.case_details = case_details
@@ -92,7 +92,7 @@ class CourtAgentRunnable:
         )
         
         # Wrap the agent with an executor that integrates memory and sets max iterations
-        self.agent_executor = AgentExecutor(agent=self.agent,tools=self.tools, max_execution_time=20,max_iterations=100,handle_parsing_errors=True
+        self.agent_executor = AgentExecutor(agent=self.agent,tools=self.tools, max_execution_time=20,max_iterations=10,handle_parsing_errors=True
                                             ,verbose=True,return_intermediate_steps=True)
 
     def get_session_history(self, session_id):

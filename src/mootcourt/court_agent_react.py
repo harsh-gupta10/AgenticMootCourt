@@ -10,7 +10,7 @@ from argsumm_test import LegalArgumentSummarizer
 
 
 class CourtAgentRunnable:
-    def __init__(self, llm, role, case_details, constitution_store, bns_store, Landmark_Cases_store, SC_Landmark_Cases_store ,  memory_store=None, max_iter=20):
+    def __init__(self, llm, role, case_details, constitution_store, bns_store, Landmark_Cases_store, SC_Landmark_Cases_store ,  memory_store=None, max_iter=10):
         self.llm = llm
         self.role = role
         self.case_details = case_details
@@ -89,7 +89,7 @@ class CourtAgentRunnable:
                 evaluation_prompt
             )
         else:
-            raise ValueError("Invalid role. Please choose from 'judge', 'respondent', 'test' or 'reviewer'.")
+            raise ValueError("Invalid role. Please choose from 'judge', 'respondent', 'test' or 'reviewer' or 'evaluation'.")
 
         self.agent = create_react_agent(
             llm=self.llm,
@@ -98,7 +98,7 @@ class CourtAgentRunnable:
         )
         
         # Wrap the agent with an executor that integrates memory and sets max iterations
-        self.agent_executor = AgentExecutor(agent=self.agent,tools=self.tools, max_execution_time=20,max_iterations=100,handle_parsing_errors=True
+        self.agent_executor = AgentExecutor(agent=self.agent,tools=self.tools, max_execution_time=20,max_iterations=10,handle_parsing_errors=True
                                             ,verbose=True,return_intermediate_steps=True)
 
     def get_session_history(self, session_id):
@@ -176,3 +176,4 @@ class CourtAgentRunnable:
     def create_runnable(self) -> Runnable:
         """Creates a custom runnable that manages memory explicitly"""
         return RunnableLambda(self.process_and_execute)
+    # Ishan Insted of modifying here why dont you modify class so we just pass the Argument to summerise or not. 
