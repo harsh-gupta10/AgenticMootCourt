@@ -159,3 +159,34 @@ def evaluate_legal_qa(questions, generated_answers, gold_answers, domain, questi
     
     return results
 
+
+
+# # Load model and tokenizer
+# tokenizer = AutoTokenizer.from_pretrained('law-ai/InLegalBERT')
+# model = AutoModel.from_pretrained('law-ai/InLegalBERT')
+
+# # Function to get embeddings
+# def get_embeddings(texts):
+#     # Tokenize
+#     encoded_input = tokenizer(texts, padding=True, truncation=True, return_tensors='pt')
+    
+#     # Get model output
+#     with torch.no_grad():
+#         model_output = model(**encoded_input)
+    
+#     # Mean Pooling - take attention mask into account for correct averaging
+#     attention_mask = encoded_input['attention_mask']
+#     input_mask_expanded = attention_mask.unsqueeze(-1).expand(model_output.last_hidden_state.size()).float()
+#     sum_embeddings = torch.sum(model_output.last_hidden_state * input_mask_expanded, 1)
+#     sum_mask = torch.clamp(input_mask_expanded.sum(1), min=1e-9)
+#     embeddings = sum_embeddings / sum_mask
+    
+#     # Normalize
+#     embeddings = F.normalize(embeddings, p=2, dim=1)
+    
+#     return embeddings
+
+# # Calculate similarity
+# def similarity(text1, text2):
+#     embeddings = get_embeddings([text1, text2])
+#     return torch.cosine_similarity(embeddings[0], embeddings[1], dim=0).item()
