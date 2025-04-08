@@ -1,6 +1,6 @@
 #from mootcourt.court_agent import CourtAgentRunnable
 from court_agent_cot import CourtAgentRunnable
-from CaseDetails import case_details
+from CaseDetails import moot_problem_1 as case_details
 from Initlise import initilise_llm_and_databases
 import time
 
@@ -18,7 +18,6 @@ reviewer_runnable = reviewer_agent.create_runnable()
 
 # File logging setup
 LOG_FILE = "moot_court_log.txt"
-
 def log_to_file(content):
     with open(LOG_FILE, "a", encoding="utf-8") as f:
         f.write(content + "\n")
@@ -47,7 +46,6 @@ def defender_round(input="<None>"):
     argument = argument["output"]
     log_to_file(f"Respondent: {argument}")
     return argument
-
 
 
 def run_moot_court():
