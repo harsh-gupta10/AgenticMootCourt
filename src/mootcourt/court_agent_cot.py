@@ -8,7 +8,7 @@ from Prompts_cot import judge_prompt, defendant_prompt, reviewer_prompt, test_pr
 from argsumm_test import LegalArgumentSummarizer
 import re
 class CourtAgentRunnable:
-    def __init__(self, llm, role, case_details, constitution_store, bns_store, Landmark_Cases_store, SC_Landmark_Cases_store, memory_store=None, max_iter=20):
+    def __init__(self, llm, role, case_details, constitution_store, bns_store, Landmark_Cases_store, SC_Landmark_Cases_store, memory_store=None, max_iter=10):
         self.llm = llm
         self.role = role
         self.case_details = case_details
@@ -126,7 +126,7 @@ class CourtAgentRunnable:
         self.agent_executor = AgentExecutor(
             agent=self.agent,
             tools=self.tools,
-            max_iterations=20,
+            max_iterations=10,
             handle_parsing_errors=True,
             verbose=True,
             return_intermediate_steps=True
@@ -139,7 +139,7 @@ class CourtAgentRunnable:
     #     self.agent_executor = AgentExecutor(
     #         agent=self.agent,
     #         tools=self.tools,
-    #         max_iterations=20,
+    #         max_iterations=10,
     #         handle_parsing_errors=True,
     #         verbose=True,
     #         return_intermediate_steps=True
@@ -217,6 +217,7 @@ class CourtAgentRunnable:
             "processed_output": processed_response,
             **result
         }
+        # @ishan ye raw_response aur processed_response same nhi h? aur result["output"] kaha use kar rha h. 
 
     def create_runnable(self) -> Runnable:
         # Create a simple runnable that calls our process_and_execute method
