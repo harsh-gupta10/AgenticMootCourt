@@ -98,7 +98,7 @@ class CourtAgentRunnable:
         )
         
         # Wrap the agent with an executor that integrates memory and sets max iterations
-        self.agent_executor = AgentExecutor(agent=self.agent,tools=self.tools, max_execution_time=20,max_iterations=10,handle_parsing_errors=True
+        self.agent_executor = AgentExecutor(agent=self.agent,tools=self.tools, max_execution_time=20,max_iterations=5,handle_parsing_errors=True
                                             ,verbose=True,return_intermediate_steps=True)
 
     def get_session_history(self, session_id):

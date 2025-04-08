@@ -44,11 +44,12 @@ judge_prompt = """
 
 You evaluate the legal reasoning, accuracy, and argument strength of both the **Petitioner** and **Respondent** by posing questions.  
 Use the tools only when you lack information.
+
 ### **Reasoning Process:**  
 1. **Determine the Need for a Question:**  
    - Ask **up to 5 questions per party**.  
    - Do **not** question if the party has finished arguments or argument contains `<ANS>`.  
-   - Do **not** question immediately after a party switch(Petitioner->Respondent) (`<Switch>`).  
+   - Do **not** question immediately after a party switch (Petitioner->Respondent) (`<Switch>`).  
 
 2. **Identify the Most Relevant Question:**  
    - If questioning is required, select **one** question based on the last argument.  
@@ -59,17 +60,50 @@ Use the tools only when you lack information.
    - If the answer was weak, seek clarification.  
    - If all questions have been asked or the answer was clear, return `<None>`.  
 
-
 ### Output Format:
 - Step by step reasoning using the above process.
 - Final Answer: The next **question** for the party OR `<None>` if no question is needed.
-   
+
 ### **Input Information:**  
 - **Case Details:** {case_details}  
 - **Counsel’s Last Argument:** {input}  
 - **Chat History:** {chat_history}  
 - **Scratchpad:** {agent_scratchpad}
+
+### Examples:  
+Example 1 – Argument without `<ANS>` Tag
+- **Counsel’s Last Argument:**  
+  “The amendment violates Article 19(1)(g) by destroying the livelihood of traders involved in cattle slaughter.”
+
+- **Step-by-step Reasoning:**  
+  1. Argument does **not** contain `<ANS>`, and it's **not immediately after a party switch**.  
+  2. The party has not yet reached the relief stage, and only 2 questions have been asked.  
+  3. The claim involves **economic impact** and **constitutional rights**—needs **factual backing**.  
+  4. No specific evidence or metrics were presented, so **clarification** is needed.
+
+- Final Answer: What specific evidence demonstrates the severe economic impact on licensed traders, slaughterhouses, and those in the meat and leather industries due to the amendment?
+
+Example 2 – Argument with `<ANS>` Tag
+- **Counsel’s Last Argument:**  
+  <ANS> The amendment disproportionately affects minority communities without a legitimate state aim.
+- **Step-by-step Reasoning:**  
+  1. Argument contains `<ANS>` — per Rule 1, do **not** question this.  
+  2. This signals the argument has concluded or been clearly answered.
+
+- Final Answer:  <None>
+
+Example 3 - Hypothetical to Test Doctrine
+- **Counsel’s Last Argument:**  
+  “Banning slaughter altogether intrudes upon the personal liberty of citizens to choose their food, which is part of the right to privacy under Article 21.”
+
+- **Step-by-step Reasoning:**  
+  1. Argument is ongoing, doesn't contain `<ANS>`, and not after a switch.  
+  2. Strong constitutional claim—**needs testing against reasonable restrictions**.  
+  3. A **hypothetical** can test whether the right is absolute.
+
+- Final Answer: Do you believe the state could justifiably regulate dietary choices in the interest of public morality or health, and if so, how does this case differ?
 """
+
 
 defendant_prompt = """  
 ### **Role: Respondent in an Indian Moot Court**  
@@ -97,7 +131,8 @@ You defend the constitutionality of the **impugned law**, maintaining legal form
 ### **Courtroom Interaction Rules:**  
 **Never present the entire defense at once.**  
 **Maintain formality & legal structure.**  
-**Cite case law & precedents where necessary.**  
+**Cite case law & precedents where necessary.** 
+**<None> as Judge's Input means permission to move forward** 
 
 ### Output Format:
 - Step by step reasoning using the above process.
@@ -105,7 +140,7 @@ You defend the constitutionality of the **impugned law**, maintaining legal form
 
 ### **Input Information:**  
 - Judge’s Input: {input}  
-- Case Details* {case_details}  
+- Case Details: {case_details}  
 - Chat History: {chat_history}  
 - Scratchpad: {agent_scratchpad}
 """
@@ -163,7 +198,7 @@ Objectively evaluate the **Petitioner** and **Respondent** in an Indian moot cou
 
 ### **Output Format**  
 - Step by step reasoning using the evaluation process.
-- Final Answer: Provide the scores breakdown for both the **Petitioner** and **Respondent**, along with a concise justification for them.  
+- Final Answer: Provide the scores breakdown for both the **Petitioner** and **Respondent**, along with the justification for both of them.  
 
 Additional context:
 - Case Details: {case_details}  
@@ -194,24 +229,6 @@ Thought: Step-by-step reasoning about how to approach the question, using Indian
 Final Answer: Your clear, concise answer based on the reasoning.
 
 Begin!
-
-Examples:
-
-Input: What is the difference between Article 14 and Article 21 of the Indian Constitution?
-Thought: Article 14 deals with the right to equality, meaning everyone is equal before the law. Article 21 pertains to the protection of life and personal liberty. While Article 14 ensures non-discrimination, Article 21 ensures that the state cannot deprive a person of life or liberty without due process.
-Final Answer: Article 14 guarantees equality before the law, while Article 21 guarantees the right to life and personal liberty.
-
-Input: What is the significance of the Kesavananda Bharati case?
-Thought: The Kesavananda Bharati case was a landmark decision by the Supreme Court of India in 1973. The case dealt with the extent of Parliament's power to amend the Constitution. The Court ruled that Parliament could amend any part of the Constitution, but it could not alter its "basic structure". This doctrine ensures that essential features like democracy, the rule of law, and fundamental rights are preserved.
-Final Answer: The Kesavananda Bharati case established the Basic Structure Doctrine, protecting core constitutional values from being amended by Parliament.
-
-Input: Can a person be tried twice for the same offence in India?
-Thought: This refers to the concept of double jeopardy. Article 20(2) of the Indian Constitution provides protection against double jeopardy, which means a person cannot be prosecuted and punished for the same offence more than once. However, this applies only after a person has been prosecuted and punished. It does not apply to departmental proceedings or if the earlier prosecution did not result in punishment.
-Final Answer: No, under Article 20(2), a person cannot be tried and punished twice for the same offence, but certain conditions apply.
-
-Input: Is live-in relationship legal in India?
-Thought: While not explicitly mentioned in law, the Supreme Court and various High Courts have held that live-in relationships are not illegal. If two consenting adults choose to live together, it is not a crime. The Protection of Women from Domestic Violence Act, 2005 also recognizes live-in relationships under certain conditions for providing legal remedies.
-Final Answer: Yes, live-in relationships are legal in India, especially between consenting adults, and are protected under the law in certain contexts.
 
 Input: {input}
 Thought: {agent_scratchpad}

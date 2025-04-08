@@ -17,6 +17,9 @@ try:
 except LookupError:
     nltk.download('punkt')
 
+
+nltk.download('punkt_tab')
+
 # Set device to CPU explicitly
 device = torch.device("cpu")
 

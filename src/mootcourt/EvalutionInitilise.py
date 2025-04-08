@@ -7,8 +7,7 @@
 # from court_agent_react import CourtAgentRunnable
 from court_agent_cot import CourtAgentRunnable
 from Initlise import initilise_llm_and_databases
-
-
+import time
 
 
 
@@ -28,6 +27,7 @@ judge_runnable = judge_agent.create_runnable()
 
 # Function to get response from judge agent
 def get_judge_response(question):
+    time.sleep(2)
     response = judge_runnable.invoke(
         {"input": question, "role": "evaluation", },
         config={"configurable": {"session_id": "legal-session-123"}}

@@ -1,4 +1,5 @@
 from langchain_google_genai import ChatGoogleGenerativeAI
+from langchain_google_vertexai import ChatVertexAI
 from langchain_community.vectorstores import FAISS
 from langchain.memory import ConversationBufferMemory
 import google.generativeai as genai
@@ -40,7 +41,7 @@ def initilise_llm_and_databases():
     # Create LLM instance
     def create_llm( Provider , model , temprature):
         if Provider=="Google":
-          return ChatGoogleGenerativeAI(model, temperature=temprature)
+          return ChatVertexAI(model=model, temperature=temprature)
         elif Provider=="Groq":
           return ChatGroq(model, temperature=temprature)
         elif Provider=="OpenRouter":
@@ -49,9 +50,10 @@ def initilise_llm_and_databases():
 
 
     # llm = create_llm()
-    # llm = create_llm(Provider="Google" , model="gemini-1.5-flash" , temprature=0.1)
+    llm = create_llm(Provider="Google" , model="gemini-2.0-flash-001" , temprature=0.1)
     # llm = create_llm(Provider="Groq" , model="deepseek-r1-distill-llama-70b" , temprature=0.2)
-    llm = create_llm(Provider="OpenRouter" , model="google/gemini-2.5-pro-exp-03-25:free" , temprature=0.1)
+    # llm = create_llm(Provider="OpenRouter" , model="google/gemini-2.5-pro-exp-03-25:free" , temprature=0.1)
+    # llm = create_llm(Provider="OpenRouter" , model="google/gemini-2.0-flash-exp:free" , temprature=0.1)
     # faiss_sc_lc = FAISS.load_local("../../vector_database/faiss_supreme_court_csv", embedding_model, allow_dangerous_deserialization=True)
     return llm,faiss_bns,faiss_constitution,faiss_lc,faiss_sc_lc
 

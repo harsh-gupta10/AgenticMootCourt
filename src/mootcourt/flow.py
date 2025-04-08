@@ -37,7 +37,12 @@ def review_case(prosecutor_log, defender_log):
     return response
 
 def prosecutor_round():
-    argument = input("\n🔹 Petitioner, present your argument:\n>> ")
+    print("\n🔹 Petitioner, present your argument(Type END to finish the argument): ")
+    argument_part = input()
+    argument = ""
+    while argument_part.strip() != "END":
+        argument+= argument_part.strip()+"\n"
+        argument_part = input()
     log_to_file(f"Petitioner: {argument}")
     return argument
 
@@ -82,10 +87,10 @@ def run_moot_court():
     # Provide <Switch> token to judge to let them know the prosecution is done
     judge_followup("<Switch>")
     print("\n🔶 Respondent's Arguments:")
-    # Limit the number of arguments to 20 and questions to 5
+    # Limit the number of arguments to 10 and questions to 5
     question_counter = 0
     argument_counter = 0
-    while argument_counter < 20:
+    while argument_counter < 10:
         # Add delay of 0.5 seconds
         time.sleep(0.5)
         defender_argument = defender_round()
