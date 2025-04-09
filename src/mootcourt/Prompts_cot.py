@@ -227,6 +227,7 @@ Always follow this format:
 Input: The user’s question
 Thought: Step-by-step reasoning about how to approach the question, using Indian legal principles and relevant precedents.
 Final Answer: Your clear, concise answer based on the reasoning.
+For IPC (BNS) Related Query Give answer in Short ie approx 1-2 lines. 
 
 Begin!
 
