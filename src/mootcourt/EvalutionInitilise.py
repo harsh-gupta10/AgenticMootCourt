@@ -27,7 +27,7 @@ judge_runnable = judge_agent.create_runnable()
 
 # Function to get response from judge agent
 def get_judge_response(question):
-    time.sleep(2)
+    time.sleep(1)
     response = judge_runnable.invoke(
         {"input": question, "role": "evaluation", },
         config={"configurable": {"session_id": "legal-session-123"}}

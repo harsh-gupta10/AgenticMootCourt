@@ -52,3 +52,30 @@
   Average ROUGE-L: 0.1781
   Average Embedding Similarity: 0.8040
 ==================================================
+
+=== IPC Summary (completed at 2025-04-09 12:15:13) ===
+  Number of questions: 2267
+  Average BLEU: 0.0825
+  Average ROUGE-1: 0.2467
+  Average ROUGE-2: 0.1165
+  Average ROUGE-L: 0.2195
+  Average Embedding Similarity: 0.7649
+==================================================
+
+=== Articles Constitution Dataset Summary (completed at 2025-04-09 16:22:22) ===
+  Number of questions: 3311
+  Average BLEU: 0.0232
+  Average ROUGE-1: 0.2476
+  Average ROUGE-2: 0.0976
+  Average ROUGE-L: 0.2267
+  Average Embedding Similarity: 0.9019
+==================================================
+
+=== Indian Constitution Dataset Summary (completed at 2025-04-09 17:25:22) ===
+  Number of questions: 487
+  Average BLEU: 0.1904
+  Average ROUGE-1: 0.3422
+  Average ROUGE-2: 0.2621
+  Average ROUGE-L: 0.3260
+  Average Embedding Similarity: 0.8416
+==================================================

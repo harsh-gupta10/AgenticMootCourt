@@ -89,7 +89,7 @@ def append_incremental_results(new_result, dataset_name):
 
 def evaluate_previous_datasets():
     """Evaluate the original datasets from the previous code"""
-    dataset_dir = "../../EvalutionDatasetTEST"  
+    dataset_dir = "../../EvalutionDataset"  
     os.makedirs(dataset_dir, exist_ok=True)
     
     dataset_files = {
@@ -152,7 +152,7 @@ def evaluate_articles_constitution_dataset():
     """Evaluate the Articles Constitution dataset (Dataset 1)"""
     try:
         print("\nProcessing Articles Constitution dataset...")
-        df = pd.read_json("../../EvalutionDatasetTEST/Articles_Constitution_3300_Instruction_Set.jsonl", lines=True)
+        df = pd.read_json("../../EvalutionDataset/Articles_Constitution_3300_Instruction_Set.jsonl", lines=True)
         
         questions = []
         gold_answers = []
@@ -209,7 +209,7 @@ def evaluate_indian_constitution_dataset():
     """Evaluate the Indian Constitution dataset (Dataset 3)"""
     try:
         print("\nProcessing Indian Constitution dataset...")
-        df = pd.read_csv("../../EvalutionDatasetTEST/indian_constitution.csv")
+        df = pd.read_csv("../../EvalutionDataset/indian_constitution.csv")
         
         questions = []
         gold_answers = []
@@ -318,7 +318,7 @@ def save_to_csv(results, output_file):
 #     try:
 #         print("\nProcessing Lawyer GPT dataset...")
 #         # df = pd.read_json("hf://datasets/nisaar/Lawyer_GPT_India/150_lawergpt_dataset_qna_v1_train.jsonl", lines=True)
-#         df = pd.read_json("../../EvalutionDatasetTEST/150_lawergpt_dataset_qna_v1_train.jsonl", lines=True)
+#         df = pd.read_json("../../EvalutionDataset/150_lawergpt_dataset_qna_v1_train.jsonl", lines=True)
         
         
 #         questions = df['question'].tolist()
@@ -351,7 +351,7 @@ def save_to_csv(results, output_file):
     """Evaluate the IPC Sections dataset (Dataset 4)"""
     try:
         print("\nProcessing IPC Sections dataset...")
-        df = pd.read_csv("../../EvalutionDatasetTEST/ipc_sections.csv")
+        df = pd.read_csv("../../EvalutionDataset/ipc_sections.csv")
         
         
         # Fetch the Croissant JSON-LD
