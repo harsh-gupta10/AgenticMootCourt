@@ -5,7 +5,7 @@
 # sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 # from court_agent_react import CourtAgentRunnable
-from court_agent_cot import CourtAgentRunnable
+from court_agent_react import CourtAgentRunnable
 from Initlise import initilise_llm_and_databases
 import time
 

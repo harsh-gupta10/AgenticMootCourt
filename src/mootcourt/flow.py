@@ -1,6 +1,6 @@
 #from mootcourt.court_agent import CourtAgentRunnable
 from court_agent_cot import CourtAgentRunnable
-from CaseDetails import moot_problem_1 as case_details
+from CaseDetails import moot_problem_2 as case_details
 from Initlise import initilise_llm_and_databases
 import time
 
@@ -79,7 +79,7 @@ def run_moot_court():
             prosecutor_log += f"Judge: {judge_response}\nPetitioner Response: {prosecutor_answer}\n"
             if question_counter==5:
                 break
-            judge_response = judge_followup(prosecutor_answer)
+            judge_response = judge_followup("<ANS>"+prosecutor_answer)
             time.sleep(0.5)      
         if input("\nContinue with next argument? (yes/no): ").lower() != "yes":
             break
@@ -114,7 +114,7 @@ def run_moot_court():
             defender_log += f"Judge: {judge_response}\nDefender Response: {defender_answer}\n"
             if question_counter==5:
                 break
-            judge_response = judge_followup(defender_answer)
+            judge_response = judge_followup("<ANS>"+defender_answer)
             time.sleep(0.5)
        
         

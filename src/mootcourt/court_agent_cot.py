@@ -196,7 +196,6 @@ class CourtAgentRunnable:
         user_input = input_data["input"]
         chat_history = self.get_session_history("default")
         # Execute the agent with the input and history
-        print("==========================RAW Response===============")
         result = self.agent_executor.invoke({
             "input": user_input,
             "chat_history": chat_history,
@@ -205,8 +204,6 @@ class CourtAgentRunnable:
         })
         
         raw_response = result.get("output", "")
-        # print(raw_response))
-        print("======================================================")
         raw_response = raw_response.replace("#", "").replace("*", "")
         match = re.search(r"Final Answer\s*(.*)", raw_response, re.DOTALL)
         raw_response = match.group(1).strip() if match else raw_response
@@ -224,4 +221,4 @@ class CourtAgentRunnable:
 
     def create_runnable(self) -> Runnable:
         # Create a simple runnable that calls our process_and_execute method
-        return RunnableLambda(self.normal_execute)
+        return RunnableLambda(self.process_and_execute)

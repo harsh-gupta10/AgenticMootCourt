@@ -103,7 +103,6 @@ class CourtAgentRunnable:
 
     def get_session_history(self, session_id):
         """Retrieve chat history."""
-        print("Memory :", self.memory.chat_memory)
         return self.memory.chat_memory
     
     def normal_execute(self, input_data):
@@ -175,5 +174,5 @@ class CourtAgentRunnable:
     
     def create_runnable(self) -> Runnable:
         """Creates a custom runnable that manages memory explicitly"""
-        return RunnableLambda(self.process_and_execute)
-    # Ishan Insted of modifying here why dont you modify class so we just pass the Argument to summerise or not. 
+        return RunnableLambda(self.normal_execute)
+    # Ishan Insted of modifying here why dont you modify class so we just pass the Argument to summarise or not. 
