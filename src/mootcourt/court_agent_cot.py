@@ -221,4 +221,4 @@ class CourtAgentRunnable:
 
     def create_runnable(self) -> Runnable:
         # Create a simple runnable that calls our process_and_execute method
-        return RunnableLambda(self.process_and_execute)
+        return RunnableLambda(self.normal_execute)

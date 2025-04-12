@@ -30,7 +30,7 @@ device = torch.device("cpu")
 
 # Load InLegalBERT with mean pooling
 word_embedding_model = models.Transformer("law-ai/InLegalBERT", max_seq_length=512)
-pooling_model = models.Pooling(
+pooling_model = models.Pooling(     
     word_embedding_model.get_word_embedding_dimension(),
     pooling_mode_mean_tokens=True,
     pooling_mode_cls_token=False,

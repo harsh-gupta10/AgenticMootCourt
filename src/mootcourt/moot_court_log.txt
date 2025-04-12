@@ -1,260 +1,217 @@
 Petitioner: May it please your Lordship, the counsel seeks permission to approach the dais.
 
-Judge: <None>
-Petitioner: Much obliged, your Lordship.Good morning, your Lordship. The counsel recognizes the gracious presence of this Hon’ble Court. For the convenience of these proceedings, may the counsel refer to your Lordship as such?
-
-Judge: `<None>`
-Petitioner: Much obliged, your Lordship.The counsel is appearing before this Hon’ble Court in the matter of ALERT INDIVA v. State of BRAMHA and Others, on behalf of the Petitioner, ALERT INDIVA, an environmental NGO, invoking the writ jurisdiction of this Hon’ble High Court under Articles 226 and 227 of the Constitution of Indiva.
-
-
-Judge: `<None>`
-Petitioner: Your Lordship, this matter raises six important constitutional and environmental issues. With your Lordship’s permission, the counsel shall focus today on three foundational issues:
-
-Whether the present petition qualifies as a Public Interest Litigation.
-
-Whether the displacement of agriculturists amounts to a violation of Article 21 of the Constitution.
-
-Whether the Environment Clearance Certificate granted is contrary to constitutional mandates.
-
-The counsel shall address these issues for the next ten minutes and shall reserve a couple of minutes for clarification, if your Lordship deems fit.
-
-Judge: `<None>`
-Petitioner: Your Lordship, with your kind permission, the counsel shall briefly outline the facts.
-
-The State of BRAMHA, facing severe water scarcity, has decided to construct several dams, one of which threatens to displace villagers from ten agriculturally dependent villages. The dam, sanctioned without adequate environmental and social safeguards, will submerge large tracts of cultivable land, directly impacting the livelihood and ecology of the area.
-
-ALERT INDIVA has filed this petition on two grounds: (1) The environmental clearance was granted arbitrarily, and (2) the displacement violates the villagers' fundamental rights under Article 21 of the Constitution of Indiva.
-
-If your Lordship is well-versed with the facts, the counsel seeks permission to proceed directly to the arguments.
-
-Judge: Counsel, you mentioned the Environmental Clearance was granted arbitrarily. Could you briefly state the primary grounds on which you allege this arbitrariness before proceeding with detailed arguments?
-Petitioner: Much obliged, your Lordship.
-
-The allegation of arbitrariness in the grant of Environmental Clearance rests primarily on the following three grounds:
-
-Lack of Proper Environmental Impact Assessment (EIA):
-The clearance was granted without conducting a comprehensive EIA as mandated by statutory guidelines. The study submitted was generic, outdated, and failed to assess the impact on local biodiversity, forest cover, and agricultural productivity in the ten affected villages.
-
-Absence of Public Consultation:
-Your Lordship, there was no genuine public hearing or informed consent of the affected communities, which is a mandatory procedural safeguard under the EIA Notification framework. The villagers were neither informed in a language they understand nor provided adequate opportunity to raise objections.
-
-Non-Application of Judicially Mandated Precautionary Principles:
-The approving authority failed to consider less destructive alternatives, did not apply the Precautionary Principle, and approved the project despite glaring data gaps — a direct contravention of the guidelines laid down in Vellore Citizens Welfare Forum v. Union of India.
-
-With your Lordship’s leave, the counsel shall now elaborate on these grounds under Issue 3 of the submissions.
-
-Judge: `<None>`
-Petitioner: Your Lordship, the petition is maintainable as a Public Interest Litigation as the petitioner NGO, ALERT INDIVA, has no personal interest but seeks to protect the rights of displaced agriculturists and the ecological balance of the region.
-
-In Janata Dal v. H.S. Chowdhary, (1992) 4 SCC 305, the Hon’ble Supreme Court held that public interest litigation is maintainable where a third party represents those who cannot approach the court themselves due to poverty, illiteracy, or social disadvantage.
-
-
-Judge: The Janata Dal case mentions representing those unable to approach the court due to poverty, illiteracy, or social disadvantage. What specific evidence supports the claim that the affected villagers in these ten villages fall into this category and cannot approach the court directly themselves?
-Petitioner: Much obliged, your Lordship.
-
-The affected villagers are primarily small-scale farmers from economically backward areas, with official data showing below-poverty-line status and low literacy rates. They lack access to legal resources, awareness of their constitutional rights, and means to approach this Hon’ble Court.
-
-No proper legal aid or rehabilitation plan has been communicated to them, making it impractical for them to initiate proceedings on their own. Therefore, as held in Janata Dal v. H.S. Chowdhary and PUDR v. Union of India, this petition is a genuine exercise in public interest, enabling access to justice for the disadvantaged.
-
-Judge: `<None>`
-Petitioner: Your Lordship, the construction of the dam, which will displace agriculturists and submerge their cultivable lands without a clear rehabilitation plan, amounts to a violation of their right to life and livelihood under Article 21.
-
-In Olga Tellis v. Bombay Municipal Corporation, AIR 1986 SC 180, the Hon’ble Supreme Court held that the “right to livelihood is an integral part of the right to life.” By displacing villagers without adequate compensation, the state is extinguishing their very means of existence.
-
-The counsel respectfully submits that the doctrine of “life with dignity” laid down in Maneka Gandhi v. Union of India, AIR 1978 SC 597, stands violated here as no amount of economic or industrial gain can override the constitutional protection of basic human rights.
-
-Judge: Counsel, you emphasize the lack of a clear rehabilitation plan and adequate compensation as central to the Article 21 violation. Has the State proposed any specific resettlement or compensation measures for the displaced villagers? If so, on what grounds do you contend these measures are insufficient to meet the constitutional standard of 'right to life with dignity'?
-Petitioner: Much obliged, your Lordship.
-
-The State has indeed alluded to monetary compensation and relocation packages. However, these measures are vague, lack transparency, and have not been meaningfully communicated or tailored to the socio-economic realities of the affected agriculturists.
-
-Judge: `<None>`
-Petitioner: Your Lordship, the Environment Clearance Certificate granted to Reliable Industries Limited was approved in haste, with no proper Environmental Impact Assessment (EIA) study or public consultation with affected parties.
-
-In Vellore Citizens’ Welfare Forum v. Union of India, (1996) 5 SCC 647, the Hon’ble Supreme Court emphasized the "Precautionary Principle" and "Polluter Pays Principle" as part of environmental law under Article 21.
-
-Judge: Regarding the Precautionary Principle cited from Vellore Citizens, how do you contend it should have been applied differently by the authorities, especially considering the stated public interest goal of addressing severe water scarcity?
-Petitioner: Much obliged, your Lordship.
-
-The Precautionary Principle, as affirmed in Vellore Citizens Welfare Forum v. Union of India, requires that if there is a threat of serious environmental damage, lack of scientific certainty shall not be a reason to postpone preventive measures. The burden lies on the developer or State to demonstrate that the proposed project is environmentally benign.
-
-In the present case, Your Lordship, while the State cites public interest due to water scarcity, the Environmental Clearance was granted without a comprehensive Environmental Impact Assessment, particularly ignoring:
-
-Cumulative ecological impact on the ten villages, biodiversity, and water-logging consequences.
-
-No public consultation with local stakeholders, despite the mandate under the Environment Impact Assessment Notification, 2006.
-
-No scientific data showing mitigation of adverse effects like displacement-induced degradation or groundwater imbalance.
-
-Hence, Your Lordship, the Precautionary Principle should have guided the authorities to halt or re-evaluate the project until such concerns were satisfactorily addressed. In failing to do so, the clearance stands arbitrary and unconstitutional.
-
-Judge: `<None>`
-Petitioner: In view of these submissions, your Lordship, the counsel humbly asserts that the current dam project violates constitutional guarantees and environmental norms. The blanket justification of "larger public interest" cannot override the specific, measurable harm to vulnerable communities and ecosystems.
-
-The Hon’ble High Court must act as the guardian of constitutional rights and environmental justice.
-
-Judge: Counsel, you argue that the 'larger public interest' justification is insufficient. However, the State presents the dam as a necessary policy response to severe water scarcity. What legal standard should this Court apply when balancing such a stated public necessity against the fundamental rights and environmental concerns you've raised? Where is the line drawn for judicial interference in policy decisions?
-Petitioner: The counsel submits that while the doctrine of separation of powers mandates judicial restraint in policy matters, the Hon’ble Court is nevertheless empowered—and indeed duty-bound—to intervene where policy decisions transgress constitutional mandates or are patently arbitrary, unreasoned, or disproportionate.
-In the instant matter, the counsel submits that:
-
-Fundamental Right under Article 21 is at stake—not merely as a matter of livelihood, but of dignified rehabilitation and environmental security.
-
-The State has failed to demonstrate proportionality—that the means adopted (displacement without adequate safeguards) are the least restrictive means to achieve the public goal.
-
-No balancing exercise has been documented between the environmental costs and developmental benefits.
-
-Petitioner: If your Lordship is satisfied with the arguments advanced, the counsel humbly prays for the following reliefs:
-
-Quash the Environmental Clearance Certificate granted to Reliable Industries Limited as being unconstitutional and arbitrary.
-
-Direct the State of BRAMHA to conduct a fresh environmental and social impact assessment with full public participation.
-
-Declare that the proposed dam project, in its current form, violates Article 21 of the Constitution.
-
-Pass any other order deemed just and proper by this Hon’ble Court in the interest of justice and equity.
-It has been a privilege to argue before this Hon’ble Court.
-
-Judge: <None>
+Judge: : <None>
 The respondent's arguments will now begin.
-Judge: `<None>`
-Respondent: May it please Your Lordship, Counsel for the Respondent, the State of Bramha, seeks permission to present the submissions in the matter of Alert Indiva Vs. State of Bramha and Other.
-Judge: `<None>`
-Respondent: May it please Your Lordship, I appear on behalf of the Respondent, the State of Bramha, in the matter of Alert Indiva versus the State of Bramha and Other. This Hon'ble Court is seized of this matter under Articles 226 and 227 of the Constitution of Indiva. The Respondent submits that the decision to construct the dam is a necessary policy measure undertaken in the larger public interest to combat severe water scarcity and drought conditions within the State, and that the actions taken are well within the constitutional and legal framework. With Your Lordship's permission, I shall proceed to address the issues framed by this Hon'ble Court.
-Judge: `<None>`
-Respondent: May it please Your Lordship, the Respondent acknowledges the issues framed by this Honourable Court for adjudication in this matter. These issues are:
+Judge: : `<None>`
+Respondent: : May it please Your Lordship/Your Ladyship, I am [Your Name], appearing on behalf of the Respondent, the State of Bramha, in the matter of Alert Indiva Vs. State of Bramha and Other. With Your Lordship's/Your Ladyship's kind permission, I shall commence the submissions for the Respondent.
+Judge: : `<None>`
+Respondent: : Much obliged, Your Lordship/Your Ladyship. This petition, filed by Alert Indiva under Articles 226 and 227 of the Constitution of Indiva, challenges the State of Bramha's policy decision to construct a dam and the environmental clearance granted for the same. The Respondent, the State of Bramha, submits that the petition is misconceived and that the actions taken by the State are constitutionally valid, legally sound, and undertaken in the paramount public interest to address the severe water crisis affecting the State. The Respondent acknowledges the jurisdiction of this Hon'ble High Court to hear this matter under Articles 226 and 227.
 
-1.  Whether the present petition is maintainable as a Public Interest Litigation.
-2.  Whether the Writ Petition filed under Art. 226 and Art. 227 is Maintainable.
-3.  Whether this Honourable Court can interfere in the policy decision taken by the State of Bramha.
-4.  Whether the displacement of agriculturists amounts to a violation of Art. 21.
-5.  Whether the Environment Clearance Certificate granted is contrary to the Constitution.
-6.  Whether the State's decision to construct the dam should be upheld or quashed.
+    With Your Lordship's/Your Ladyship's permission, I shall now proceed to the Statement of Issues as framed by this Hon'ble Court.
+Judge: : `<None>`
+Respondent: : : Much obliged, Your Lordship/Your Ladyship. The issues framed by this Hon'ble Court for adjudication are as follows:
 
-With Your Lordship's permission, the Respondent would like to begin addressing the first issue concerning the maintainability of this petition as a Public Interest Litigation.
-Judge: `<None>`
-Respondent: May it please Your Lordship, Counsel for the Respondent will now address the first issue framed by this Hon'ble Court: Whether the present petition has been filed in public interest and therefore maintainable as a Public Interest Litigation?
+1.  Whether the present petition has been filed in public interest and therefore maintainable as a Public Interest Litigation?
+2.  Whether the Writ Petition filed under Art. 226 and Art. 227 of the Constitution of Indiva is Maintainable?
+3.  Whether the High Court of BRAMHA can interfere in any policy decision taken by the State of BRAMHA?
+4.  Whether the displacement of the agriculturists from the area where the proposed dam is to be constructed amounts to violation of Art. 21 of the Constitution of Indiva?
+5.  Whether the Environment Clearance Certificate granted by the State is contrary to the provisions of Constitution of Indiva?
+6.  Whether the decision taken by the State of BRAHMA to construct the dam deserves to be maintained or should be quashed and set aside?
 
-Your Lordship, the State of Bramha acknowledges the expanded scope of locus standi under Public Interest Litigation, established through landmark cases like S.P. Gupta v. Union of India (AIR 1982 SC 149), which permits public-spirited citizens and organizations like 'Alert Indiva' to approach the Court on behalf of those unable to do so themselves, especially concerning fundamental rights and environmental matters.
+With Your Lordship's/Your Ladyship's permission, I shall now proceed to present the arguments on behalf of the Respondent, addressing these issues sequentially, starting with Issue No. 1 concerning the maintainability of the petition as a Public Interest Litigation.
+Judge: : `<None>`
+Respondent: : Your Lordship/Your Ladyship, addressing the first issue: "Whether the present petition has been filed in public interest and therefore maintainable as a Public Interest Litigation?"
 
-The Respondent recognizes that the issues raised—environmental impact and the potential displacement of agriculturists—are matters of public concern. Therefore, the Respondent does not wish to contest the locus standi of the Petitioner, 'Alert Indiva', to file this petition pro bono publico.
+The Respondent, the State of Bramha, acknowledges the well-established principles of Public Interest Litigation (PIL) in Indiva's jurisprudence. PIL serves as a vital tool allowing access to justice for those unable to approach the courts directly and enables concerned citizens and organizations, such as the Petitioner 'Alert Indiva', to raise matters of significant public concern, including environmental protection and the rights of affected communities.
 
-However, the Respondent humbly submits that the determination of "public interest" in this specific case must encompass the dire situation faced by the State due to acute water scarcity and near-drought conditions. The State's decision to construct the dam is a policy measure aimed at addressing this widespread crisis, securing water for drinking, agriculture, and industry, and replenishing groundwater levels for the benefit of the entire populace. This, Your Lordship, represents a paramount public interest.
+The Respondent recognizes that the issues raised – environmental impact and potential displacement – fall within the ambit of matters typically addressed through PIL. Alert Indiva, being an NGO dedicated to environmental causes, prima facie possesses the locus standi to bring such matters before this Hon'ble Court in the public interest.
 
-Thus, while the petition may be maintainable in form as a PIL, the Respondent contends that the substantive public interest overwhelmingly supports the State's actions. We urge this Hon'ble Court to consider this broader context when adjudicating the merits.
+However, Your Lordship/Your Ladyship, the maintainability of this petition as a PIL does not, in itself, substantiate the claims made therein or invalidate the actions taken by the State. While the procedural door of PIL is open, the substantive merits of the case must still be rigorously examined. The Respondent firmly contends that the decision to construct the dam, undertaken after due consideration and procedural compliance, is a necessary measure driven by the overwhelming public interest in alleviating the severe water crisis plaguing the State of Bramha. This larger public interest, we submit, must be weighed against the concerns raised by the Petitioner.
 
-May I proceed to address the second issue regarding the maintainability of the Writ Petition under Articles 226 and 227, Your Lordship?
-Judge: Counsel, you concede the Petitioner's locus standi for this PIL but argue the 'substantive public interest' lies with the State's need for the dam. Does the very nature of a PIL, particularly one alleging violations of Article 21 and environmental norms, not require this Court to first thoroughly examine those specific allegations before weighing them against the broader policy objectives cited by the State, even at this preliminary stage of maintainability?
-Respondent: Your Lordship raises a crucial point regarding the Court's paramount duty to scrutinize alleged violations of fundamental rights and environmental norms, particularly within the framework of Public Interest Litigation. It is respectfully submitted that the Respondent State fully acknowledges the significance of the concerns raised under Article 21 and environmental regulations, and agrees that these require thorough examination by this Hon'ble Court on their merits.
+Therefore, while the Respondent concedes that the petition can be procedurally categorized as a PIL, we maintain that the substantive claims lack merit and the State's actions are legally and constitutionally sound, undertaken for the greater public good.
 
-However, concerning the preliminary issue of maintainability of this petition as a PIL, the Respondent submits that the assessment cannot occur in a vacuum. While the Petitioner's locus standi is conceded, the concept of 'public interest' inherently requires the Court to consider the broader context. The State's policy decision to construct the dam arises from an acute and widespread water scarcity crisis, bordering on drought, affecting a vast population within Bramha. This effort to secure water for drinking, agriculture, and industry, and to replenish groundwater levels, represents a substantial and pressing public interest in itself.
+May it please Your Lordship/Your Ladyship, I seek permission to proceed to address Issue No. 2: "Whether the Writ Petition filed under Art. 226 and Art. 227 of the Constitution of Indiva is Maintainable?"
+Judge: : `<None>`
+Respondent: : Much obliged, Your Lordship/Your Ladyship.
 
-Therefore, it is submitted that a prima facie consideration of the State's objectives is necessary even at this maintainability stage, not to definitively weigh them against the Petitioner's claims, but to understand the complete picture and ascertain whether the litigation genuinely serves the larger public interest, as opposed to potentially hindering a critical state action aimed at alleviating widespread public hardship. This preliminary contextual understanding ensures the PIL mechanism is appropriately invoked, without foreclosing the detailed examination of the Petitioner's specific allegations regarding Article 21 and environmental compliance at the subsequent merits stage. We humbly contend that the State's response to the water crisis constitutes a vital aspect of the 'substantive public interest' relevant to the question of maintainability.
-Judge: `<None>`
-Respondent: Your Lordship, the Respondent acknowledges the profound importance and the Court's solemn duty to scrutinize alleged violations of fundamental rights, particularly Article 21, and environmental norms, especially within the framework of a Public Interest Litigation. The gravity of such allegations is indeed paramount.
+Proceeding to the second issue: "Whether the Writ Petition filed under Art. 226 and Art. 227 of the Constitution of Indiva is Maintainable?"
 
-    However, with the greatest respect, the question of maintainability, as understood through established jurisprudence following cases like S.P. Gupta, primarily concerns the locus standi of the petitioner and whether the subject matter genuinely pertains to the public interest, rather than requiring a conclusive determination on the merits of the alleged violations at this initial stage.
+Your Lordship/Your Ladyship, the Respondent acknowledges the wide powers vested in this Hon'ble High Court under Article 226 of the Constitution of Indiva. This Article empowers the High Court to issue writs, directions, or orders for the enforcement of fundamental rights, as enumerated in Part III of the Constitution, and 'for any other purpose'. The Petitioners herein invoke this jurisdiction alleging a violation of Article 21 (Right to Life and Personal Liberty) and challenging the legality of the Environmental Clearance Certificate granted for the dam construction.
 
-    The State contends that its policy decision to construct the dam, driven by the urgent need to combat widespread drought and water scarcity impacting countless citizens, constitutes a significant and prima facie public interest. The very existence of these competing concerns – the alleged infringement of rights and environmental impact on one hand, and the State's response to a large-scale public welfare crisis on the other – underscores why this matter is appropriately brought before this Hon'ble Court as a PIL.
+Furthermore, Article 227 grants this Hon'ble Court the power of superintendence over all courts and tribunals throughout the territories in relation to which it exercises jurisdiction. While the primary challenge here concerns executive action and policy, the Petitioners have invoked this Article as well.
 
-    While the seriousness of the Petitioner's allegations concerning Article 21 and environmental norms certainly warrants this Court's thorough examination, their existence does not, in our submission, negate the maintainability of the petition itself. Both aspects fall within the broad definition of 'public interest'. A detailed balancing of these competing interests, weighing the alleged violations against the State's justification of larger public good, is, we humbly submit, a matter for the substantive hearing on the merits, once the petition's maintainability under Issue 1 is affirmed.
-Judge: Counsel, you argue the State's policy objectives provide necessary context for determining maintainability, even while conceding locus standi. However, isn't the established test for PIL maintainability primarily focused on the petitioner's bona fides, the nature of the rights allegedly infringed, and whether the affected group genuinely lacks access to justice, rather than requiring a preliminary assessment of the merits or weight of the State's justification for its actions?
-Respondent: Your Lordship rightly outlines the established tests for PIL maintainability, focusing on the petitioner's bona fides, the nature of the rights allegedly infringed, and the access to justice for the affected group. The State does not dispute these foundational principles.
+The Respondent submits that, technically, a petition challenging state action, alleging infringement of fundamental rights and questioning the legality of administrative decisions like the grant of an environmental clearance, can be brought before this Hon'ble Court under Article 226. The Court possesses the jurisdiction to examine whether the State's actions are arbitrary, unreasonable, contrary to law, or violative of fundamental rights.
 
-    However, the State submits that understanding the context in which the alleged rights infringement occurs is pertinent even at the maintainability stage, particularly when assessing the 'public interest' element inherent in the PIL framework. The State's policy decision to construct the dam arises from an acute and widespread water scarcity crisis, a matter of grave public concern affecting the entire populace of Bramha.
+However, Your Lordship/Your Ladyship, the mere existence of jurisdiction does not automatically render the petition substantively maintainable in the sense that it warrants interference by this Court. The maintainability under Article 226 is predicated on the Petitioner demonstrating a prima facie case of illegality, irrationality, procedural impropriety, or violation of fundamental rights. The Respondent contends that the Petitioners have failed to establish such grounds. The decision to construct the dam is a considered policy decision taken in the larger public interest to combat a severe water crisis, and the environmental clearance was granted following due process.
 
-    Acknowledging this context is not, we contend, a premature assessment of the merits or the weight of the State's justification. Rather, it provides a necessary backdrop for evaluating whether the petition, viewed holistically, genuinely serves the overall public interest. This includes considering the State's constitutional and statutory duty to act in the face of a natural crisis impacting the fundamental well-being of its citizens. It helps frame the scope of the 'public interest' that this Hon'ble Court is being asked to adjudicate upon when determining maintainability.
+Therefore, while the Respondent concedes that this Hon'ble Court has the jurisdiction under Article 226 to entertain this petition, we strongly submit that the petition lacks the substantive merit required to warrant judicial interference in the State's legitimate exercise of its executive and statutory functions. The grounds raised, we contend, are insufficient to maintain the challenge against the State's actions.
 
-    Therefore, while the petitioner's locus standi based on representing affected groups and environmental concerns is conceded for the purpose of argument, the State contends that the profound public interest served by its policy aimed at alleviating widespread drought is a relevant factor for this Hon'ble Court to consider when assessing the overall maintainability of this Public Interest Litigation.
-Judge: `<None>`
+With Your Lordship's/Your Ladyship's permission, I shall now proceed to address Issue No. 3: "Whether the High Court of BRAMHA can interfere in any policy decision taken by the State of BRAMHA?"
+Judge: : Counsel, you assert that the environmental clearance was granted following 'due process'. Could you elaborate on the specific procedures undertaken by the Ministry of Environment and Forest to satisfy this requirement, particularly regarding the assessment of environmental impact and the consideration of the villagers' concerns about displacement and livelihood, prior to granting the clearance?
+Respondent: :
+
+May it please Your Lordship/Your Ladyship. Addressing Your Lordship's/Your Ladyship's specific query regarding the 'due process' followed by the Ministry of Environment and Forest prior to granting the environmental clearance:
+
+The Respondent submits that the environmental clearance for the dam project was granted strictly in accordance with the established procedures mandated under the environmental laws of Indiva, which ensure a thorough assessment and consideration of all relevant factors. While the specific details of the file are not before this Hon'ble Court at this precise moment, the standard 'due process' for such a project invariably involves the following key stages:
+
+1.  Environmental Impact Assessment (EIA): The project proponent, Reliable Industries Limited, would have been required to conduct a comprehensive EIA study. This study meticulously examines the potential environmental consequences of the proposed dam, including impacts on hydrology, ecology, land use, and importantly, the socio-economic effects on local populations. This assessment directly addresses the potential for submergence of agricultural fields and the impact on livelihoods.
+2.  Public Consultation: A crucial component of this due process is mandatory public consultation. This typically involves public hearings held in the vicinity of the proposed project site, providing a platform for affected persons, including the villagers whose displacement and livelihood are concerns, to voice their objections, apprehensions, and suggestions. Written representations are also solicited and considered. This ensures that the concerns Your Lordship/Your Ladyship has highlighted regarding displacement and livelihood are formally recorded and brought before the decision-making authorities.
+3.  Expert Appraisal: The EIA report, along with the proceedings and outcomes of the public consultation, is then subjected to scrutiny by a multi-disciplinary Expert Appraisal Committee (EAC). This committee comprises experts from various fields relevant to environmental and social impacts. They evaluate the adequacy of the EIA, the severity of the predicted impacts, the feasibility of proposed mitigation measures, and the substance of the public concerns raised.
+4.  Ministry's Decision: The Ministry of Environment and Forest makes the final decision based on the recommendations of the EAC, the EIA report, and the public consultation feedback. This decision involves balancing the anticipated environmental and social costs (including displacement and loss of livelihood) against the project's stated benefits – in this case, addressing the acute water scarcity in the State of Bramha, which constitutes a significant 'larger public interest'. The clearance, when granted, typically includes mandatory conditions for mitigation, resettlement, and rehabilitation (R&R) to address the adverse impacts identified, including those affecting the villagers.
+
+Therefore, Your Lordship/Your Ladyship, the assertion that clearance was granted following 'due process' refers to this established, multi-stage procedure designed specifically to assess environmental impacts and integrate public concerns, including those related to displacement and livelihood, into the final decision-making framework. The State contends that these procedures were duly followed before the clearance was granted.
+
+May it please Your Lordship/Your Ladyship, having addressed your query, may I seek permission to return to the structured arguments, specifically addressing Issue No. 3 concerning the scope of judicial review over policy decisions? Or would Your Lordship/Your Ladyship prefer that I elaborate further on Issue No. 5 regarding the Environmental Clearance Certificate at this juncture?
+Judge: : `<None>`
+Respondent: : Much obliged, Your Lordship/Your Ladyship.
+
+Proceeding now to the third issue: "Whether the High Court of BRAMHA can interfere in any policy decision taken by the State of BRAMHA?"
+
+Your Lordship/Your Ladyship, the Respondent submits that while this Hon'ble Court possesses the power of judicial review under Article 226, the scope of interference in matters of governmental policy is circumscribed. The decision to construct dams to combat the severe water scarcity and drought-like conditions in the State of Bramha is fundamentally a policy decision, arrived at after considering the needs of the populace for drinking water, agriculture, and industry, as well as the ecological necessity of recouping groundwater levels.
+
+It is a settled principle of law that courts do not substitute their judgment for that of the executive in policy matters. The executive, being accountable to the legislature and the people, is vested with the primary responsibility of formulating policies based on expert advice, resource availability, and the overall needs of the state. Judicial review in such matters is generally confined to examining the legality, rationality, and procedural propriety of the decision-making process, rather than the wisdom or efficacy of the policy itself.
+
+Interference is warranted only if the policy decision is demonstrably arbitrary, capricious, mala fide, contrary to statutory provisions, or violative of fundamental rights guaranteed under the Constitution. In the present case, the policy to construct dams is a rational response to an undeniable crisis – the acute scarcity of water. It is aimed at achieving the larger public good and falls squarely within the executive domain of resource management and infrastructure development. The State has considered the competing interests and determined that the construction of the dam is necessary in the public interest.
+
+The Petitioners are essentially asking this Hon'ble Court to sit in judgment over the State's assessment of the best way to manage its water resources. This, the Respondent submits, would transgress the established boundaries of judicial review. Unless the Petitioners can establish manifest arbitrariness or illegality in the decision-making process, the policy decision of the State of Bramha ought not to be interfered with.
+
+(Self-correction: Initially, I might have just stated the principle. Adding the connection back to the specific facts - the water crisis and the purpose of the dam - strengthens the argument)
+
+Therefore, the Respondent humbly submits that this Hon'ble Court should exercise restraint and refrain from interfering in the policy decision taken by the State of Bramha, as it is neither arbitrary nor illegal, but a necessary measure taken in the public interest.
+
+May it please Your Lordship/Your Ladyship, I seek permission to proceed to address Issue No. 4: "Whether the displacement of the agriculturists from the area where the proposed dam is to be constructed amounts to violation of Art. 21 of the Constitution of Indiva?"
+Judge: : Counsel, you argue for judicial restraint unless the policy is 'manifestly arbitrary' or violates fundamental rights. At what point could the scale or severity of the negative impact, such as the displacement of entire communities and the complete loss of their agricultural livelihood as alleged here, render an otherwise rational policy decision judicially reviewable on grounds of arbitrariness or disproportionality under Article 14 or Article 21?
+Respondent: : Your Lordship/Your Ladyship, I acknowledge the gravity of the concern raised regarding the point at which the scale and severity of impact might render a policy decision judicially reviewable, even if its underlying objective appears rational.
+
+The Respondent maintains the position of judicial restraint in policy matters. However, this restraint is not absolute. The Hon'ble Courts have consistently held that the implementation and consequences of a policy are indeed subject to judicial scrutiny, particularly when fundamental rights are implicated.
+
+Addressing Your Lordship's/Your Ladyship's specific points:
+
+1.  Article 14 (Arbitrariness and Disproportionality): While the objective of alleviating water scarcity is rational, the means employed must also satisfy the test of reasonableness under Article 14. If the negative impact – such as the displacement of entire communities and the complete loss of their agricultural livelihood – is grossly disproportionate to the public good sought to be achieved, it could potentially render the action arbitrary. The principle of proportionality requires a balancing act. The scale of displacement alleged here necessitates that the State demonstrate not only the overriding public purpose but also that it has taken all necessary steps to mitigate the hardship. This includes ensuring that the resettlement and rehabilitation (R&R) measures are fair, just, and adequate to restore the livelihoods of the affected persons as far as reasonably possible. A failure to provide such adequate measures, or an R&R package that is merely illusory, could potentially invite judicial intervention on grounds of disproportionality amounting to arbitrariness under Article 14.
+
+2.  Article 21 (Right to Life and Livelihood): The Right to Livelihood has been recognized as an integral part of the Right to Life under Article 21. Deprivation of livelihood must occur according to a 'procedure established by law' which is fair, just, and reasonable. Large-scale displacement undoubtedly impacts this right severely. However, the jurisprudence of this Hon'ble Court and the Supreme Court, notably in cases like Narmada Bachao Andolan vs. Union of India (2000), recognizes that displacement necessitated by development projects undertaken for a significant public purpose is permissible, provided it is accompanied by a comprehensive and effectively implemented R&R plan. The threshold for judicial intervention under Article 21 in such cases often lies in the adequacy and fairness of these R&R measures. If the State fails to provide meaningful rehabilitation, thereby rendering the displaced persons destitute and without alternative livelihoods, it could amount to a violation of Article 21.
+
+Therefore, Your Lordship/Your Ladyship, the point at which judicial review is triggered is not merely by the existence of displacement, but by a potential failure of the State to act fairly, proportionately, and reasonably in addressing the consequences of that displacement. The scale of the impact necessitates a correspondingly robust and humane response from the State.
+
+The Respondent submits that the State of Bramha is acutely conscious of its constitutional obligations. The decision to proceed with the dam was taken after considering these impacts, and the State is committed to implementing a comprehensive R&R package that adheres to national standards and ensures that the affected villagers are not deprived of their right to livelihood in an arbitrary manner. We contend that the measures planned are adequate and proportionate, thus keeping the State's actions within the bounds of Articles 14 and 21.
+
+May it please Your Lordship/Your Ladyship, having addressed your query, may I now seek permission to proceed to address Issue No. 4: "Whether the displacement of the agriculturists from the area where the proposed dam is to be constructed amounts to violation of Art. 21 of the Constitution of Indiva?"
+Judge: : `<None>`
 Respondent: 
-Judge: `<None>`
-Respondent: "Your Lordship, the Respondent acknowledges the established principles governing the maintainability of Public Interest Litigations, focusing on the petitioner's locus standi, the nature of the rights allegedly infringed, and the access to justice for the affected group. While the Respondent concedes that an organization like 'Alert Indiva' generally possesses the locus standi to bring forth matters of environmental concern and potential rights violations under the expanded scope of PIL jurisprudence, we humbly submit that the assessment of 'public interest' cannot be entirely divorced from the compelling circumstances necessitating the State's actions – namely, the severe drought and the urgent need for water resource management for the benefit of the entire populace of Bramha.
+Judge: : Counsel, you stated the State is committed to implementing a comprehensive Resettlement and Rehabilitation (R&R) package adhering to national standards. Could you please specify which particular national standards, legislation, or policy guidelines the State is relying upon for formulating and implementing this R&R package for the affected villagers?
+Respondent: : Much obliged, Your Lordship/Your Ladyship.
 
-Therefore, while we concede that the petition may be technically maintainable as a PIL based on the petitioner's standing, we urge this Hon'ble Court to consider the overwhelming public interest served by the State's policy throughout the proceedings.
+Proceeding now to the fourth issue: "Whether the displacement of the agriculturists from the area where the proposed dam is to be constructed amounts to violation of Art. 21 of the Constitution of Indiva?"
 
-May it please Your Lordship, with the Court's permission, the Respondent would now like to proceed to address the second issue framed for adjudication: Whether the Writ Petition filed under Articles 226 and 227 of the Constitution of Indiva is Maintainable?"
-Judge: Counsel, having conceded that the petition is technically maintainable as a PIL under Issue 1, how do you propose this Court should approach the balancing exercise between the public interest represented by the Petitioner (environmental protection, rights of villagers) and the public interest claimed by the State (water scarcity alleviation) when adjudicating the substantive merits under Issues 3, 4, 5, and 6?
-Respondent: [NO ANSWER]
-Judge: Counsel, having conceded the petition's maintainability as a Public Interest Litigation under Issue 1, which typically invokes Article 226, on what specific grounds do you intend to challenge the maintainability of the writ petition under Articles 226 and 227 as a separate issue (Issue 2)? What distinction are you drawing between the maintainability arguments under these two issues in this specific case?
-Respondent: May it please Your Lordship, the Respondent appreciates the opportunity to clarify the distinction between our submissions on Issue 1 and Issue 2 regarding maintainability.
+Your Lordship/Your Ladyship, the Respondent acknowledges that the Right to Life under Article 21 of the Constitution of Indiva has been interpreted expansively by the Hon'ble Supreme Court to include the Right to Livelihood. The displacement of the agriculturists and the potential submergence or waterlogging of their lands undeniably impacts their primary source of livelihood.
 
-Your Lordship, while the Respondent has conceded, for the sake of argument, the locus standi of the Petitioner 'Alert Indiva' to file this petition as a Public Interest Litigation under Issue 1 – acknowledging the broadened scope established in PIL jurisprudence allowing representative bodies to approach the court on matters of public importance, particularly concerning environmental issues and fundamental rights – our challenge under Issue 2 pertains to different, albeit related, grounds concerning the maintainability of the writ petition itself under the specific heads of Articles 226 and 227.
+However, the Respondent submits that this impact does not automatically constitute a violation of Article 21. The fundamental rights guaranteed under the Constitution are not absolute and can be subject to reasonable restrictions, particularly when necessitated by the larger public interest. The deprivation of property or livelihood, if any, must be in accordance with a 'procedure established by law' which is fair, just, and reasonable, as established in Maneka Gandhi vs. Union of India.
 
-The distinction, Your Lordship, lies herein:
-1.  Issue 1 (PIL Maintainability): This primarily concerned the standing of the Petitioner – whether an NGO like 'Alert Indiva' could legitimately represent the public interest and the interests of the affected villagers. We have conceded this point based on precedents like S.P. Gupta.
-2.  Issue 2 (Writ Maintainability under Art. 226 & 227): This issue challenges the appropriateness and entertainability of the writ remedy sought, irrespective of the Petitioner's standing. Our grounds under Issue 2, which we intend to elaborate upon, may include, inter alia:
-       The existence of alternative and efficacious remedies that the Petitioner ought to have pursued before invoking the extraordinary writ jurisdiction of this Hon'ble Court, potentially through specialized tribunals or statutory bodies dealing with environmental clearances or rehabilitation.
-       The nature of the impugned actions – namely, a policy decision taken in response to a state-wide crisis and the grant of environmental clearance based on expert assessment. While not immune from judicial review, the scope of interference under Article 226, particularly concerning policy matters and technical assessments, is circumscribed and requires examination.
-       The specific invocation of Article 227, which confers supervisory jurisdiction, may not be appropriate against the executive actions challenged herein, as its scope is generally directed towards inferior courts and tribunals.
+In the present case, the construction of the dam is a critical infrastructure project undertaken by the State of Bramha to combat an acute water scarcity crisis affecting a vast population. This constitutes a compelling public purpose. The displacement of villagers, while regrettable, is an unavoidable consequence of pursuing this vital objective for the common good.
 
-Therefore, Your Lordship, Issue 1 dealt with who can approach the Court in the public interest, which we conceded. Issue 2 deals with whether the writ jurisdiction under Articles 226 and 227 is the appropriate remedy to be invoked in the facts and circumstances of this case, considering potential alternative remedies and the specific nature of the executive actions being challenged. We submit that these are distinct legal considerations pertinent to the maintainability of the petition before this Hon'ble Court.
+The Hon'ble Supreme Court, in landmark cases such as Narmada Bachao Andolan vs. Union of India (2000), has dealt extensively with the issue of displacement due to large dam projects. The Court recognized that while displacement impacts the right to livelihood, it is permissible under Article 21 provided it is done for a public purpose and is accompanied by adequate and fair Resettlement and Rehabilitation (R&R) measures for the Project Affected Persons (PAPs). The emphasis is on ensuring that the displaced persons are not left without means of livelihood and are properly resettled.
 
-With Your Lordship's permission, I shall await further direction on whether to elaborate on these grounds now or proceed as per the Court's preference.
-Judge: `<None>`
-Respondent: "Your Lordship, the distinction the Respondent draws is as follows:
+The State of Bramha is fully cognizant of its constitutional and humanitarian obligations towards the affected villagers. The State assures this Hon'ble Court that a comprehensive R&R package, formulated in accordance with established national norms and policies, will be implemented to ensure that the displaced agriculturists are provided with alternative land, financial compensation, and necessary support to re-establish their livelihoods. This package aims to mitigate the hardship caused by displacement and ensure that the affected persons share in the benefits of the project.
 
-    Issue 1 concerned the locus standi of the Petitioner, 'Alert Indiva', to bring this matter before the Court as a Public Interest Litigation. As Your Lordship noted, we conceded that based on the established principles broadening access to justice in PIL matters, particularly concerning environmental issues and the rights of potentially disadvantaged groups like the agriculturists, the Petitioner has the standing to file this petition in the public interest.
+Therefore, Your Lordship/Your Ladyship, the Respondent contends that since the displacement is necessitated by a significant public purpose and is coupled with a commitment to provide fair and just resettlement and rehabilitation, the action does not amount to a violation of Article 21 of the Constitution of Indiva.
 
-    Issue 2, however, addresses a different aspect: the maintainability and appropriateness of invoking the High Court's extraordinary writ jurisdiction under Articles 226 and 227 specifically against the actions challenged – namely, a policy decision of the State government and the grant of an Environmental Clearance.
+May it please Your Lordship/Your Ladyship, I seek permission to proceed to address Issue No. 5: "Whether the Environment Clearance Certificate granted by the State is contrary to the provisions of Constitution of Indiva?"
+Judge: : `<None>`
+Respondent: : May it please Your Lordship/Your Ladyship.
 
-    Under Article 226, while the Court's power is wide, its exercise is discretionary. We intend to argue that the nature of the challenge, involving complex policy considerations regarding resource management in a drought situation and technical environmental assessments, might make the Court hesitant to interfere via a writ, potentially favouring other avenues or requiring a higher threshold for intervention.
+Addressing Your Lordship's/Your Ladyship's query regarding the specific national standards, legislation, or policy guidelines underpinning the Resettlement and Rehabilitation (R&R) package for the affected villagers:
 
-    Furthermore, Article 227 primarily confers powers of superintendence over subordinate courts and tribunals. We submit that challenging a State policy decision or an environmental clearance granted by the executive does not typically fall within the conventional scope of Article 227's supervisory jurisdiction, which is distinct from the broader power under Article 226 to issue writs against 'any person or authority'.
+The State of Bramha, in formulating and implementing the R&R package, is primarily guided by and adheres to the comprehensive framework established by "The Right to Fair Compensation and Transparency in Land Acquisition, Rehabilitation and Resettlement Act, 2013" (LARR Act, 2013). This central legislation mandates detailed procedures and entitlements for individuals and families affected by land acquisition for public purposes, such as the construction of this dam.
 
-    Therefore, while Issue 1 dealt with who can approach the Court (locus standi), Issue 2 deals with whether the specific remedies under Articles 226 and 227 are the appropriate mechanisms for the Court to intervene in this particular type of governmental action and decision-making process.
+Specifically, the LARR Act, 2013, lays down minimum standards concerning:
+1.  Compensation: Ensuring fair market value for the acquired land and assets.
+2.  Rehabilitation and Resettlement Entitlements: This includes provisions such as, where applicable, land for land, housing units in resettlement areas, transitional allowances, transportation costs, and other measures aimed at restoring the livelihoods of the affected families, particularly agriculturists and agricultural labourers.
+3.  Infrastructure in Resettlement Areas: Mandating the provision of essential amenities and infrastructure in the areas where affected families are resettled.
+4.  Special Provisions: Addressing the specific needs of vulnerable groups, including Scheduled Castes and Scheduled Tribes, if any are affected.
+5.  Procedural Safeguards: Including requirements for Social Impact Assessment (SIA) and consultation with affected communities through Gram Sabhas or equivalent bodies.
 
-    Does this clarification address Your Lordship's query? May I proceed with the substantive arguments on why the writ petition under Articles 226 and 227 might not be maintainable in this specific instance?"
-Judge: `<None>`
-Respondent: May it please Your Lordship,
+The State of Bramha's commitment is to ensure that the R&R package meets, and where feasible exceeds, the requirements stipulated under the LARR Act, 2013, and any relevant State-level rules or policies framed in consonance with this Act, thereby ensuring a just and fair process for the displaced agriculturists.
 
-Further to distinguishing between the maintainability of the petition as a Public Interest Litigation (Issue 1) and its maintainability specifically under Articles 226 and 227 (Issue 2), the Respondent submits the following:
+May it please Your Lordship/Your Ladyship, having clarified the basis for the R&R package, I seek permission to proceed to address Issue No. 5: "Whether the Environment Clearance Certificate granted by the State is contrary to the provisions of Constitution of Indiva?"
+Judge: : `<None>`
+Respondent: : Much obliged, Your Lordship/Your Ladyship.
 
-While Article 226 confers wide powers upon this Hon'ble Court to issue writs for the enforcement of fundamental rights and for 'any other purpose', judicial review of administrative action, particularly concerning complex policy decisions involving socio-economic considerations and technical expertise, such as the construction of a dam to combat drought and the grant of environmental clearance, is traditionally circumscribed. The Petitioners, by challenging the environmental clearance and the policy decision itself, are essentially inviting this Hon'ble Court to delve into the merits and technical adequacy of the decision, an area where courts generally exercise restraint, intervening only on grounds of illegality, irrationality (Wednesbury unreasonableness), or procedural impropriety.
+Proceeding now to the fifth issue: "Whether the Environment Clearance Certificate granted by the State is contrary to the provisions of Constitution of Indiva?"
 
-Furthermore, the reliance on Article 227 appears misplaced in the present context. Article 227 grants this Hon'ble Court the power of superintendence over all courts and tribunals throughout the territories in relation to which it exercises jurisdiction. This power is primarily intended to ensure that subordinate courts and tribunals act within the bounds of their authority. It is not typically invoked to challenge the executive policy decisions of the State Government or administrative orders such as the environmental clearance granted by the Ministry, which are not judicial or quasi-judicial acts of subordinate courts or tribunals.
+Your Lordship/Your Ladyship, the Respondent submits that the Environmental Clearance Certificate (ECC) granted for the construction of the dam is not contrary to the provisions of the Constitution of Indiva. On the contrary, the process of granting the ECC is designed to uphold the constitutional mandate of balancing environmental protection with sustainable development.
 
-Therefore, while the Petitioners may have locus standi to bring matters of public interest before the Court (Issue 1), the specific challenge mounted against a policy decision and an expert clearance under the writ jurisdiction of Articles 226 and 227 (Issue 2) may not be appropriate, given the nature of the decision and the limited scope of judicial review, particularly under Article 227.
-May I proceed to address Issue number 3, Your Lordship?
-Judge: Counsel, you argue that judicial review under Article 226 is circumscribed, intervening only on grounds like illegality, irrationality, or procedural impropriety. The Petitioner alleges, inter alia, a lack of proper Environmental Impact Assessment and absence of genuine public consultation. Why do you contend that these specific allegations, even if taken prima facie at this stage, do not meet the threshold of irrationality or procedural impropriety sufficient to warrant the exercise of this Court's jurisdiction under Article 226?
-Respondent: "Your Lordship, the Respondent acknowledges the gravity of the Petitioner's allegations concerning the Environmental Impact Assessment and public consultation. However, we contend that these allegations, even viewed prima facie, do not meet the established threshold of irrationality or procedural impropriety necessary to invoke this Hon'ble Court's extraordinary jurisdiction under Article 226, for the following reasons:
+1.  Procedural Compliance: As previously submitted, the ECC was granted after adhering to the rigorous procedures established under the environmental laws of Indiva, primarily the Environment (Protection) Act, 1986, and the relevant Environmental Impact Assessment (EIA) Notifications thereunder. This process, involving mandatory EIA studies, public consultations, and expert appraisal, ensures a systematic evaluation of potential environmental impacts and the consideration of mitigation measures. This structured process itself embodies the principle of reasonableness required under the Constitution.
 
-Firstly, regarding the Environmental Clearance Certificate (ECC), it was granted by the competent authority, the Ministry of Environment and Forest, presumably after following the mandated procedures. The mere assertion by the Petitioner that the EIA was improper, or that they disagree with its conclusions, does not automatically render the decision granting the ECC irrational in the Wednesbury sense. Irrationality requires a decision 'so outrageous in its defiance of logic or accepted moral standards that no sensible person who had applied his mind to the question to be decided could have arrived at it'. The grant of clearance, explicitly stated to be in the larger public interest of addressing severe water scarcity, suggests a balancing exercise was undertaken by the competent authority. Disputing the outcome of this technical assessment does not, by itself, demonstrate irrationality or a fundamental procedural flaw warranting Article 226 intervention at this stage.
+2.  Constitutional Balance: The Constitution of Indiva, while emphasizing the protection and improvement of the environment under Article 48A (Directive Principles) and Article 51A(g) (Fundamental Duties), also mandates the State to promote the welfare of the people (Article 38) and undertake development activities for the larger public good. The grant of environmental clearance, particularly for a project aimed at alleviating severe water scarcity, represents a considered decision by the competent authority to balance these constitutional imperatives – the need for environmental protection and the necessity of development for public welfare.
 
-Secondly, concerning the alleged lack of genuine public consultation, the facts indicate the State was aware of the villagers' concerns and the potential displacement. The decision to proceed with the dam despite opposition reflects a policy choice, weighing the immediate impact on the villagers against the broader, long-term public interest of alleviating a state-wide water crisis and drought conditions. While the quality or extent of consultation might be debatable, this falls short of demonstrating a complete absence of consideration or a procedural impropriety so fundamental as to vitiate the entire decision-making process. The State, in exercising its executive function, is often required to make difficult choices between competing interests. Unless the Petitioner can demonstrate that the process was a mere sham or fundamentally flawed, violating statutory requirements or principles of natural justice to the point of irrationality, the Court's intervention under Article 226 is not warranted merely because a section of the public remains opposed or feels inadequately consulted.
+3.  Decision by Competent Authority: The clearance was granted by the Ministry of Environment and Forest, the designated competent authority, based on expert recommendations and after considering the feedback received during public consultations. This decision reflects an administrative determination that the project's benefits, particularly in addressing the critical water needs of the State of Bramha, outweigh the potential environmental impacts, provided that the stipulated mitigation measures are implemented.
 
-Therefore, Your Lordship, while these issues are central to the merits of the case, they involve complex factual assessments and policy considerations. They do not, at this preliminary stage, demonstrate the kind of patent illegality, manifest irrationality, or egregious procedural impropriety that justifies the exercise of this Court's writ jurisdiction to interfere with the State's policy decision and the environmental clearance granted by the competent authority. May I proceed with further submissions on Issue 2, Your Lordship?"
+4.  No Violation of Specific Provisions: The Petitioners have not demonstrated how the grant of the ECC, following the prescribed legal and procedural framework, violates any specific provision of the Constitution. The process ensures that environmental concerns, implicitly linked to the Right to Life under Article 21 (which includes the right to a healthy environment), are explicitly addressed and weighed against the public interest.
 
-Respondent: "Your Lordship, the Respondent acknowledges the gravity of the Petitioner's allegations concerning the Environmental Impact Assessment and public consultation. However, for the purpose of maintainability under Article 226, the threshold for judicial intervention on grounds of irrationality or procedural impropriety is significantly high, particularly concerning policy decisions involving technical expertise.
-The fact remains that the Environmental Clearance Certificate was granted by the competent statutory authority, the Ministry of Environment and Forest. This grant creates a presumption, albeit rebuttable, that the necessary procedures were followed. While the Petitioner disputes the adequacy and genuineness of these processes, these are assertions that challenge the merits of the clearance, requiring detailed factual scrutiny and evidence.
-At this preliminary stage of maintainability, the mere allegation of deficiencies, without demonstrating manifest arbitrariness or a complete breakdown of the procedural framework that meets the stringent Wednesbury standard, does not automatically render the State's action susceptible to judicial review under Article 226 to the extent of declaring the petition non-maintainable. The existence of the clearance process, undertaken by the designated body, suggests a level of procedural compliance was attempted. Whether that compliance was sufficient or legally sound is precisely what needs to be adjudicated during the substantive hearing on Issues 5 and 6, rather than forming a basis to deny the petition's maintainability under Article 226 at the outset.
-Therefore, while we maintain that judicial review should be exercised with restraint in policy matters, we submit that the Petitioner's specific allegations regarding EIA and consultation are matters going to the merits of the environmental clearance, rather than demonstrating a prima facie case of irrationality or procedural impropriety so egregious as to preclude the petition's maintainability under Article 226."
-Judge: <None>
-Final Score Report: Scores Breakdown & Justification
+Therefore, Your Lordship/Your Ladyship, the Respondent contends that the Environmental Clearance Certificate, having been granted after due process and reflecting a necessary balance between environmental considerations and the compelling public interest in securing water resources, is fully in consonance with the letter and spirit of the Constitution of Indiva.
 
-Petitioner (Alert Indiva):
+May it please Your Lordship/Your Ladyship, I seek permission to proceed to the final issue, Issue No. 6: "Whether the decision taken by the State of BRAHMA to construct the dam deserves to be maintained or should be quashed and set aside?"
+Judge: : Counsel, you argue the ECC process balances environmental protection with development needs and addresses the right to a healthy environment under Article 21. Could you elaborate on how the specific findings of the Environmental Impact Assessment regarding ecological damage, and the concerns raised during public consultations about environmental degradation, were substantively weighed against the public interest of water security when the competent authority decided to grant the clearance? How was the 'right to a healthy environment' specifically factored into this balancing exercise beyond mere procedural compliance?
+Respondent: :
 
-1.  Recognition of Issues: 10/10 (Clearly identified and prioritized key issues)
-2.  Legal Principles: 14/15 (Strong application of relevant constitutional and environmental principles)
-3.  Use of Authorities: 14/15 (Effective use of relevant landmark case law)
-4.  Application of Facts: 14/15 (Logical connection of facts to legal arguments)
-5.  Clarity & Structure: 9/10 (Well-organized and coherent presentation)
-6.  Response to Questions: 14/15 (Direct, relevant, and well-reasoned answers)
-7.  Communication: 9/10 (Clear, respectful, and engaging)
-8.  Presentation & Poise: 9/10 (Appeared confident, composed, and adhered to etiquette)
-    Total Score: 93/100
+Much obliged, Your Lordship/Your Ladyship.
 
-   Justification: The Petitioner excelled in linking facts, law, and precedent. They built a strong case based on fundamental rights and environmental principles, effectively using landmark judgments. Their responses to judges were direct, persuasive, and demonstrated a strong grasp of the issues and relevant law.
+Proceeding now to the sixth and final issue: "Whether the decision taken by the State of BRAHMA to construct the dam deserves to be maintained or should be quashed and set aside?"
 
-Respondent (State of Bramha):
+Your Lordship/Your Ladyship, the Respondent, the State of Bramha, submits with utmost respect that the decision to construct the dam is a necessary, lawful, and constitutionally sound measure undertaken in the paramount public interest and therefore, deserves to be maintained by this Hon'ble Court.
 
-1.  Recognition of Issues: 9/10 (Acknowledged all framed issues)
-2.  Legal Principles: 11/15 (Applied relevant principles but showed weakness/confusion in the PIL maintainability argument and less depth overall)
-3.  Use of Authorities: 10/15 (Limited use of specific case law compared to Petitioner)
-4.  Application of Facts: 11/15 (Used 'public interest' fact but less engagement with Petitioner's specific factual allegations)
-5.  Clarity & Structure: 8/10 (Generally structured, but initial argument was convoluted)
-6.  Response to Questions: 9/15 (Some responses were evasive/repetitive; critically missed answering one question)
-7.  Communication: 8/10 (Appropriate language but less persuasive due to argument weaknesses and missed question)
-8.  Presentation & Poise: 8/10 (Maintained decorum but appeared less confident/prepared, especially during difficult questioning)
-    Total Score: 74/100
+1.  Overriding Public Interest: The State is facing an acute water crisis, bordering on drought conditions. The construction of the dam is a critical policy decision aimed at ensuring water security for drinking, agriculture, and industry, and replenishing groundwater levels – objectives vital for the survival and well-being of the populace. This constitutes a compelling public purpose.
+2.  Legality and Procedural Compliance: As submitted earlier, the decision-making process, including the grant of the Environmental Clearance Certificate, adhered to the established legal and procedural framework under the Environment (Protection) Act, 1986, and associated EIA notifications. This involved impact assessments, public consultations, and expert appraisal, ensuring environmental concerns were duly considered.
+3.  Constitutional Validity:
+       The policy decision falls within the executive domain and is not arbitrary, mala fide, or irrational, thus warranting judicial restraint (Issue 3).
+       The impact on the livelihood of agriculturists (Issue 4), while acknowledged, does not violate Article 21 as it is necessitated by public purpose and is being addressed through a comprehensive Resettlement and Rehabilitation package formulated under the Right to Fair Compensation and Transparency in Land Acquisition, Rehabilitation and Resettlement Act, 2013.
+       The Environmental Clearance Certificate (Issue 5) reflects a considered balance between environmental protection and the urgent need for development, consistent with constitutional principles.
+4.  Maintainability of Petition: While the petition is maintainable procedurally as a PIL under Article 226 (Issues 1 & 2), the Petitioners have failed to establish substantive grounds demonstrating any illegality, irrationality, or constitutional infirmity in the State's actions that would warrant judicial interference.
 
-   Justification: The Respondent correctly identified principles of judicial restraint but struggled with the PIL maintainability argument after conceding locus. There was less reliance on specific authorities, and a crucial question from the bench was not addressed. While arguments on writ maintainability (Issue 2) were standard, the overall performance was less convincing and demonstrated weaknesses in argumentation and responsiveness compared to the Petitioner.
+Therefore, Your Lordship/Your Ladyship, considering the overwhelming public interest in alleviating the severe water crisis, the adherence to due process, the commitment to fair resettlement and rehabilitation, and the constitutional validity of the State's actions, the Respondent humbly submits that the decision to construct the dam is justified and must be maintained. Quashing the decision would have severe adverse consequences for the people of Bramha who are dependent on this project for their basic water needs.
+
+May it please Your Lordship/Your Ladyship, having addressed all the issues framed by this Hon'ble Court, I seek permission to proceed to the Conclusion and Final Prayer.
+Judge: : `<None>`
+Respondent: : May it please Your Lordship/Your Ladyship. Addressing Your Lordship's/Your Ladyship's pertinent query regarding the substantive weighing of environmental impacts and the right to a healthy environment during the Environmental Clearance (EC) process:
+
+The Respondent submits that the balancing exercise undertaken by the competent authority, the Ministry of Environment and Forest, guided by the Expert Appraisal Committee (EAC), goes beyond mere procedural checklist compliance. It involves a substantive evaluation where the 'right to a healthy environment', implicitly part of Article 21, is a central consideration.
+
+1.  Weighing EIA Findings and Public Concerns: The EIA report quantifies the anticipated ecological damage (e.g., extent of forest submergence, impact on biodiversity, hydrological changes). Concerns raised during public consultations, particularly regarding environmental degradation and loss of livelihood, are documented and placed before the EAC and the Ministry. These negative impacts are explicitly acknowledged and form one side of the scale.
+2.  Assessing Mitigation and Alternatives: The EAC critically examines the feasibility and effectiveness of the mitigation measures proposed by the project proponent (Reliable Industries Limited) to counteract the identified environmental damage. This includes plans for compensatory afforestation, catchment area treatment, wildlife conservation (if applicable), and, crucially, the Resettlement and Rehabilitation (R&R) plan for displaced persons. The viability of less damaging alternatives, if any were suggested or are apparent, is also considered.
+3.  Factoring the Right to a Healthy Environment (Art. 21): This right informs the entire process. It requires the authority to ensure that the environmental degradation is not irreversible or catastrophic and that the measures proposed to mitigate harm are robust and likely to succeed. The decision to grant clearance implies a finding by the authority that:
+       The project's objective – alleviating severe water scarcity – serves a fundamental aspect of the Right to Life (Article 21) for a vast population, providing a compelling public interest justification.
+       The anticipated environmental damage, though significant, can be managed, mitigated, and compensated for to an acceptable degree through the stringent conditions imposed in the EC. These conditions are legally binding and enforceable.
+       The R&R plan, formulated as per the LARR Act, 2013, aims to address the socio-economic impact, ensuring that the affected population's right to livelihood (also under Article 21) is protected through adequate compensation and rehabilitation measures.
+4.  The Balancing Decision: The final decision by the Ministry involves weighing the quantified environmental and social costs (including the impact on the right to a healthy environment and livelihood) against the quantified and qualitative benefits of ensuring water security for the State. The grant of clearance signifies the authority's considered judgment, based on expert advice and public feedback, that the project's benefits, coupled with the mandated mitigation and rehabilitation measures, outweigh the environmental costs in the specific context of the acute water crisis faced by Bramha. It is a determination that the project, with safeguards, aligns with the principles of sustainable development.
+
+Therefore, Your Lordship/Your Ladyship, the substantive concerns regarding ecological damage and the right to a healthy environment were integral to the decision-making process, not merely procedural hurdles. The clearance reflects a complex, context-specific balancing act performed by the expert statutory authorities entrusted with this responsibility.
+
+May it please Your Lordship/Your Ladyship, having addressed your query regarding the substantive considerations in the environmental clearance process, and having previously presented arguments on Issue No. 6, I seek permission to proceed to the Conclusion and Final Prayer for the Respondent.
+Judge: : `<None>`
+Final Score Report: Evaluation Score - Respondent (State of Bramha)
+
+| Criteria                   | Max Points | Respondent Score | Justification                                                                                                                               |
+| :------------------------- | :--------- | :--------------- | :------------------------------------------------------------------------------------------------------------------------------------------ |
+| 1. Recognition of Issues   | 10         | 10               | Clearly identified and addressed all framed issues sequentially.                                                                            |
+| 2. Legal Principles        | 15         | 13               | Strong application of relevant constitutional/legal principles; minor scope for slightly greater depth.                                     |
+| 3. Use of Authorities      | 15         | 14               | Effective use of relevant Constitution Articles, landmark cases, and statutes; key authorities well-integrated.                             |
+| 4. Application of Facts    | 15         | 14               | Excellent integration of case facts into legal arguments; arguments well-grounded in the scenario.                                          |
+| 5. Clarity & Structure     | 10         | 10               | Exceptionally clear, logical structure following framed issues; coherent presentation.                                                      |
+| 6. Response to Questions   | 15         | 15               | Outstanding; answered all judicial questions directly, substantively, accurately, and adaptably.                                          |
+| 7. Communication           | 10         | 10               | Clear, formal, respectful, and engaging communication; appropriate court language.                                                        |
+| 8. Presentation & Poise    | 10         | 9                | Transcript indicates strong confidence, professionalism, and composure, especially under questioning. Minor deduction as text limits full assessment. |
+| Total                  | 100    | 95           | Overall very strong performance demonstrating thorough preparation and skilled advocacy.                                                |
+
+Evaluation Score - Petitioner (Alert Indiva)
+
+| Criteria                   | Max Points | Petitioner Score | Justification                                     |
+| :------------------------- | :--------- | :--------------- | :------------------------------------------------ |
+| 1. Recognition of Issues   | 10         | N/A              | No input log provided for the Petitioner.         |
+| 2. Legal Principles        | 15         | N/A              | No input log provided for the Petitioner.         |
+| 3. Use of Authorities      | 15         | N/A              | No input log provided for the Petitioner.         |
+| 4. Application of Facts    | 15         | N/A              | No input log provided for the Petitioner.         |
+| 5. Clarity & Structure     | 10         | N/A              | No input log provided for the Petitioner.         |
+| 6. Response to Questions   | 15         | N/A              | No input log provided for the Petitioner.         |
+| 7. Communication           | 10         | N/A              | No input log provided for the Petitioner.         |
+| 8. Presentation & Poise    | 10         | N/A              | No input log provided for the Petitioner.         |
+| Total                  | 100    | N/A          | Evaluation not possible due to missing data. |
