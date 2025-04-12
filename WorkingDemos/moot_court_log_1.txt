@@ -2,318 +2,310 @@
 Petitioner: May it please your Lordship, the counsel seeks permission to approach the dais.
 
 
-Judge: <None>
-
-Petitioner: Much obliged, your Lordship.Good morning, your Lordship. The counsel recognizes the gracious presence of this Hon’ble Court. For the convenience of these proceedings, may the counsel refer to your Lordship as such?
-
-
-Judge: `<None>`
-
-Petitioner: Much obliged, your Lordship.The counsel is appearing before this Hon’ble Court in the matter of ALERT INDIVA v. State of BRAMHA and Others, on behalf of the Petitioner, ALERT INDIVA, an environmental NGO, invoking the writ jurisdiction of this Hon’ble High Court under Articles 226 and 227 of the Constitution of Indiva.
-
-
-
-Judge: `<None>`
-
-Petitioner: Your Lordship, this matter raises six important constitutional and environmental issues. With your Lordship’s permission, the counsel shall focus today on three foundational issues:
-
-Whether the present petition qualifies as a Public Interest Litigation.
-
-Whether the displacement of agriculturists amounts to a violation of Article 21 of the Constitution.
-
-Whether the Environment Clearance Certificate granted is contrary to constitutional mandates.
-
-The counsel shall address these issues for the next ten minutes and shall reserve a couple of minutes for clarification, if your Lordship deems fit.
-
-
-Judge: `<None>`
-
-Petitioner: Your Lordship, with your kind permission, the counsel shall briefly outline the facts.
-
-The State of BRAMHA, facing severe water scarcity, has decided to construct several dams, one of which threatens to displace villagers from ten agriculturally dependent villages. The dam, sanctioned without adequate environmental and social safeguards, will submerge large tracts of cultivable land, directly impacting the livelihood and ecology of the area.
-
-ALERT INDIVA has filed this petition on two grounds: (1) The environmental clearance was granted arbitrarily, and (2) the displacement violates the villagers' fundamental rights under Article 21 of the Constitution of Indiva.
-
-If your Lordship is well-versed with the facts, the counsel seeks permission to proceed directly to the arguments.
-
-
-Judge: Counsel, you mentioned the Environmental Clearance was granted arbitrarily. Could you briefly state the primary grounds on which you allege this arbitrariness before proceeding with detailed arguments?
+Judge: : `<None>`
 
 Petitioner: Much obliged, your Lordship.
-
-The allegation of arbitrariness in the grant of Environmental Clearance rests primarily on the following three grounds:
-
-Lack of Proper Environmental Impact Assessment (EIA):
-The clearance was granted without conducting a comprehensive EIA as mandated by statutory guidelines. The study submitted was generic, outdated, and failed to assess the impact on local biodiversity, forest cover, and agricultural productivity in the ten affected villages.
-
-Absence of Public Consultation:
-Your Lordship, there was no genuine public hearing or informed consent of the affected communities, which is a mandatory procedural safeguard under the EIA Notification framework. The villagers were neither informed in a language they understand nor provided adequate opportunity to raise objections.
-
-Non-Application of Judicially Mandated Precautionary Principles:
-The approving authority failed to consider less destructive alternatives, did not apply the Precautionary Principle, and approved the project despite glaring data gaps — a direct contravention of the guidelines laid down in Vellore Citizens Welfare Forum v. Union of India.
-
-With your Lordship’s leave, the counsel shall now elaborate on these grounds under Issue 3 of the submissions.
+Good morning, your Lordship. The counsel recognizes the gracious presence of this Hon’ble Court. For the convenience of these proceedings, may the counsel refer to your Lordship as such?
 
 
-Judge: `<None>`
+Judge: : `<None>`
 
-Petitioner: Your Lordship, the petition is maintainable as a Public Interest Litigation as the petitioner NGO, ALERT INDIVA, has no personal interest but seeks to protect the rights of displaced agriculturists and the ecological balance of the region.
+Petitioner: The counsel is appearing before this Hon’ble Court in the matter of PQR & Ors. v. State of Mahadpur, under Article 136 of the Constitution of India, challenging the constitutionality of the Mahadpur Preservation of Animals Act, 1976 as amended on 4th November 2016.
 
-In Janata Dal v. H.S. Chowdhary, (1992) 4 SCC 305, the Hon’ble Supreme Court held that public interest litigation is maintainable where a third party represents those who cannot approach the court themselves due to poverty, illiteracy, or social disadvantage.
+Your Lordship, the present matter raises the following critical issues for determination:
+
+Whether the amendment to the MPA Act, 1976 violates the fundamental rights of the Petitioners guaranteed under Articles 19(1)(g), 21, 25, and 29 of the Constitution of India.
+
+Whether the reverse burden of proof under Section 9-B of the amended Act is violative of the principle of presumption of innocence under Article 21.
+
+The counsel shall now proceed to address these issues, if your Lordship so permits.
 
 
-
-Judge: The Janata Dal case mentions representing those unable to approach the court due to poverty, illiteracy, or social disadvantage. What specific evidence supports the claim that the affected villagers in these ten villages fall into this category and cannot approach the court directly themselves?
+Judge: : `<None>`
 
 Petitioner: Much obliged, your Lordship.
+Your Lordship, the brief facts of the case are as follows:
 
-The affected villagers are primarily small-scale farmers from economically backward areas, with official data showing below-poverty-line status and low literacy rates. They lack access to legal resources, awareness of their constitutional rights, and means to approach this Hon’ble Court.
+The State of Mahadpur, by an amendment dated 4th November 2016, brought changes to the Mahadpur Preservation of Animals Act, 1976. This amendment introduced Sections 5A to 5D, which effectively imposed a total ban on the transportation, slaughter, import, and possession of flesh of cows, bulls, and bullocks, including those slaughtered outside the State of Mahadpur.
 
-No proper legal aid or rehabilitation plan has been communicated to them, making it impractical for them to initiate proceedings on their own. Therefore, as held in Janata Dal v. H.S. Chowdhary and PUDR v. Union of India, this petition is a genuine exercise in public interest, enabling access to justice for the disadvantaged.
+Additionally, Sections 9A and 9B of the amendment introduced a statutory reversal of the burden of proof—placing the onus on the accused to prove that the possession or movement of such flesh was not in contravention of the Act.
 
+These amendments were notified in the Mahadpur Gazette on 4th November 2016 and received Presidential assent on the same day.
 
-Judge: `<None>`
+Following the enactment, a significant section of the public, including slaughterhouse owners, expressed concern over the sweeping nature of the ban. This led to the filing of a Public Interest Litigation by the lead petitioner, PQR, along with a Writ Petition filed by the Slaughter Houses Association before the Hon’ble High Court, challenging the constitutional validity of the amended provisions.
 
-Petitioner: Your Lordship, the construction of the dam, which will displace agriculturists and submerge their cultivable lands without a clear rehabilitation plan, amounts to a violation of their right to life and livelihood under Article 21.
+The Hon’ble High Court upheld the amendments. The Petitioners now approach this Hon’ble Court under Article 136, challenging that judgment on the grounds that the amended Act violates fundamental rights.
 
-In Olga Tellis v. Bombay Municipal Corporation, AIR 1986 SC 180, the Hon’ble Supreme Court held that the “right to livelihood is an integral part of the right to life.” By displacing villagers without adequate compensation, the state is extinguishing their very means of existence.
-
-The counsel respectfully submits that the doctrine of “life with dignity” laid down in Maneka Gandhi v. Union of India, AIR 1978 SC 597, stands violated here as no amount of economic or industrial gain can override the constitutional protection of basic human rights.
-
-
-Judge: Counsel, you emphasize the lack of a clear rehabilitation plan and adequate compensation as central to the Article 21 violation. Has the State proposed any specific resettlement or compensation measures for the displaced villagers? If so, on what grounds do you contend these measures are insufficient to meet the constitutional standard of 'right to life with dignity'?
-
-Petitioner: Much obliged, your Lordship.
-
-The State has indeed alluded to monetary compensation and relocation packages. However, these measures are vague, lack transparency, and have not been meaningfully communicated or tailored to the socio-economic realities of the affected agriculturists.
+If your Lordship is well-acquainted with the facts, the counsel seeks permission to proceed with the arguments.
 
 
-Judge: `<None>`
+Judge: : `<None>`
 
-Petitioner: Your Lordship, the Environment Clearance Certificate granted to Reliable Industries Limited was approved in haste, with no proper Environmental Impact Assessment (EIA) study or public consultation with affected parties.
+Petitioner: Your Lordship, the first issue pertains to the constitutional validity of the amended provisions of the MPA Act, 1976—specifically Sections 5A to 5D and Section 9B—in light of Articles 21, 19(1)(g), 25, and 29 of the Constitution.
+Your Lordship, Article 21 guarantees not just life, but a life with dignity. The Hon’ble Supreme Court in Justice K.S. Puttaswamy (Retd.) v. Union of India has recognized the right to privacy as a fundamental right under Article 21. This includes decisional autonomy and personal dietary choices.
 
-In Vellore Citizens’ Welfare Forum v. Union of India, (1996) 5 SCC 647, the Hon’ble Supreme Court emphasized the "Precautionary Principle" and "Polluter Pays Principle" as part of environmental law under Article 21.
+The impugned provisions, by criminalizing even the possession of beef brought from outside the State, enter the private sphere of individual autonomy and disrupt personal choices, including those made in the privacy of one's home.
 
-
-Judge: Regarding the Precautionary Principle cited from Vellore Citizens, how do you contend it should have been applied differently by the authorities, especially considering the stated public interest goal of addressing severe water scarcity?
-
-Petitioner: Much obliged, your Lordship.
-
-The Precautionary Principle, as affirmed in Vellore Citizens Welfare Forum v. Union of India, requires that if there is a threat of serious environmental damage, lack of scientific certainty shall not be a reason to postpone preventive measures. The burden lies on the developer or State to demonstrate that the proposed project is environmentally benign.
-
-In the present case, Your Lordship, while the State cites public interest due to water scarcity, the Environmental Clearance was granted without a comprehensive Environmental Impact Assessment, particularly ignoring:
-
-Cumulative ecological impact on the ten villages, biodiversity, and water-logging consequences.
-
-No public consultation with local stakeholders, despite the mandate under the Environment Impact Assessment Notification, 2006.
-
-No scientific data showing mitigation of adverse effects like displacement-induced degradation or groundwater imbalance.
-
-Hence, Your Lordship, the Precautionary Principle should have guided the authorities to halt or re-evaluate the project until such concerns were satisfactorily addressed. In failing to do so, the clearance stands arbitrary and unconstitutional.
+In effect, the law compels conformity with a specific dietary standard—not on grounds of public health, but on moral and cultural lines—without offering a legitimate state interest strong enough to override individual liberty.
 
 
-Judge: `<None>`
 
-Petitioner: In view of these submissions, your Lordship, the counsel humbly asserts that the current dam project violates constitutional guarantees and environmental norms. The blanket justification of "larger public interest" cannot override the specific, measurable harm to vulnerable communities and ecosystems.
+Judge: : Counsel, you invoke the right to privacy under Article 21, encompassing dietary choice. How should this Court balance this individual right against the State's constitutional duty outlined in Article 48 of the Directive Principles, which directs the State to prohibit the slaughter of cows and calves? Can the State impose restrictions based on these principles, even if they impact personal food choices?
 
-The Hon’ble High Court must act as the guardian of constitutional rights and environmental justice.
+Petitioner: Your Lordship, the Directive Principles, including Article 48, certainly reflect the moral and constitutional vision of our polity, and the State may rely on them to justify certain restrictions. However, when such restrictions infringe a Fundamental Right, such as the right to privacy under Article 21, the test of proportionality and necessity must still be satisfied.
 
-
-Judge: Counsel, you argue that the 'larger public interest' justification is insufficient. However, the State presents the dam as a necessary policy response to severe water scarcity. What legal standard should this Court apply when balancing such a stated public necessity against the fundamental rights and environmental concerns you've raised? Where is the line drawn for judicial interference in policy decisions?
-
-Petitioner: The counsel submits that while the doctrine of separation of powers mandates judicial restraint in policy matters, the Hon’ble Court is nevertheless empowered—and indeed duty-bound—to intervene where policy decisions transgress constitutional mandates or are patently arbitrary, unreasoned, or disproportionate.
-In the instant matter, the counsel submits that:
-
-Fundamental Right under Article 21 is at stake—not merely as a matter of livelihood, but of dignified rehabilitation and environmental security.
-
-The State has failed to demonstrate proportionality—that the means adopted (displacement without adequate safeguards) are the least restrictive means to achieve the public goal.
-
-No balancing exercise has been documented between the environmental costs and developmental benefits.
+As held in Puttaswamy, individual autonomy in personal spaces—including food choices—falls squarely within the right to privacy. The State cannot override this right solely on moral or ideological grounds unless it demonstrates a compelling public interest, and that the restriction is the least intrusive means to achieve that interest.
 
 
-Petitioner: If your Lordship is satisfied with the arguments advanced, the counsel humbly prays for the following reliefs:
+Judge: : `<None>`
 
-Quash the Environmental Clearance Certificate granted to Reliable Industries Limited as being unconstitutional and arbitrary.
+Petitioner: Your Lordship, the total ban, especially as it applies to slaughterhouse owners and meat traders, directly impairs the right to practice any profession or to carry on any occupation, trade or business.
 
-Direct the State of BRAMHA to conduct a fresh environmental and social impact assessment with full public participation.
+While reasonable restrictions under Article 19(6) are permissible, the totality of the ban—extending to even inter-State movement and lawful possession—fails the test of proportionality. The counsel submits that less restrictive alternatives could have served the same purpose.
 
-Declare that the proposed dam project, in its current form, violates Article 21 of the Constitution.
-
-Pass any other order deemed just and proper by this Hon’ble Court in the interest of justice and equity.
-It has been a privilege to argue before this Hon’ble Court.
+The Hon’ble Court in Mohd. Hanif Quareshi v. State of Bihar upheld bans on cow slaughter only where it was balanced by public interest and did not impose undue hardship on the livelihoods of butchers. Here, even animals lawfully slaughtered in other States fall within the prohibition—a restriction that appears excessive and arbitrary.
 
 
-Judge: <None>
+Judge: : Counsel, you contend that less restrictive alternatives could have achieved the State's objectives. Could you elaborate on what specific, less restrictive measures you believe would be constitutionally permissible while still addressing the State's purported interests under Article 48, particularly concerning the trade and possession aspects challenged under Article 19(1)(g)?
+
+Petitioner: ChatGPT said:
+Your Lordship, the Petitioners submit that the State’s objectives under Article 48—preserving cattle and preventing slaughter—can indeed be pursued through less restrictive alternatives that do not disproportionately infringe the rights under Article 19(1)(g).
+
+Specifically:
+
+Enhanced Licensing and Inspection of Slaughterhouses: Instead of a blanket ban, the State could regulate slaughterhouses more rigorously to ensure that only permissible animals are slaughtered, thereby aligning with Article 48 without eliminating livelihoods.
+
+Inter-State Certification System: For trade and possession of beef sourced from outside Mahadpur, the State could require certification mechanisms, like veterinary clearance, transport permits, or origin verification. This would allow legal trade without violating interstate commerce or creating an undue burden on individual rights.
+
+
+Judge: : `<None>`
+
+Petitioner: Your Lordship, the Constitution guarantees the freedom to practice and propagate religion under Article 25 and the protection of distinct cultural identities under Article 29.
+
+For certain communities, consumption of beef is not just a dietary preference but an element of culture and belief. The impugned provisions ignore this diversity and impose a uniform norm derived from majoritarian sentiment. Such uniformity, when enforced by law, stands at odds with the pluralistic ethos of the Constitution.
+
+The Hon’ble Court has previously held in Bijoe Emmanuel v. State of Kerala that freedom of conscience is not subject to popular morality but to constitutional morality. Hence, religious or cultural practices of minority communities must be given equal protection.
+
+
+Judge: : Counsel, you argue that the ban infringes upon Articles 25 and 29 by affecting communities for whom beef consumption is part of their culture or belief. Could you elaborate on whether this consumption constitutes an 'essential religious practice' for any specific community, a standard often required for protection under Article 25? Furthermore, how does the protection under Article 29 for cultural rights apply specifically to dietary practices in this context, especially when weighed against the State's objectives under Article 48?
+
+Petitioner: Your Lordship, I appreciate the opportunity to clarify.
+
+On Article 25:
+The Petitioners acknowledge that to receive full protection under Article 25, a practice must be shown to be essential to a religion. While beef consumption may not qualify as an essential religious practice in the strict doctrinal sense for most communities, the freedom of conscience and belief protected under Article 25(1) is broader. As held in Bijoe Emmanuel v. State of Kerala, what matters is whether a practice stems from a sincere belief, even if not mandated by religious texts. Hence, the protection can extend to dietary practices arising from deeply held convictions tied to faith or identity.
+
+On Article 29:
+This provision safeguards the distinct culture of minority groups, including dietary habits as cultural expressions. For certain Scheduled Tribes, Dalit communities, and religious minorities, beef consumption is embedded in tradition, not merely as food but as a marker of cultural autonomy. The impugned law disproportionately targets such communities, amounting to cultural homogenization, contrary to the spirit of Article 29.
+
+Thus, even if beef consumption is not an "essential religious practice," the cumulative impact on both conscience and culture merits constitutional scrutiny—especially when balanced against Article 48, which, while significant, is a Directive Principle and not a fundamental right. The disproportionate burden imposed on marginalized groups cannot be justified merely on grounds of a majoritarian ethical stance.
+
+
+Judge: : `<None>`
+
+Petitioner: In light of the above submissions, your Lordship, the amended provisions of the MPA Act, 1976 suffer from unconstitutionality on multiple fronts. They are arbitrary, disproportionate, and incompatible with the values enshrined in Articles 19, 21, 25, and 29 of the Constitution.
+
+The counsel humbly prays that this Hon’ble Court may be pleased to strike down Sections 5A to 5D and Section 9B of the Act as being ultra vires the Constitution.
+
+Should your Lordship have any questions or require clarifications, the counsel shall be pleased to address them.
+
+
+Judge: : `<None>`
 The respondent's arguments will now begin.
 
-Judge: `<None>`
+Judge: : `<None>`
 
-Respondent: May it please Your Lordship, Counsel for the Respondent, the State of Bramha, seeks permission to present the submissions in the matter of Alert Indiva Vs. State of Bramha and Other.
+Respondent: : May it please Your Lordships. I appear on behalf of the Respondent, the State of Mahadpur, in the Special Leave Petition filed by PQR & Ors. With Your Lordships' permission, I shall proceed with the submissions on behalf of the Respondent.
 
-Judge: `<None>`
+Judge: : `<None>`
 
-Respondent: May it please Your Lordship, I appear on behalf of the Respondent, the State of Bramha, in the matter of Alert Indiva versus the State of Bramha and Other. This Hon'ble Court is seized of this matter under Articles 226 and 227 of the Constitution of Indiva. The Respondent submits that the decision to construct the dam is a necessary policy measure undertaken in the larger public interest to combat severe water scarcity and drought conditions within the State, and that the actions taken are well within the constitutional and legal framework. With Your Lordship's permission, I shall proceed to address the issues framed by this Hon'ble Court.
+Respondent: : Your Lordships, this matter arises from a Special Leave Petition filed under Article 136 of the Constitution of India, challenging the judgment of the Hon'ble High Court of Mahadpur which upheld the constitutional validity of the Mahadpur Preservation of Animals (Amendment) Act, 2016, specifically Sections 5A to 5D and Sections 9A and 9B thereof. The Respondent State submits to the jurisdiction of this Hon'ble Court. May I, with Your Lordships' permission, proceed to the Statement of Issues?
 
-Judge: `<None>`
+Judge: : `<None>`
 
-Respondent: May it please Your Lordship, the Respondent acknowledges the issues framed by this Honourable Court for adjudication in this matter. These issues are:
+Respondent: : Your Lordships, the Respondent humbly submits that the core issues for consideration before this Hon'ble Court are as follows:
 
-1.  Whether the present petition is maintainable as a Public Interest Litigation.
-2.  Whether the Writ Petition filed under Art. 226 and Art. 227 is Maintainable.
-3.  Whether this Honourable Court can interfere in the policy decision taken by the State of Bramha.
-4.  Whether the displacement of agriculturists amounts to a violation of Art. 21.
-5.  Whether the Environment Clearance Certificate granted is contrary to the Constitution.
-6.  Whether the State's decision to construct the dam should be upheld or quashed.
+    1.  Whether the Mahadpur Preservation of Animals (Amendment) Act, 2016, particularly Sections 5A to 5D, constitutes a reasonable restriction on the fundamental rights guaranteed under Articles 19(1)(g) and 21 of the Constitution, enacted in furtherance of the Directive Principles of State Policy, specifically Article 48, and Fundamental Duties under Article 51A(g)?
+    2.  Whether Section 5D, prohibiting possession of flesh of cows, bulls, or bullocks slaughtered outside Mahadpur, infringes upon the Right to Privacy under Article 21, considering the nature of the restriction and the compelling public interest sought to be achieved?
+    3.  Whether Section 9B, which shifts the burden of proof onto the accused under specific circumstances, is constitutionally valid and does not violate Article 21, viewed in the context of regulatory statutes aimed at preventing specific offences?
+    4.  Whether the impugned amendments infringe upon the Petitioners' rights under Article 25 and Article 29 of the Constitution?
 
-With Your Lordship's permission, the Respondent would like to begin addressing the first issue concerning the maintainability of this petition as a Public Interest Litigation.
+    With Your Lordships' permission, may I proceed to the arguments defending the constitutionality of the impugned provisions?
 
-Judge: `<None>`
+Judge: : `<None>`
 
-Respondent: May it please Your Lordship, Counsel for the Respondent will now address the first issue framed by this Hon'ble Court: Whether the present petition has been filed in public interest and therefore maintainable as a Public Interest Litigation?
+Respondent: Agent stopped due to max iterations.
 
-Your Lordship, the State of Bramha acknowledges the expanded scope of locus standi under Public Interest Litigation, established through landmark cases like S.P. Gupta v. Union of India (AIR 1982 SC 149), which permits public-spirited citizens and organizations like 'Alert Indiva' to approach the Court on behalf of those unable to do so themselves, especially concerning fundamental rights and environmental matters.
+Judge: : `<None>`
 
-The Respondent recognizes that the issues raised—environmental impact and the potential displacement of agriculturists—are matters of public concern. Therefore, the Respondent does not wish to contest the locus standi of the Petitioner, 'Alert Indiva', to file this petition pro bono publico.
+Respondent: :
 
-However, the Respondent humbly submits that the determination of "public interest" in this specific case must encompass the dire situation faced by the State due to acute water scarcity and near-drought conditions. The State's decision to construct the dam is a policy measure aimed at addressing this widespread crisis, securing water for drinking, agriculture, and industry, and replenishing groundwater levels for the benefit of the entire populace. This, Your Lordship, represents a paramount public interest.
+Your Lordships, addressing the first issue, the Respondent submits that the Mahadpur Preservation of Animals (Amendment) Act, 2016, represents a valid exercise of legislative power aimed at fulfilling the constitutional mandate enshrined in the Directive Principles of State Policy and Fundamental Duties.
 
-Thus, while the petition may be maintainable in form as a PIL, the Respondent contends that the substantive public interest overwhelmingly supports the State's actions. We urge this Hon'ble Court to consider this broader context when adjudicating the merits.
+Specifically, Article 48 of the Constitution directs the State to organise agriculture and animal husbandry on modern and scientific lines and to take steps for preserving and improving breeds, and prohibiting the slaughter of cows and calves and other milch and draught cattle. The impugned amendments, particularly Sections 5A to 5D imposing restrictions on slaughter, transport, and possession, are directly in furtherance of this constitutional directive.
 
-May I proceed to address the second issue regarding the maintainability of the Writ Petition under Articles 226 and 227, Your Lordship?
+Furthermore, Article 51A(g) casts a fundamental duty upon every citizen to protect and improve the natural environment, including forests, lakes, rivers, and wildlife, and to have compassion for living creatures. The Act seeks to cultivate this sense of compassion and prevent cruelty to animals specified therein.
 
-Judge: Counsel, you concede the Petitioner's locus standi for this PIL but argue the 'substantive public interest' lies with the State's need for the dam. Does the very nature of a PIL, particularly one alleging violations of Article 21 and environmental norms, not require this Court to first thoroughly examine those specific allegations before weighing them against the broader policy objectives cited by the State, even at this preliminary stage of maintainability?
+It is a settled principle, Your Lordships, that Fundamental Rights under Part III must be read harmoniously with the Directive Principles in Part IV and the Fundamental Duties in Part IVA. While the Petitioners invoke Articles 19(1)(g) and 21, these rights are not absolute and are subject to reasonable restrictions imposed in the public interest. Restrictions enacted to give effect to Directive Principles are generally considered reasonable and in the public interest. The economic, agricultural, and cultural significance of cattle in the state, coupled with the constitutional directives, provides a compelling public interest justifying the restrictions imposed by the amendments.
 
-Respondent: Your Lordship raises a crucial point regarding the Court's paramount duty to scrutinize alleged violations of fundamental rights and environmental norms, particularly within the framework of Public Interest Litigation. It is respectfully submitted that the Respondent State fully acknowledges the significance of the concerns raised under Article 21 and environmental regulations, and agrees that these require thorough examination by this Hon'ble Court on their merits.
+Therefore, the Respondent contends that the limitations imposed by Sections 5A to 5D are reasonable restrictions, protected under Article 19(6) and the inherent limitations within Article 21, enacted to achieve the laudable objectives outlined in Articles 48 and 51A(g).
 
-However, concerning the preliminary issue of maintainability of this petition as a PIL, the Respondent submits that the assessment cannot occur in a vacuum. While the Petitioner's locus standi is conceded, the concept of 'public interest' inherently requires the Court to consider the broader context. The State's policy decision to construct the dam arises from an acute and widespread water scarcity crisis, bordering on drought, affecting a vast population within Bramha. This effort to secure water for drinking, agriculture, and industry, and to replenish groundwater levels, represents a substantial and pressing public interest in itself.
+May I proceed to elaborate on the reasonableness of these restrictions in light of judicial precedents, Your Lordships?
 
-Therefore, it is submitted that a prima facie consideration of the State's objectives is necessary even at this maintainability stage, not to definitively weigh them against the Petitioner's claims, but to understand the complete picture and ascertain whether the litigation genuinely serves the larger public interest, as opposed to potentially hindering a critical state action aimed at alleviating widespread public hardship. This preliminary contextual understanding ensures the PIL mechanism is appropriately invoked, without foreclosing the detailed examination of the Petitioner's specific allegations regarding Article 21 and environmental compliance at the subsequent merits stage. We humbly contend that the State's response to the water crisis constitutes a vital aspect of the 'substantive public interest' relevant to the question of maintainability.
+Judge: : Counsel, you rely on Article 48, which directs the State to prohibit the slaughter of cows, calves, and other milch and draught cattle. How does extending the prohibition to the mere possession of beef, even if sourced from animals lawfully slaughtered outside Mahadpur (as per Section 5D), directly further the objective outlined in Article 48? Isn't the act targeted by Article 48 the slaughter itself, which has already occurred elsewhere in such cases?
 
-Judge: `<None>`
+Respondent: :
 
-Respondent: Your Lordship, the Respondent acknowledges the profound importance and the Court's solemn duty to scrutinize alleged violations of fundamental rights, particularly Article 21, and environmental norms, especially within the framework of a Public Interest Litigation. The gravity of such allegations is indeed paramount.
+Your Lordship raises a pertinent point regarding the nexus between Section 5D and the objectives of Article 48. The Respondent submits that the prohibition on possession under Section 5D, even concerning flesh from animals lawfully slaughtered outside Mahadpur, is an essential ancillary measure necessary for the effective implementation and enforcement of the primary prohibition on slaughter within the State, which is directly mandated by Article 48.
 
-    However, with the greatest respect, the question of maintainability, as understood through established jurisprudence following cases like S.P. Gupta, primarily concerns the locus standi of the petitioner and whether the subject matter genuinely pertains to the public interest, rather than requiring a conclusive determination on the merits of the alleged violations at this initial stage.
+If the possession of such beef were permitted within Mahadpur, it would create a significant practical impediment to enforcing the ban on slaughter within the State. It would become extremely difficult, if not impossible, for enforcement authorities to differentiate between beef originating from animals slaughtered legally outside the State and beef from animals slaughtered illegally inside Mahadpur in contravention of the Act. This difficulty would render the State's prohibition on slaughter, enacted pursuant to Article 48, largely ineffective and easily circumvented.
 
-    The State contends that its policy decision to construct the dam, driven by the urgent need to combat widespread drought and water scarcity impacting countless citizens, constitutes a significant and prima facie public interest. The very existence of these competing concerns – the alleged infringement of rights and environmental impact on one hand, and the State's response to a large-scale public welfare crisis on the other – underscores why this matter is appropriately brought before this Hon'ble Court as a PIL.
+Furthermore, allowing the possession and consumption of beef sourced from outside would sustain the demand for such products within the State. This demand could indirectly encourage the slaughter of cattle in neighbouring areas specifically for import into Mahadpur, thereby undermining the legislative intent to give effect to the spirit of Article 48 within the State's sphere of influence.
 
-    While the seriousness of the Petitioner's allegations concerning Article 21 and environmental norms certainly warrants this Court's thorough examination, their existence does not, in our submission, negate the maintainability of the petition itself. Both aspects fall within the broad definition of 'public interest'. A detailed balancing of these competing interests, weighing the alleged violations against the State's justification of larger public good, is, we humbly submit, a matter for the substantive hearing on the merits, once the petition's maintainability under Issue 1 is affirmed.
+Therefore, Your Lordship, Section 5D is not aimed at extraterritorially prohibiting slaughter that has already occurred elsewhere. Rather, it is a necessary supporting provision designed to prevent the frustration of the Act's core objective – the prohibition of slaughter of specified cattle within Mahadpur – by closing a potential loophole that would otherwise render the primary ban unenforceable. It is a measure enacted to ensure the integrity and effectiveness of the legislative scheme implementing the Directive Principle under Article 48.
 
-Judge: Counsel, you argue the State's policy objectives provide necessary context for determining maintainability, even while conceding locus standi. However, isn't the established test for PIL maintainability primarily focused on the petitioner's bona fides, the nature of the rights allegedly infringed, and whether the affected group genuinely lacks access to justice, rather than requiring a preliminary assessment of the merits or weight of the State's justification for its actions?
+If Your Lordship has any further questions on this point, I am prepared to address them. Otherwise, may I, with Your Lordship's permission, proceed with further submissions on the reasonableness of the restrictions imposed by the impugned amendments?
 
-Respondent: Your Lordship rightly outlines the established tests for PIL maintainability, focusing on the petitioner's bona fides, the nature of the rights allegedly infringed, and the access to justice for the affected group. The State does not dispute these foundational principles.
+Judge: : Counsel, you assert that differentiating legally imported beef from illegally slaughtered beef within the state is 'extremely difficult, if not impossible,' thus justifying the possession ban under Section 5D for effective enforcement. Was any evidence considered or feasibility study conducted to support this claim of impossibility? Could a stringent regulatory regime involving tagging, certification, and point-of-sale checks not address this enforcement challenge without resorting to a complete ban on possession?
 
-    However, the State submits that understanding the context in which the alleged rights infringement occurs is pertinent even at the maintainability stage, particularly when assessing the 'public interest' element inherent in the PIL framework. The State's policy decision to construct the dam arises from an acute and widespread water scarcity crisis, a matter of grave public concern affecting the entire populace of Bramha.
+Respondent: : Your Lordship, I acknowledge the pertinent questions raised regarding the basis for the assertion of difficulty in differentiation and the feasibility of alternative regulatory mechanisms.
 
-    Acknowledging this context is not, we contend, a premature assessment of the merits or the weight of the State's justification. Rather, it provides a necessary backdrop for evaluating whether the petition, viewed holistically, genuinely serves the overall public interest. This includes considering the State's constitutional and statutory duty to act in the face of a natural crisis impacting the fundamental well-being of its citizens. It helps frame the scope of the 'public interest' that this Hon'ble Court is being asked to adjudicate upon when determining maintainability.
+Regarding the first point, concerning evidence or a formal feasibility study on the difficulty of distinguishing legally imported beef from that sourced from illegal slaughter within Mahadpur: While the legislative record may not explicitly detail a specific, commissioned 'feasibility study' in those exact terms, the legislature, in its wisdom and based on its understanding of the ground realities and administrative challenges within the State, concluded that such differentiation would be fraught with practical impossibilities. The nature of meat products makes their origin difficult to trace definitively once they enter the supply chain. The potential for misdeclaration, the difficulty in verifying documentation accompanying consignments (especially from numerous sources outside the state), and the challenges in policing numerous points of sale and possession across the state were factors inherently considered. The legislature is presumed to act based on a reasonable assessment of prevailing conditions and the practicalities of enforcement. The sheer scale required for foolproof monitoring led to the legislative judgment that differentiating would be administratively unviable and prone to abuse, thereby undermining the core prohibition.
 
-    Therefore, while the petitioner's locus standi based on representing affected groups and environmental concerns is conceded for the purpose of argument, the State contends that the profound public interest served by its policy aimed at alleviating widespread drought is a relevant factor for this Hon'ble Court to consider when assessing the overall maintainability of this Public Interest Litigation.
+Addressing Your Lordship's second point, on the potential sufficiency of a stringent regulatory regime involving tagging, certification, and checks: The State submits that while such measures are employed in other contexts, the legislature apprehended that they would be insufficient to guarantee the effective enforcement of the slaughter ban under the Mahadpur Act. Implementing and enforcing a foolproof system of tagging and certification for meat imported from potentially numerous jurisdictions, tracking it through transit, processing, and down to the final point of sale or consumption, presents enormous logistical and administrative challenges. Such systems are susceptible to forgery, corruption, and gaps in enforcement, particularly given the nature of the product and the potential for clandestine activities. The legislature determined that the risk of such a regime failing to prevent the commingling of legal and illegal products, and thus failing to effectively enforce the ban on slaughter within the state (the primary objective linked to Article 48), was unacceptably high. Therefore, the prohibition on possession under Section 5D was deemed a necessary ancillary measure to ensure the primary legislative intent was not rendered ineffective. It represents the legislature's chosen method, within its wide latitude, to address a complex enforcement problem directly linked to achieving a constitutionally directed objective.
 
-Judge: `<None>`
+Unless Your Lordship has further inquiries on this specific point, may I seek permission to proceed with the submissions regarding the reasonableness of the restrictions in light of judicial precedents?
 
-Respondent: 
+Judge: : `<None>`
 
-Judge: `<None>`
+Respondent: : Your Lordships, having addressed the concerns regarding the necessity of Section 5D for effective enforcement and the perceived limitations of alternative regulatory regimes, the Respondent reiterates that the legislature acted within its competence and wisdom to ensure the primary objective of the Act, rooted in Article 48, is not frustrated.
 
-Respondent: "Your Lordship, the Respondent acknowledges the established principles governing the maintainability of Public Interest Litigations, focusing on the petitioner's locus standi, the nature of the rights allegedly infringed, and the access to justice for the affected group. While the Respondent concedes that an organization like 'Alert Indiva' generally possesses the locus standi to bring forth matters of environmental concern and potential rights violations under the expanded scope of PIL jurisprudence, we humbly submit that the assessment of 'public interest' cannot be entirely divorced from the compelling circumstances necessitating the State's actions – namely, the severe drought and the urgent need for water resource management for the benefit of the entire populace of Bramha.
+Unless Your Lordships have further questions on this aspect, may I, with Your Lordships' permission, proceed to cite judicial precedents that support the Respondent's contention regarding the reasonableness of the restrictions imposed by the Mahadpur Preservation of Animals (Amendment) Act, 2016, particularly in the context of balancing Fundamental Rights with Directive Principles of State Policy?
 
-Therefore, while we concede that the petition may be technically maintainable as a PIL based on the petitioner's standing, we urge this Hon'ble Court to consider the overwhelming public interest served by the State's policy throughout the proceedings.
+Judge: : Counsel, you've argued that Section 5D's complete ban on possession is necessary for the effective enforcement of the slaughter prohibition under Article 48, deeming alternatives impractical. However, considering this measure completely extinguishes the right to possess and consume even legally sourced beef, impacting rights under Article 21 and potentially Article 19(1)(g), how does the State demonstrate that this absolute prohibition meets the stringent test of proportionality required when restricting fundamental rights, particularly when balancing them against Directive Principles?
 
-May it please Your Lordship, with the Court's permission, the Respondent would now like to proceed to address the second issue framed for adjudication: Whether the Writ Petition filed under Articles 226 and 227 of the Constitution of Indiva is Maintainable?"
+Respondent: Your Lordship, the Respondent acknowledges the gravity of the restriction imposed by Section 5D and its impact on the rights invoked by the Petitioners under Articles 21 and 19(1)(g). However, the Respondent submits that this measure satisfies the stringent test of proportionality when viewed in the context of the compelling state interest derived directly from the Directive Principles of State Policy.
 
-Judge: Counsel, having conceded that the petition is technically maintainable as a PIL under Issue 1, how do you propose this Court should approach the balancing exercise between the public interest represented by the Petitioner (environmental protection, rights of villagers) and the public interest claimed by the State (water scarcity alleviation) when adjudicating the substantive merits under Issues 3, 4, 5, and 6?
+The proportionality analysis, as established by this Hon'ble Court, involves assessing: (i) the legitimacy of the state's objective, (ii) the rational connection between the measure and the objective, (iii) the necessity of the measure (i.e., whether less intrusive alternatives exist that are equally effective), and (iv) the balancing of the restriction's severity against the importance of the objective.
 
-Respondent:
+1.  Legitimate Objective: As previously submitted, the objective is to give effect to Article 48 of the Constitution, which mandates the prohibition of slaughter of specific cattle, and Article 51A(g), promoting compassion for living creatures. These are constitutionally sanctioned, fundamental goals in the governance of the country.
+2.  Rational Nexus: The ban on possession under Section 5D is rationally connected to preventing the circumvention of the intra-state slaughter ban. It directly addresses the enforcement challenge of distinguishing legally sourced (imported) beef from illegally sourced beef, thereby ensuring the primary prohibition is not rendered ineffective.
+3.  Necessity: Your Lordship, we have addressed the perceived impracticality and insufficiency of alternative measures like tagging or certification. The legislature, in its assessment, concluded that only a prohibition on possession could effectively close the loophole and guarantee the enforcement of the slaughter ban within Mahadpur. A less restrictive measure was not deemed equally effective in achieving the legislative objective mandated by Article 48.
+4.  Balancing (Proportionality Stricto Sensu): This stage requires balancing the adverse impact on fundamental rights against the significance of the public interest served. While the restriction impacts the choice of food under Article 21 and potentially the trade related to imported beef under Article 19(1)(g), this impact must be weighed against the constitutional imperative of Article 48. Laws enacted to implement Directive Principles carry a strong presumption of constitutionality and reasonableness. This Hon'ble Court has consistently held that individual interests under Fundamental Rights must sometimes yield to the larger public interest embodied in the Directive Principles. The right to choose one's food, while an aspect of Article 21, is not absolute and can be subject to reasonable restrictions, particularly when the restriction serves a compelling public purpose grounded in the Constitution itself, such as preventing animal cruelty and upholding the objectives of Article 48. Similarly, the restriction on trade related to imported beef is argued to be a reasonable restriction under Article 19(6) in furtherance of these objectives. The legislature has determined that the public interest in upholding the prohibition on slaughter, as directed by the Constitution, outweighs the limitation imposed on the possession of beef, even if legally sourced from outside.
 
-Judge: Counsel, having conceded the petition's maintainability as a Public Interest Litigation under Issue 1, which typically invokes Article 226, on what specific grounds do you intend to challenge the maintainability of the writ petition under Articles 226 and 227 as a separate issue (Issue 2)? What distinction are you drawing between the maintainability arguments under these two issues in this specific case?
+Therefore, Your Lordship, the State submits that the absolute prohibition under Section 5D, while stringent, is a necessary and proportionate measure required to effectively implement the constitutional mandate under Article 48, thereby satisfying the test of proportionality.
 
-Respondent: May it please Your Lordship, the Respondent appreciates the opportunity to clarify the distinction between our submissions on Issue 1 and Issue 2 regarding maintainability.
+Unless Your Lordship has further questions on the aspect of proportionality, may I seek permission to proceed with citing judicial precedents supporting the reasonableness of restrictions enacted in furtherance of Directive Principles?
 
-Your Lordship, while the Respondent has conceded, for the sake of argument, the locus standi of the Petitioner 'Alert Indiva' to file this petition as a Public Interest Litigation under Issue 1 – acknowledging the broadened scope established in PIL jurisprudence allowing representative bodies to approach the court on matters of public importance, particularly concerning environmental issues and fundamental rights – our challenge under Issue 2 pertains to different, albeit related, grounds concerning the maintainability of the writ petition itself under the specific heads of Articles 226 and 227.
+Judge: : `<None>`
 
-The distinction, Your Lordship, lies herein:
-1.  Issue 1 (PIL Maintainability): This primarily concerned the standing of the Petitioner – whether an NGO like 'Alert Indiva' could legitimately represent the public interest and the interests of the affected villagers. We have conceded this point based on precedents like S.P. Gupta.
-2.  Issue 2 (Writ Maintainability under Art. 226 & 227): This issue challenges the appropriateness and entertainability of the writ remedy sought, irrespective of the Petitioner's standing. Our grounds under Issue 2, which we intend to elaborate upon, may include, inter alia:
-       The existence of alternative and efficacious remedies that the Petitioner ought to have pursued before invoking the extraordinary writ jurisdiction of this Hon'ble Court, potentially through specialized tribunals or statutory bodies dealing with environmental clearances or rehabilitation.
-       The nature of the impugned actions – namely, a policy decision taken in response to a state-wide crisis and the grant of environmental clearance based on expert assessment. While not immune from judicial review, the scope of interference under Article 226, particularly concerning policy matters and technical assessments, is circumscribed and requires examination.
-       The specific invocation of Article 227, which confers supervisory jurisdiction, may not be appropriate against the executive actions challenged herein, as its scope is generally directed towards inferior courts and tribunals.
+Respondent: :
 
-Therefore, Your Lordship, Issue 1 dealt with who can approach the Court in the public interest, which we conceded. Issue 2 deals with whether the writ jurisdiction under Articles 226 and 227 is the appropriate remedy to be invoked in the facts and circumstances of this case, considering potential alternative remedies and the specific nature of the executive actions being challenged. We submit that these are distinct legal considerations pertinent to the maintainability of the petition before this Hon'ble Court.
+Your Lordships, the Respondent is grateful for the permission to proceed.
 
-With Your Lordship's permission, I shall await further direction on whether to elaborate on these grounds now or proceed as per the Court's preference.
+To substantiate the argument that the restrictions imposed by the Mahadpur Preservation of Animals (Amendment) Act, 2016, are reasonable and constitutionally valid, particularly when viewed through the lens of balancing Fundamental Rights with Directive Principles, the Respondent humbly relies on established judicial precedents.
 
-Judge: `<None>`
+This Hon'ble Court, in the landmark case of State of Gujarat v. Mirzapur Moti Kureshi Kassab Jamat, (2005) 8 SCC 534, extensively examined the interplay between Article 19(1)(g) and Article 48. The Court held that Directive Principles, while not directly enforceable, are fundamental in the governance of the country and must guide the State in making laws. It was emphatically stated that restrictions imposed in furtherance of Article 48 carry a strong presumption of reasonableness.
 
-Respondent: "Your Lordship, the distinction the Respondent draws is as follows:
+In Mirzapur, this Hon'ble Court upheld the constitutional validity of an amendment imposing a total prohibition on the slaughter of bulls and bullocks, irrespective of their age or usefulness, thereby giving precedence to the objectives of Article 48. The Court observed that the objective of Article 48 is not merely to preserve cattle useful for agriculture or milch purposes but extends to the preservation of the species itself, recognizing their continued utility (e.g., for dung) even after they cease to be draught animals.
 
-    Issue 1 concerned the locus standi of the Petitioner, 'Alert Indiva', to bring this matter before the Court as a Public Interest Litigation. As Your Lordship noted, we conceded that based on the established principles broadening access to justice in PIL matters, particularly concerning environmental issues and the rights of potentially disadvantaged groups like the agriculturists, the Petitioner has the standing to file this petition in the public interest.
+The Respondent submits that the Mahadpur High Court, in upholding the impugned amendments, correctly applied the principles laid down in Mirzapur. The amendments, including the prohibition on slaughter (Sections 5A-C) and the ancillary provision regarding possession (Section 5D) necessary for effective enforcement, are directly aimed at achieving the objectives of Article 48, as interpreted by this Hon'ble Court. The rationale in Mirzapur, which emphasizes the fundamental nature of Article 48 and the presumption of reasonableness for laws enacted thereunder, squarely supports the Respondent's contention that the impugned provisions constitute reasonable restrictions under Article 19(6) and within the permissible limits of Article 21.
 
-    Issue 2, however, addresses a different aspect: the maintainability and appropriateness of invoking the High Court's extraordinary writ jurisdiction under Articles 226 and 227 specifically against the actions challenged – namely, a policy decision of the State government and the grant of an Environmental Clearance.
+Unless Your Lordships have further questions on the applicability of these precedents, may I, with Your Lordships' permission, proceed to address the specific challenge raised by the Petitioners concerning the Right to Privacy and Choice under Article 21 in relation to Section 5D?
 
-    Under Article 226, while the Court's power is wide, its exercise is discretionary. We intend to argue that the nature of the challenge, involving complex policy considerations regarding resource management in a drought situation and technical environmental assessments, might make the Court hesitant to interfere via a writ, potentially favouring other avenues or requiring a higher threshold for intervention.
+Judge: : Counsel, you rely significantly on the Mirzapur decision, which upheld a total ban on the slaughter of certain cattle within Gujarat, linking it to Article 48. How does the reasoning in Mirzapur specifically justify Section 5D of the Mahadpur Act, which criminalizes the mere possession of beef, even if sourced from animals lawfully slaughtered outside the State of Mahadpur, particularly when considering the Petitioner's challenge based on the right to privacy and choice under Article 21?
 
-    Furthermore, Article 227 primarily confers powers of superintendence over subordinate courts and tribunals. We submit that challenging a State policy decision or an environmental clearance granted by the executive does not typically fall within the conventional scope of Article 227's supervisory jurisdiction, which is distinct from the broader power under Article 226 to issue writs against 'any person or authority'.
+Respondent: :
 
-    Therefore, while Issue 1 dealt with who can approach the Court (locus standi), Issue 2 deals with whether the specific remedies under Articles 226 and 227 are the appropriate mechanisms for the Court to intervene in this particular type of governmental action and decision-making process.
+Your Lordship, the reliance on the Mirzapur decision extends beyond merely upholding the ban on slaughter itself. The core principle established in Mirzapur is the significant weight and constitutional importance accorded to the Directive Principle enshrined in Article 48. This Hon'ble Court, in Mirzapur, recognized that achieving the objectives of Article 48 constitutes a compelling public interest that can justify substantial restrictions on fundamental rights, specifically Article 19(1)(g) in that context.
 
-    Does this clarification address Your Lordship's query? May I proceed with the substantive arguments on why the writ petition under Articles 226 and 227 might not be maintainable in this specific instance?"
+While Mirzapur dealt directly with the prohibition on slaughter within Gujarat, its reasoning provides crucial support for Section 5D of the Mahadpur Act in two ways when considering the Article 21 challenge:
 
-Judge: `<None>`
+1.  Validation of the Underlying Objective: Mirzapur unequivocally establishes the legitimacy and compelling nature of the State's objective in prohibiting the slaughter of specific cattle under Article 48. This objective forms the bedrock justification for the Mahadpur Act, including Section 5D.
+2.  Justification for Effective Enforcement Measures: The Mirzapur decision implicitly recognizes the State's authority to enact measures necessary to effectively implement the prohibition mandated by Article 48. If the primary prohibition on slaughter within Mahadpur (Sections 5A-C) is justified based on Mirzapur's interpretation of Article 48, then ancillary provisions reasonably required to prevent the primary prohibition from being rendered ineffective – such as Section 5D's ban on possession – derive their justification from the same compelling public interest. As argued earlier, the ban on possession is deemed necessary to prevent the circumvention of the intra-state slaughter ban due to the practical impossibility of distinguishing legally imported beef from illegally slaughtered local beef.
 
-Respondent: May it please Your Lordship,
+Regarding the specific challenge under Article 21 (Right to Privacy and Choice): The right to privacy, including the right to make personal choices about food, is indeed a fundamental right. However, as established by this Hon'ble Court, it is not absolute and is subject to reasonable restrictions based on law, legitimate state aim, and proportionality. The Mirzapur decision underscores that fulfilling the mandate of Article 48 is a legitimate and compelling state aim. Section 5D, as an essential measure to ensure the effective implementation of this aim, serves this legitimate purpose. The State contends that the restriction imposed by Section 5D, viewed in light of the Mirzapur precedent emphasizing the importance of Article 48, is a proportionate measure necessary to achieve the constitutional directive, even if it impacts the choice of food under Article 21. The legislative judgment is that the compelling interest in preventing the slaughter of specified cattle within the state, as validated by Mirzapur, outweighs the restriction on possessing beef sourced from outside.
 
-Further to distinguishing between the maintainability of the petition as a Public Interest Litigation (Issue 1) and its maintainability specifically under Articles 226 and 227 (Issue 2), the Respondent submits the following:
+Therefore, Your Lordship, the reasoning in Mirzapur, by affirming the constitutional significance of Article 48, provides the foundation for justifying not only the primary slaughter ban but also the necessary enforcement mechanism of Section 5D against challenges under both Article 19(1)(g) and Article 21.
 
-While Article 226 confers wide powers upon this Hon'ble Court to issue writs for the enforcement of fundamental rights and for 'any other purpose', judicial review of administrative action, particularly concerning complex policy decisions involving socio-economic considerations and technical expertise, such as the construction of a dam to combat drought and the grant of environmental clearance, is traditionally circumscribed. The Petitioners, by challenging the environmental clearance and the policy decision itself, are essentially inviting this Hon'ble Court to delve into the merits and technical adequacy of the decision, an area where courts generally exercise restraint, intervening only on grounds of illegality, irrationality (Wednesbury unreasonableness), or procedural impropriety.
+Unless Your Lordship has further questions on this point or the application of Mirzapur, may I, with permission, proceed to address the challenge pertaining to Section 9B regarding the burden of proof?
 
-Furthermore, the reliance on Article 227 appears misplaced in the present context. Article 227 grants this Hon'ble Court the power of superintendence over all courts and tribunals throughout the territories in relation to which it exercises jurisdiction. This power is primarily intended to ensure that subordinate courts and tribunals act within the bounds of their authority. It is not typically invoked to challenge the executive policy decisions of the State Government or administrative orders such as the environmental clearance granted by the Ministry, which are not judicial or quasi-judicial acts of subordinate courts or tribunals.
+Judge: : `<None>`
 
-Therefore, while the Petitioners may have locus standi to bring matters of public interest before the Court (Issue 1), the specific challenge mounted against a policy decision and an expert clearance under the writ jurisdiction of Articles 226 and 227 (Issue 2) may not be appropriate, given the nature of the decision and the limited scope of judicial review, particularly under Article 227.
-May I proceed to address Issue number 3, Your Lordship?
+Respondent: :
 
-Judge: Counsel, you argue that judicial review under Article 226 is circumscribed, intervening only on grounds like illegality, irrationality, or procedural impropriety. The Petitioner alleges, inter alia, a lack of proper Environmental Impact Assessment and absence of genuine public consultation. Why do you contend that these specific allegations, even if taken prima facie at this stage, do not meet the threshold of irrationality or procedural impropriety sufficient to warrant the exercise of this Court's jurisdiction under Article 226?
+Your Lordships, having addressed the challenge to Section 5D based on Article 21 and its connection to the principles laid down in State of Gujarat v. Mirzapur Moti Kureshi Kassab Jamat, the Respondent submits that the restriction, while impacting personal choice, is a necessary and proportionate measure to effectively implement the compelling state interest enshrined in Article 48 of the Constitution.
 
-Respondent: "Your Lordship, the Respondent acknowledges the gravity of the Petitioner's allegations concerning the Environmental Impact Assessment and public consultation. However, we contend that these allegations, even viewed prima facie, do not meet the established threshold of irrationality or procedural impropriety necessary to invoke this Hon'ble Court's extraordinary jurisdiction under Article 226, for the following reasons:
+Unless Your Lordships have any further questions concerning the challenge to Sections 5A to 5D under Articles 19(1)(g) and 21, may I, with Your Lordships' permission, proceed to address the third issue raised by the Petitioners, namely, the challenge to the constitutional validity of Section 9B, which deals with the burden of proof, under Article 21?
 
-Firstly, regarding the Environmental Clearance Certificate (ECC), it was granted by the competent authority, the Ministry of Environment and Forest, presumably after following the mandated procedures. The mere assertion by the Petitioner that the EIA was improper, or that they disagree with its conclusions, does not automatically render the decision granting the ECC irrational in the Wednesbury sense. Irrationality requires a decision 'so outrageous in its defiance of logic or accepted moral standards that no sensible person who had applied his mind to the question to be decided could have arrived at it'. The grant of clearance, explicitly stated to be in the larger public interest of addressing severe water scarcity, suggests a balancing exercise was undertaken by the competent authority. Disputing the outcome of this technical assessment does not, by itself, demonstrate irrationality or a fundamental procedural flaw warranting Article 226 intervention at this stage.
+Judge: : `<None>`
 
-Secondly, concerning the alleged lack of genuine public consultation, the facts indicate the State was aware of the villagers' concerns and the potential displacement. The decision to proceed with the dam despite opposition reflects a policy choice, weighing the immediate impact on the villagers against the broader, long-term public interest of alleviating a state-wide water crisis and drought conditions. While the quality or extent of consultation might be debatable, this falls short of demonstrating a complete absence of consideration or a procedural impropriety so fundamental as to vitiate the entire decision-making process. The State, in exercising its executive function, is often required to make difficult choices between competing interests. Unless the Petitioner can demonstrate that the process was a mere sham or fundamentally flawed, violating statutory requirements or principles of natural justice to the point of irrationality, the Court's intervention under Article 226 is not warranted merely because a section of the public remains opposed or feels inadequately consulted.
+Respondent: :
 
-Therefore, Your Lordship, while these issues are central to the merits of the case, they involve complex factual assessments and policy considerations. They do not, at this preliminary stage, demonstrate the kind of patent illegality, manifest irrationality, or egregious procedural impropriety that justifies the exercise of this Court's writ jurisdiction to interfere with the State's policy decision and the environmental clearance granted by the competent authority. May I proceed with further submissions on Issue 2, Your Lordship?"
+Your Lordships, the Respondent will now address the third issue raised by the Petitioners: the challenge to the constitutional validity of Section 9B of the Mahadpur Preservation of Animals Act, 1976, as amended, under Article 21 of the Constitution. The Petitioners argue that this section, by reversing the burden of proof onto the accused, violates the presumption of innocence.
 
+The Respondent acknowledges the cardinal principle of criminal jurisprudence, protected under Article 21, that an accused is presumed innocent until proven guilty. However, this principle is not absolute and admits exceptions crafted by the legislature, particularly in the context of regulatory statutes aimed at curbing specific social or economic harms, or where facts are peculiarly within the knowledge of the accused.
 
-Respondent: "Your Lordship, the Respondent acknowledges the gravity of the Petitioner's allegations concerning the Environmental Impact Assessment and public consultation. However, for the purpose of maintainability under Article 226, the threshold for judicial intervention on grounds of irrationality or procedural impropriety is significantly high, particularly concerning policy decisions involving technical expertise.
-The fact remains that the Environmental Clearance Certificate was granted by the competent statutory authority, the Ministry of Environment and Forest. This grant creates a presumption, albeit rebuttable, that the necessary procedures were followed. While the Petitioner disputes the adequacy and genuineness of these processes, these are assertions that challenge the merits of the clearance, requiring detailed factual scrutiny and evidence.
-At this preliminary stage of maintainability, the mere allegation of deficiencies, without demonstrating manifest arbitrariness or a complete breakdown of the procedural framework that meets the stringent Wednesbury standard, does not automatically render the State's action susceptible to judicial review under Article 226 to the extent of declaring the petition non-maintainable. The existence of the clearance process, undertaken by the designated body, suggests a level of procedural compliance was attempted. Whether that compliance was sufficient or legally sound is precisely what needs to be adjudicated during the substantive hearing on Issues 5 and 6, rather than forming a basis to deny the petition's maintainability under Article 226 at the outset.
-Therefore, while we maintain that judicial review should be exercised with restraint in policy matters, we submit that the Petitioner's specific allegations regarding EIA and consultation are matters going to the merits of the environmental clearance, rather than demonstrating a prima facie case of irrationality or procedural impropriety so egregious as to preclude the petition's maintainability under Article 226."
+Section 9B does not impose an absolute burden on the accused from the outset. It operates only after the prosecution discharges its initial burden of establishing foundational facts, such as the possession, transport, or sale of the specified animal flesh by the accused. Once these facts are established, Section 9B creates a rebuttable presumption, requiring the accused to furnish proof regarding the legality of their actions (e.g., that the slaughter did not occur within Mahadpur in contravention of the Act, or that the transport or possession is otherwise lawful under the Act).
 
+This procedural shift is justified, Your Lordships, by the inherent difficulty the prosecution would face in proving a negative – namely, that the meat was not sourced legally according to the Act's provisions. The facts concerning the origin, slaughter, and transport of the specific meat are typically within the special knowledge of the person possessing or dealing with it. Requiring the accused to provide evidence on these matters, which they are best placed to possess, is a necessary tool for the effective enforcement of the Act's prohibitions.
+
+This Hon'ble Court has previously upheld the validity of similar reverse onus clauses in various statutes dealing with socio-economic offences, provided they are reasonable and not arbitrary. Such provisions are recognized as permissible legislative tools to ensure the efficacy of regulatory measures enacted in the public interest. Section 9B is precisely such a measure, designed to prevent the substantive provisions of the Act, aimed at fulfilling the mandate of Article 48, from being easily evaded due to insurmountable proof challenges for the prosecution. It is a reasonable procedural requirement and does not violate the essence of Article 21.
+
+Unless Your Lordships have any questions regarding the constitutionality of Section 9B, may I, with Your Lordships' permission, proceed to address the final issue raised by the Petitioners concerning the alleged violation of Articles 25 and 29 of the Constitution?
+
+Judge: : Counsel, you argue that Section 9B operates only after the prosecution establishes foundational facts like possession, and the burden shifts because the origin details are within the accused's 'special knowledge'. However, if someone possesses meat purchased from a vendor, how is the origin and legality of slaughter (which might have occurred far away, involving multiple intermediaries) considered 'peculiarly' within the knowledge of the end possessor? Does this application of reverse onus not place an unreasonable burden, potentially violating Article 21?
+
+Respondent: : Your Lordship raises a critical point regarding the application of the 'special knowledge' principle to an end possessor, particularly one who has purchased meat from a vendor, and the potential unreasonableness under Article 21.
+
+The Respondent submits that while the degree of direct knowledge about the ultimate origin and legality of slaughter may vary depending on the accused's position in the supply chain, Section 9B is designed as a necessary enforcement mechanism for a regulatory statute aimed at preventing a specific harm prohibited under the Act, which itself is grounded in Article 48.
+
+1.  Scope of 'Special Knowledge': For an end possessor who purchased from a vendor, the 'special knowledge' under Section 106 of the Evidence Act, in the context of Section 9B, pertains primarily to the circumstances of their acquisition of the meat. They have peculiar knowledge of from whom they purchased it, when, and under what circumstances. While they may not know the precise origin or slaughter details, they possess the immediate knowledge regarding their own transaction.
+2.  Rebuttable Presumption: Section 9B creates a rebuttable presumption, not an insurmountable burden. The nature and quantum of proof required from the accused to rebut the presumption would necessarily depend on the facts and circumstances, including their role. An end consumer might discharge their burden by demonstrating, for instance, a purchase made in good faith from a licensed vendor (if such licensing exists) or providing details of the seller, thereby furnishing a starting point for further investigation if needed. The provision does not necessarily require the end consumer to trace the meat back to its origin definitively.
+3.  Regulatory Context: In regulatory offences, particularly those involving prohibited items or substances where tracing origin is difficult for the prosecution, the legislature often places a degree of onus on those dealing with or possessing the item. This encourages diligence and aids effective enforcement. The objective is to ensure the Act's prohibitions (like the ban on possession linked to the intra-state slaughter ban) are not easily defeated by the practical difficulties of proving the negative (i.e., proving the meat was from an animal illegally slaughtered within Mahadpur).
+4.  Proportionality and Article 21: The Respondent contends that this procedural requirement, viewed in the context of the Act's objectives and the enforcement challenges, is a proportionate legislative measure. It does not render the presumption of innocence illusory but shifts the onus of introducing evidence on facts peculiarly within the accused's knowledge regarding their possession. The difficulty highlighted by Your Lordship is acknowledged, but the legislature deemed this shift necessary for the efficacy of the law enacted in furtherance of a Directive Principle. The burden is not absolute and must be applied reasonably by the courts, considering the accused's specific situation. Therefore, it does not place an unreasonable burden violating Article 21.
+
+Unless Your Lordship has further questions on the operation or constitutionality of Section 9B, may I, with Your Lordships' permission, proceed to address the final issue raised by the Petitioners concerning the alleged violation of Articles 25 and 29 of the Constitution?
+
+Respondent: :
+
+Your Lordships, the Respondent is grateful for the opportunity to address the final issue raised by the Petitioners: the contention that the Mahadpur Preservation of Animals (Amendment) Act, 2016, infringes upon the fundamental rights guaranteed under Article 25 (Right to Freedom of Religion) and Article 29 (Cultural Rights) of the Constitution.
+
+The Respondent submits that this challenge is misconceived and lacks merit. The impugned Act is, in its essence and purpose, a legislation aimed at giving effect to the Directive Principles of State Policy, specifically Article 48, concerning the preservation and improvement of cattle breeds and prohibiting their slaughter. It is primarily an economic and regulatory measure, also reflecting the Fundamental Duty under Article 51A(g) to show compassion to living creatures.
+
+With respect to Article 25, this Hon'ble Court has consistently held that the protection afforded is to practices that are essential and integral to a religion. In the landmark case of Mohd. Hanif Quareshi & Ors. v. The State of Bihar (AIR 1958 SC 731), this Court specifically examined whether the sacrifice of cows on Bakr-Id was an essential religious practice for Muslims and concluded that it was not. The Court found that while the religion might permit such sacrifice, it was not obligatory or essential. The impugned Mahadpur Act regulates the slaughter, possession, and transport of specific cattle based on the constitutional mandate under Article 48, which is a secular objective. It does not target any specific religious practice, much less an essential one. Any incidental effect the Act might have on the practices of any community does not render it violative of Article 25, as the primary object of the law is secular and grounded in constitutional directives.
+
+Regarding Article 29, which protects the cultural rights of minorities, the Petitioners have failed to establish that the consumption of beef constitutes a fundamental tenet of any distinct culture protected under this Article, such that its prohibition would violate their cultural rights. The Act applies uniformly to all citizens within the State of Mahadpur and is based on considerations of animal preservation and public interest as mandated by the Constitution, not on cultural grounds.
+
+Therefore, Your Lordships, the Respondent submits that the impugned amendments do not violate either Article 25 or Article 29 of the Constitution.
+
+Unless Your Lordships have any further questions on this issue, may I, with Your Lordships' permission, proceed to the conclusion and final prayer?
 Judge: <None>
-Final Score Report: Scores Breakdown & Justification
+Final Score Report: : Scores Breakdown and Justification
 
-Petitioner (Alert Indiva):
+Petitioner (PQR & Ors.)
 
-1.  Recognition of Issues: 10/10 (Clearly identified and prioritized key issues)
-2.  Legal Principles: 14/15 (Strong application of relevant constitutional and environmental principles)
-3.  Use of Authorities: 14/15 (Effective use of relevant landmark case law)
-4.  Application of Facts: 14/15 (Logical connection of facts to legal arguments)
-5.  Clarity & Structure: 9/10 (Well-organized and coherent presentation)
-6.  Response to Questions: 14/15 (Direct, relevant, and well-reasoned answers)
-7.  Communication: 9/10 (Clear, respectful, and engaging)
-8.  Presentation & Poise: 9/10 (Appeared confident, composed, and adhered to etiquette)
-    Total Score: 93/100
+| Criteria                 | Score | Justification                                                                                                                               |
+| :----------------------- | :---- | :------------------------------------------------------------------------------------------------------------------------------------------ |
+| Recognition of Issues    | 10/10 | Accurately identified all key constitutional challenges (Arts 19, 21, 25, 29) and the specific issue of Sec 9B.                               |
+| Legal Principles         | 13/15 | Strong application of privacy, proportionality, religious/cultural rights principles. Good balancing attempt. Minor deduction for 9B logging. |
+| Use of Authorities       | 13/15 | Effective use of Puttaswamy, Quareshi, Bijoe Emmanuel.                                                                                 |
+| Application of Facts     | 14/15 | Clearly linked amended sections to impacts on citizens/trade/legal burden.                                                                  |
+| Clarity & Structure      | 10/10 | Excellent organization and clear presentation.                                                                                              |
+| Response to Questions    | 14/15 | Very strong, reasoned, and legally supported answers to judicial interventions.                                                             |
+| Communication            | 9/10  | Clear, formal, respectful language.                                                                                                       |
+| Presentation & Poise     | 9/10  | Inferred confidence and professionalism.                                                                                                    |
+| Total                | 92/100 | Overall: A strong performance effectively championing fundamental rights, particularly privacy, with clear arguments and good responses. |
 
-   Justification: The Petitioner excelled in linking facts, law, and precedent. They built a strong case based on fundamental rights and environmental principles, effectively using landmark judgments. Their responses to judges were direct, persuasive, and demonstrated a strong grasp of the issues and relevant law.
+Respondent (State of Mahadpur)
 
-Respondent (State of Bramha):
-
-1.  Recognition of Issues: 9/10 (Acknowledged all framed issues)
-2.  Legal Principles: 11/15 (Applied relevant principles but showed weakness/confusion in the PIL maintainability argument and less depth overall)
-3.  Use of Authorities: 10/15 (Limited use of specific case law compared to Petitioner)
-4.  Application of Facts: 11/15 (Used 'public interest' fact but less engagement with Petitioner's specific factual allegations)
-5.  Clarity & Structure: 8/10 (Generally structured, but initial argument was convoluted)
-6.  Response to Questions: 9/15 (Some responses were evasive/repetitive; critically missed answering one question)
-7.  Communication: 8/10 (Appropriate language but less persuasive due to argument weaknesses and missed question)
-8.  Presentation & Poise: 8/10 (Maintained decorum but appeared less confident/prepared, especially during difficult questioning)
-    Total Score: 74/100
-
-   Justification: The Respondent correctly identified principles of judicial restraint but struggled with the PIL maintainability argument after conceding locus. There was less reliance on specific authorities, and a crucial question from the bench was not addressed. While arguments on writ maintainability (Issue 2) were standard, the overall performance was less convincing and demonstrated weaknesses in argumentation and responsiveness compared to the Petitioner.
+| Criteria                 | Score | Justification                                                                                                                                                           |
+| :----------------------- | :---- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Recognition of Issues    | 10/10 | Accurately framed issues from the State's perspective, addressing all challenges.                                                                                         |
+| Legal Principles         | 14/15 | Excellent application of DPSP, reasonable restrictions, proportionality, harmonious construction, and defence of ancillary enforcement measures.                          |
+| Use of Authorities       | 15/15 | Masterful and central use of Mirzapur precedent; effective use of Quareshi.                                                                                           |
+| Application of Facts     | 13/15 | Strong argument linking possession ban/reverse onus to enforcement necessity. Weaker on providing specific evidence for 'impossibility' of alternatives.                 |
+| Clarity & Structure      | 10/10 | Very well-organized and logical presentation.                                                                                                                           |
+| Response to Questions    | 13/15 | Strong overall, applying legal tests and precedent effectively. Handled tough questions well, though relied on assertion/legislative wisdom for enforcement difficulty. |
+| Communication            | 9/10  | Clear, formal, respectful language.                                                                                                                                     |
+| Presentation & Poise     | 9/10  | Inferred confidence and preparedness.                                                                                                                                   |
+| Total                | 93/100 | Overall: A very robust defence, strongly anchored in constitutional directives and precedent (Mirzapur), effectively justifying the state's actions.             |
