@@ -1,7 +1,21 @@
-# Project Title
+# AgenticMootCourt
 
 ## Description
-This project is designed to facilitate legal simulations and court proceedings using advanced language models. It leverages various libraries and frameworks to provide a comprehensive environment for legal practitioners and researchers.
+This project is a human-in-the-loop simulation of Indian constitutional moot courts using Large Language Models (LLMs) that is designed to aid law students in preparing for oral rounds. The system simulates real Indian moot court dynamics with AI agents acting as the judge, respondent, and reviewer, while the user plays the role of the petitioner.
+
+**Key Features:**
+
+- Realistic simulation of oral rounds in moot courts.
+- AI agents powered by LLMs and Indian legal texts (Constitution, BNS, landmark cases).
+- Judge agent asks questions dynamically based on arguments.
+- Respondent agent presents structured arguments and responds to judicial queries.
+- Reviewer agent scores and gives feedback based on standard moot court rubrics.
+
+**Technologies Used:**
+
+* LangChain, FAISS, Python
+* Google Vertex AI (Gemini models)
+* InLegalBERT, MiniLM for semantic similarity
 
 ## File Structure
 ```
@@ -77,6 +91,7 @@ This project is designed to facilitate legal simulations and court proceedings u
     └── moot_court_log_2.txt
 ```
 
+
 ## Installation
 To set up the project, follow these steps:
 
@@ -96,5 +111,12 @@ To run the project, execute the following command:
 ```bash
 python src/mootcourt/main.py
 ```
+## Drive Link for Results
+https://drive.google.com/drive/folders/1NLCf7bYVQRIUZJEStQJ59KjiTy2t5XFh?usp=sharing
+
+
+## Collaborators
+- Ishan Gupta(https://github.com/Ishan-1)
+- Harsh Gupta(https://github.com/harsh-gupta10)
 
 
